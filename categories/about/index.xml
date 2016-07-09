@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leif&#39;s Development Blog-o-rama </title>
+    <link>https://leifwells.github.io/blog-o-rama/categories/about/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-04-15 22:38:06 -0400 EDT</updated>
+
+    
+      
+        <item>
+          <title>Rebooting &amp; Clearing the Cache of My Professional Life</title>
+          <link>https://leifwells.github.io/blog-o-rama/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
+          <pubDate>Fri, 15 Apr 2016 22:38:06 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/blog-o-rama/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
+          <description>&lt;p&gt;Welcome to my new blog. I plan to write about many things here &amp;mdash;&amp;ndash; life, television, movies &amp;mdash;&amp;ndash; but I will be focusing a lot of my efforts around my work as a Web and mobile application developer.&lt;/p&gt;
+
+&lt;p&gt;A lot has changed for me over the past few years. I went from being an RIA Evangelist at Roundbox (now defunct) to working at &lt;a href=&#34;http://www.measuredprogress.org/&#34;&gt;Measured Progress&lt;/a&gt; to freelancing and feeling fairly underemployed. I&amp;rsquo;ve done my best to learn new technologies &amp;mdash;&amp;ndash; &lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Appcelerator Titanium&lt;/a&gt;, &lt;a href=&#34;https://angularjs.org/&#34;&gt;Angular&lt;/a&gt;, &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt; &amp;mdash;&amp;ndash; whilst wrapping my head around the entire ecosystem that is modern Javascript. For a long while it was all overwhelming. It seemed like we were introduced to ten new frameworks or automation libraries or CSS pre-post-processors every day. I eventually learned (or, actually, re-learned) how to cut through the daily white noise and focus on things that mattered most to me.&lt;/p&gt;
+
+&lt;p&gt;These days I am hard at work getting up-to-speed with the on-going development of &lt;a href=&#34;https://github.com/driftyco/ionic/blob/2.0/CHANGELOG.md&#34;&gt;Ionic 2&lt;/a&gt; and &lt;a href=&#34;https://github.com/angular/angular/blob/master/CHANGELOG.md&#34;&gt;Angular 2&lt;/a&gt;, both now in beta. That includes other projects like &lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS&lt;/a&gt;, &lt;a href=&#34;https://github.com/angular/zone.js/&#34;&gt;Zones.js&lt;/a&gt;, &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt;, and &lt;a href=&#34;http://sass-lang.com/&#34;&gt;Sass&lt;/a&gt;. Those are the technologies I am really enjoying, so expect future posts on them.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m no expert. I&amp;rsquo;m still learning. But that is what is so very exciting about these days; &lt;a href=&#34;https://twitter.com/hashtag/EverythingIsInBeta?src=hash&#34;&gt;#EverythingIsInBeta&lt;/a&gt;, including our skills. Not many people are expert at the new versions of these technologies. Learn along with me, if you&amp;rsquo;d like. Help me to learn if you can.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>About Me</title>
+          <link>https://leifwells.github.io/blog-o-rama/2016/04/15/about-me/</link>
+          <pubDate>Fri, 15 Apr 2016 15:58:34 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/blog-o-rama/2016/04/15/about-me/</guid>
+          <description>
+
+&lt;p&gt;&lt;em&gt;This is a narrative of my professional life. If this is too long for your attention deprived mind, please visit &lt;a href=&#34;https://www.linkedin.com/in/leifwells&#34;&gt;my Linked In profile&lt;/a&gt;; but I am so very much more than my resume. &lt;a href=&#34;https://twitter.com/leifwells&#34;&gt;Follow me on Twitter&lt;/a&gt; but be warned, I tweet about a many different things, not just technology.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Last Updated: 2016-04-16T18:40:00&lt;/p&gt;
+
+&lt;h2 id=&#34;shadowboxes-the-beginning:8723697e33f65823610bf3f676b8d742&#34;&gt;Shadowboxes: The Beginning&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been a developer for more than 20 years. After months of stealing computer time at a local college to train myself in Macromedia Director, I was brought on to an interactive media team at IBM&amp;rsquo;s Eduquest to work on a children&amp;rsquo;s interactive CD-ROM story book based on Laura L. Seeley&amp;rsquo;s &lt;a href=&#34;http://www.amazon.com/The-Book-Shadowboxes-Story-ABCs/dp/0934601658&#34;&gt;The Book of Shadowboxes: A Story of the ABC&amp;rsquo;s&lt;/a&gt;. This valuable experience lead me to becoming Technical Director of the Window 3.1 version of Shadowboxes as well as for The 1994 IBM Interactive Annual Report. The annual report project was so massive that nearly killed me.&lt;/p&gt;
+
+&lt;p&gt;After a brief stay at the Betty Ford Clinic for Interactive Developers I entered the wild world of freelancing. I was contracted to work for agencies and companies large and small including IBM (of course), UPS, Home Depot, and the CDC.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-atlanta-interactive-media-community:8723697e33f65823610bf3f676b8d742&#34;&gt;The Atlanta Interactive Media Community&lt;/h2&gt;
+
+&lt;p&gt;At this point I took the opportunity to lift my head and take a look around at the Atlanta development community. It basically didn&amp;rsquo;t exist. New companies were popping up everywhere, new interactive departments inside large corporations were forming. The Web was taking off in a big way. A very big way. But no one knew each other. There was so much work, companies weren&amp;rsquo;t even aware of other competing companies down the street.&lt;/p&gt;
+
+&lt;p&gt;With a lot of assistance and insistence from friends, we put together a party at a studio which volunteered as host and invited the entire disconnected community. It was huge. Everyone came. Connections were made. People were hired. Companies were engaged. It was amazing. I truly enjoyed being able to help people get work and help people find workers.&lt;/p&gt;
+
+&lt;h2 id=&#34;poorly-laid-plans:8723697e33f65823610bf3f676b8d742&#34;&gt;Poorly Laid Plans&lt;/h2&gt;
+
+&lt;p&gt;Later, while working with a company called Caribiner I met some gentlemen who shared the same views about creative and technical development as I. We decided to create a start-up. It was a disaster. Partially planning, partially timing, but completely disastrous.&lt;/p&gt;
+
+&lt;p&gt;Then came 911 and everything else fell apart.&lt;/p&gt;
+
+&lt;p&gt;In 2002, I joined Realm Communications (now &lt;a href=&#34;http://realmco.com/&#34;&gt;Realm Integrated Marketing&lt;/a&gt;) as their Technical Director working on CD-ROM and Web projects using Macromedia Director and Macromedia Flash.&lt;/p&gt;
+
+&lt;h2 id=&#34;evangelist-at-roundbox:8723697e33f65823610bf3f676b8d742&#34;&gt;Evangelist at Roundbox&lt;/h2&gt;
+
+&lt;p&gt;In 2004 I began working with Roundbox Media as their Director of Multimedia Services. Roundbox was &amp;mdash;&amp;ndash; I use the past tense, as the company no longer exists &amp;mdash;&amp;ndash; a company that worked with clients in the educational field. We worked on various projects related to student assessments. At the same time I had taken over the management of the Atlanta Macromedia User Group (later to evolved as the Adobe User Group of Atlanta) as well as presenting at local user groups and conferences. I was building a name for myself in the rich Internet application space.&lt;/p&gt;
+
+&lt;p&gt;Roundbox Media grew into Roundbox Global and the management team decided to create a new position for me as Rich Internet Application Evangelist. Basically, I was doing all the things I was already doing, but now I could do them during the workday without making any project managers crazy. We moved into a new office space which had a huge meeting area. We could easily host meeting for 200 people. It was a very supportive environment for me and my community.&lt;/p&gt;
+
+&lt;h2 id=&#34;continuing-with-education-companies:8723697e33f65823610bf3f676b8d742&#34;&gt;Continuing with Education Companies&lt;/h2&gt;
+
+&lt;p&gt;After Roundbox Global was sold, I moved on to &lt;a href=&#34;http://www.measuredprogress.org/&#34;&gt;Measured Progress&lt;/a&gt;, another education company, as an Enterprise Architect. I worked on one large project which assisted teachers with creating student assessment questions. Later I assisted the Measured Progress UX team with creating prototypes for user testing, something I completely enjoyed.&lt;/p&gt;
+
+&lt;p&gt;I was assigned to move to Boston and work at a company Measured Progress had just purchased. I made plans, handed off all of my community responsibilities, and prepared to leave Atlanta. But the plan didn&amp;rsquo;t pan out. Having lived in The South my entire life I was happy I didn&amp;rsquo;t have to find out what it was like living where Winter was a serious matter.&lt;/p&gt;
+
+&lt;h2 id=&#34;freelancing-and-re-educating:8723697e33f65823610bf3f676b8d742&#34;&gt;Freelancing and Re-educating&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve worked as a freelancer since leaving Measured Progress in 2012. I&amp;rsquo;ve especially enjoyed working with &lt;a href=&#34;http://www.digitalprimates.net/&#34;&gt;Digital Primates&lt;/a&gt; on a small Angular application and a massively huge Flex/Java application as well as working with &lt;a href=&#34;https://www.simb.co/&#34;&gt;Simb &amp;amp; Company&lt;/a&gt; on a few Angular micro sites. And in my spare time I&amp;rsquo;ve learned. And learned.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
