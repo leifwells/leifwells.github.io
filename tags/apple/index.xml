@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Apple on Leif&#39;s Development Blog-o-rama</title>
+    <title>Leif&#39;s Development Blog-o-rama </title>
     <link>https://leifwells.github.io/tags/apple/</link>
-    <description>Recent content in Apple on Leif&#39;s Development Blog-o-rama</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
-    <lastBuildDate>Sat, 28 May 2016 14:57:05 -0400</lastBuildDate>
-    <atom:link href="https://leifwells.github.io/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-05-28 14:57:05 -0400 EDT</updated>
+
     
-    <item>
-      <title>Lessons Learned: Unnamed Project 2016-05</title>
-      <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
-      <pubDate>Sat, 28 May 2016 14:57:05 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
-      <description>
+        <item>
+          <title>Lessons Learned: Unnamed Project 2016-05</title>
+          <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+          <pubDate>Sat, 28 May 2016 14:57:05 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+          <description>
 
 &lt;h2 id=&#34;an-unnamed-project:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;An Unnamed Project&lt;/h2&gt;
 
@@ -125,7 +125,9 @@
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
+        </item>
+      
     
+
   </channel>
 </rss>

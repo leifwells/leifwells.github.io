@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rxjs on Leif&#39;s Development Blog-o-rama</title>
+    <title>Leif&#39;s Development Blog-o-rama </title>
     <link>https://leifwells.github.io/tags/rxjs/</link>
-    <description>Recent content in Rxjs on Leif&#39;s Development Blog-o-rama</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
-    <lastBuildDate>Sun, 10 Jul 2016 12:00:00 -0400</lastBuildDate>
-    <atom:link href="https://leifwells.github.io/tags/rxjs/index.xml" rel="self" type="application/rss+xml" />
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-07-10 12:00:00 -0400 EDT</updated>
+
     
-    <item>
-      <title>EverythingIsInBeta</title>
-      <link>https://leifwells.github.io/2016/07/10/everythingisinbeta/</link>
-      <pubDate>Sun, 10 Jul 2016 12:00:00 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/07/10/everythingisinbeta/</guid>
-      <description>
+        <item>
+          <title>EverythingIsInBeta</title>
+          <link>https://leifwells.github.io/2016/07/10/everythingisinbeta/</link>
+          <pubDate>Sun, 10 Jul 2016 12:00:00 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/07/10/everythingisinbeta/</guid>
+          <description>
 
 &lt;h3 id=&#34;last-update-2016-07-10:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-07-10&lt;/h3&gt;
 
@@ -32,15 +32,17 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-beta.10&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>I Attended ng-conf 2016. Yay!</title>
-      <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
-      <pubDate>Sat, 07 May 2016 18:35:39 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
-      <description>
+    
+      
+        <item>
+          <title>I Attended ng-conf 2016. Yay!</title>
+          <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+          <pubDate>Sat, 07 May 2016 18:35:39 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+          <description>
 
 &lt;p&gt;This week I attended &lt;a href=&#34;http://www.ng-conf.org/&#34;&gt;ng-conf&lt;/a&gt; for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.&lt;/p&gt;
 
@@ -72,15 +74,17 @@
 
 &lt;p&gt;In the upcoming week I&amp;rsquo;ll try to talk about all of these things and more. I had a great time at ng-conf, and now I need to decompress and recover before applying things I learned to projects I have in mind.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Why EverythingIsInBeta?</title>
-      <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
-      <pubDate>Sat, 16 Apr 2016 23:44:14 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
-      <description>
+    
+      
+        <item>
+          <title>Why EverythingIsInBeta?</title>
+          <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
+          <pubDate>Sat, 16 Apr 2016 23:44:14 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
+          <description>
 
 &lt;p&gt;I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?&lt;/p&gt;
 
@@ -105,7 +109,9 @@
 &lt;p&gt;&lt;a class=&#34;twitter-timeline&#34; href=&#34;https://twitter.com/hashtag/EverythingIsInBeta&#34; data-widget-id=&#34;721395116104146944&#34;&gt;#EverythingIsInBeta Tweets&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rdquo;://platform.twitter.com/widgets.js&amp;rdquo;;fjs.parentNode.insertBefore(js,fjs);}}(document,&amp;ldquo;script&amp;rdquo;,&amp;ldquo;twitter-wjs&amp;rdquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
+        </item>
+      
     
+
   </channel>
 </rss>
