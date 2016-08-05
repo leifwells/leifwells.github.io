@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leif&#39;s Development Blog-o-rama </title>
+    <title>Conferences on Leif&#39;s Development Blog-o-rama</title>
     <link>https://leifwells.github.io/categories/conferences/</link>
+    <description>Recent content in Conferences on Leif&#39;s Development Blog-o-rama</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2016</rights>
-    <updated>2016-05-07 18:35:39 -0400 EDT</updated>
-
+    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
+    <lastBuildDate>Sat, 07 May 2016 18:35:39 -0400</lastBuildDate>
+    <atom:link href="https://leifwells.github.io/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>I Attended ng-conf 2016. Yay!</title>
+      <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+      <pubDate>Sat, 07 May 2016 18:35:39 -0400</pubDate>
       
-        <item>
-          <title>I Attended ng-conf 2016. Yay!</title>
-          <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
-          <pubDate>Sat, 07 May 2016 18:35:39 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
-          <description>
+      <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+      <description>
 
 &lt;p&gt;This week I attended &lt;a href=&#34;http://www.ng-conf.org/&#34;&gt;ng-conf&lt;/a&gt; for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.&lt;/p&gt;
 
@@ -48,9 +48,7 @@
 
 &lt;p&gt;In the upcoming week I&amp;rsquo;ll try to talk about all of these things and more. I had a great time at ng-conf, and now I need to decompress and recover before applying things I learned to projects I have in mind.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
-
   </channel>
 </rss>

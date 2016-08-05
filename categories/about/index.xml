@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leif&#39;s Development Blog-o-rama </title>
+    <title>About on Leif&#39;s Development Blog-o-rama</title>
     <link>https://leifwells.github.io/categories/about/</link>
+    <description>Recent content in About on Leif&#39;s Development Blog-o-rama</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2016</rights>
-    <updated>2016-04-15 22:38:06 -0400 EDT</updated>
-
+    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
+    <lastBuildDate>Fri, 15 Apr 2016 22:38:06 -0400</lastBuildDate>
+    <atom:link href="https://leifwells.github.io/categories/about/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Rebooting &amp; Clearing the Cache of My Professional Life</title>
+      <link>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
+      <pubDate>Fri, 15 Apr 2016 22:38:06 -0400</pubDate>
       
-        <item>
-          <title>Rebooting &amp; Clearing the Cache of My Professional Life</title>
-          <link>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
-          <pubDate>Fri, 15 Apr 2016 22:38:06 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
-          <description>&lt;p&gt;Welcome to my new blog. I plan to write about many things here &amp;mdash;&amp;ndash; life, television, movies &amp;mdash;&amp;ndash; but I will be focusing a lot of my efforts around my work as a Web and mobile application developer.&lt;/p&gt;
+      <guid>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
+      <description>&lt;p&gt;Welcome to my new blog. I plan to write about many things here &amp;mdash;&amp;ndash; life, television, movies &amp;mdash;&amp;ndash; but I will be focusing a lot of my efforts around my work as a Web and mobile application developer.&lt;/p&gt;
 
 &lt;p&gt;A lot has changed for me over the past few years. I went from being an RIA Evangelist at Roundbox (now defunct) to working at &lt;a href=&#34;http://www.measuredprogress.org/&#34;&gt;Measured Progress&lt;/a&gt; to freelancing and feeling fairly underemployed. I&amp;rsquo;ve done my best to learn new technologies &amp;mdash;&amp;ndash; &lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Appcelerator Titanium&lt;/a&gt;, &lt;a href=&#34;https://angularjs.org/&#34;&gt;Angular&lt;/a&gt;, &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt; &amp;mdash;&amp;ndash; whilst wrapping my head around the entire ecosystem that is modern Javascript. For a long while it was all overwhelming. It seemed like we were introduced to ten new frameworks or automation libraries or CSS pre-post-processors every day. I eventually learned (or, actually, re-learned) how to cut through the daily white noise and focus on things that mattered most to me.&lt;/p&gt;
 
@@ -24,17 +24,15 @@
 
 &lt;p&gt;I&amp;rsquo;m no expert. I&amp;rsquo;m still learning. But that is what is so very exciting about these days; &lt;a href=&#34;https://twitter.com/hashtag/EverythingIsInBeta?src=hash&#34;&gt;#EverythingIsInBeta&lt;/a&gt;, including our skills. Not many people are expert at the new versions of these technologies. Learn along with me, if you&amp;rsquo;d like. Help me to learn if you can.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>About Me</title>
+      <link>https://leifwells.github.io/2016/04/15/about-me/</link>
+      <pubDate>Fri, 15 Apr 2016 15:58:34 -0400</pubDate>
       
-        <item>
-          <title>About Me</title>
-          <link>https://leifwells.github.io/2016/04/15/about-me/</link>
-          <pubDate>Fri, 15 Apr 2016 15:58:34 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/04/15/about-me/</guid>
-          <description>
+      <guid>https://leifwells.github.io/2016/04/15/about-me/</guid>
+      <description>
 
 &lt;p&gt;&lt;em&gt;This is a narrative of my professional life. If this is too long for your attention deprived mind, please visit &lt;a href=&#34;https://www.linkedin.com/in/leifwells&#34;&gt;my Linked In profile&lt;/a&gt;; but I am so very much more than my resume. &lt;a href=&#34;https://twitter.com/leifwells&#34;&gt;Follow me on Twitter&lt;/a&gt; but be warned, I tweet about a many different things, not just technology.&lt;/em&gt;&lt;/p&gt;
 
@@ -76,9 +74,7 @@
 
 &lt;p&gt;I&amp;rsquo;ve worked as a freelancer since leaving Measured Progress in 2012. I&amp;rsquo;ve especially enjoyed working with &lt;a href=&#34;http://www.digitalprimates.net/&#34;&gt;Digital Primates&lt;/a&gt; on a small Angular application and a massively huge Flex/Java application as well as working with &lt;a href=&#34;https://www.simb.co/&#34;&gt;Simb &amp;amp; Company&lt;/a&gt; on a few Angular micro sites. And in my spare time I&amp;rsquo;ve learned. And learned.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
-
   </channel>
 </rss>
