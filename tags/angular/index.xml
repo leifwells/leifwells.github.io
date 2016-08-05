@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Angular on Leif&#39;s Development Blog-o-rama</title>
+    <title>Leif&#39;s Development Blog-o-rama </title>
     <link>https://leifwells.github.io/tags/angular/</link>
-    <description>Recent content in Angular on Leif&#39;s Development Blog-o-rama</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
-    <lastBuildDate>Fri, 05 Aug 2016 12:00:00 -0400</lastBuildDate>
-    <atom:link href="https://leifwells.github.io/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-08-05 12:00:00 -0400 EDT</updated>
+
     
-    <item>
-      <title>EverythingIsInBeta</title>
-      <link>https://leifwells.github.io/2016/08/05/everythingisinbeta/</link>
-      <pubDate>Fri, 05 Aug 2016 12:00:00 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/08/05/everythingisinbeta/</guid>
-      <description>
+        <item>
+          <title>EverythingIsInBeta</title>
+          <link>https://leifwells.github.io/2016/08/05/everythingisinbeta/</link>
+          <pubDate>Fri, 05 Aug 2016 12:00:00 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/08/05/everythingisinbeta/</guid>
+          <description>
 
 &lt;h3 id=&#34;last-update-2016-07-10:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-07-10&lt;/h3&gt;
 
@@ -32,15 +32,17 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-beta.10&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Getting Angular CLI Apps to Work Inside Electron</title>
-      <link>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
-      <pubDate>Sun, 12 Jun 2016 11:41:41 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
-      <description>
+    
+      
+        <item>
+          <title>Getting Angular CLI Apps to Work Inside Electron</title>
+          <link>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
+          <pubDate>Sun, 12 Jun 2016 11:41:41 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
+          <description>
 
 &lt;p&gt;I started working on a new Electron application using the Angular CLI and found a solution to a show-stopping problem that I thought that I should share.&lt;/p&gt;
 
@@ -83,15 +85,17 @@
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</title>
-      <link>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</link>
-      <pubDate>Thu, 09 Jun 2016 15:31:45 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</guid>
-      <description>
+    
+      
+        <item>
+          <title>Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</title>
+          <link>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</link>
+          <pubDate>Thu, 09 Jun 2016 15:31:45 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</guid>
+          <description>
 
 &lt;p&gt;This week I was asked by my friend &lt;a href=&#34;https://chrisgriffith.wordpress.com/&#34;&gt;Chris Griffith&lt;/a&gt; about using a Google spread sheet as a data source for a prototype he was building. Both Chris and I build prototypes as part of our daily jobs, so the question makes sense; what happens when you need to use archived data &amp;mdash; data that you need will need to update from time to time &amp;mdash; but you don&amp;rsquo;t have the time to build a server application or use something like Firebase to deliver the content?&lt;/p&gt;
 
@@ -198,15 +202,17 @@
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
-      <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
-      <pubDate>Fri, 03 Jun 2016 22:15:27 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.&lt;/p&gt;
+    
+      
+        <item>
+          <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
+          <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
+          <pubDate>Fri, 03 Jun 2016 22:15:27 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
+          <description>&lt;p&gt;I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.&lt;/p&gt;
 
 &lt;p&gt;Lets take a look at the typical code to create a Local Notification in Ionic 1:&lt;/p&gt;
 
@@ -240,15 +246,17 @@
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Setting Android Icons with Local Notifications</title>
-      <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
-      <pubDate>Mon, 30 May 2016 00:01:31 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
-      <description>
+    
+      
+        <item>
+          <title>Setting Android Icons with Local Notifications</title>
+          <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
+          <pubDate>Mon, 30 May 2016 00:01:31 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
+          <description>
 
 &lt;p&gt;My &lt;a href=&#34;https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
 
@@ -412,15 +420,17 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Lessons Learned: Unnamed Project 2016-05</title>
-      <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
-      <pubDate>Sat, 28 May 2016 14:57:05 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
-      <description>
+    
+      
+        <item>
+          <title>Lessons Learned: Unnamed Project 2016-05</title>
+          <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+          <pubDate>Sat, 28 May 2016 14:57:05 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+          <description>
 
 &lt;h2 id=&#34;an-unnamed-project:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;An Unnamed Project&lt;/h2&gt;
 
@@ -529,15 +539,17 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>I Attended ng-conf 2016. Yay!</title>
-      <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
-      <pubDate>Sat, 07 May 2016 18:35:39 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
-      <description>
+    
+      
+        <item>
+          <title>I Attended ng-conf 2016. Yay!</title>
+          <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+          <pubDate>Sat, 07 May 2016 18:35:39 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+          <description>
 
 &lt;p&gt;This week I attended &lt;a href=&#34;http://www.ng-conf.org/&#34;&gt;ng-conf&lt;/a&gt; for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.&lt;/p&gt;
 
@@ -569,15 +581,17 @@ console.log(&amp;quot;&amp;quot;);
 
 &lt;p&gt;In the upcoming week I&amp;rsquo;ll try to talk about all of these things and more. I had a great time at ng-conf, and now I need to decompress and recover before applying things I learned to projects I have in mind.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Why EverythingIsInBeta?</title>
-      <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
-      <pubDate>Sat, 16 Apr 2016 23:44:14 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
-      <description>
+    
+      
+        <item>
+          <title>Why EverythingIsInBeta?</title>
+          <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
+          <pubDate>Sat, 16 Apr 2016 23:44:14 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
+          <description>
 
 &lt;p&gt;I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?&lt;/p&gt;
 
@@ -602,15 +616,17 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;a class=&#34;twitter-timeline&#34; href=&#34;https://twitter.com/hashtag/EverythingIsInBeta&#34; data-widget-id=&#34;721395116104146944&#34;&gt;#EverythingIsInBeta Tweets&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rdquo;://platform.twitter.com/widgets.js&amp;rdquo;;fjs.parentNode.insertBefore(js,fjs);}}(document,&amp;ldquo;script&amp;rdquo;,&amp;ldquo;twitter-wjs&amp;rdquo;);&lt;/script&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>AngularFire 2 at the AngularJS Mountain View Meetup</title>
-      <link>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
-      <pubDate>Sat, 16 Apr 2016 12:21:17 -0400</pubDate>
+        </item>
       
-      <guid>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;I&amp;rsquo;m building an Ionic 2 starter with social login using Firebase!&amp;rdquo;&lt;/em&gt; said hundreds of developers participating in the &lt;a href=&#34;https://github.com/driftyco/ionic/blob/2.0/CHANGELOG.md&#34;&gt;Ionic 2 beta&lt;/a&gt;. Yeah, I&amp;rsquo;m doing it as well. It&amp;rsquo;s not a bad idea. Usually, if your app uses online data your users will be required to login. Creating a starter app &amp;mdash;&amp;ndash; a set of code from which you can base a new application upon &amp;mdash;&amp;ndash; would certainly save time and effort creating new applications. In this case it will also give you a good feel for the new way of doing things in Ionic 2. And &lt;a href=&#34;https://www.firebase.com/&#34;&gt;Firebase&lt;/a&gt; is a great service that allows you to easily create social logins.&lt;/p&gt;
+    
+      
+        <item>
+          <title>AngularFire 2 at the AngularJS Mountain View Meetup</title>
+          <link>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
+          <pubDate>Sat, 16 Apr 2016 12:21:17 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
+          <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;I&amp;rsquo;m building an Ionic 2 starter with social login using Firebase!&amp;rdquo;&lt;/em&gt; said hundreds of developers participating in the &lt;a href=&#34;https://github.com/driftyco/ionic/blob/2.0/CHANGELOG.md&#34;&gt;Ionic 2 beta&lt;/a&gt;. Yeah, I&amp;rsquo;m doing it as well. It&amp;rsquo;s not a bad idea. Usually, if your app uses online data your users will be required to login. Creating a starter app &amp;mdash;&amp;ndash; a set of code from which you can base a new application upon &amp;mdash;&amp;ndash; would certainly save time and effort creating new applications. In this case it will also give you a good feel for the new way of doing things in Ionic 2. And &lt;a href=&#34;https://www.firebase.com/&#34;&gt;Firebase&lt;/a&gt; is a great service that allows you to easily create social logins.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve attempted to create my social login starter for weeks. There are several Firebase-related &lt;a href=&#34;http://angular.io&#34;&gt;Angular 2&lt;/a&gt; example apps available on github that were created using &lt;a href=&#34;https://angularfire2.com&#34;&gt;AngularFire 2&lt;/a&gt; or just using the Firebase TypeScript definitions, but I could only get one of them to actually work. One problem has been that AngularFire, the project that everyone uses with Firebase in their Angular 1 projects, simply hasn&amp;rsquo;t been ready for use with Angular 2.&lt;/p&gt;
 
@@ -628,7 +644,9 @@ console.log(&amp;quot;&amp;quot;);
  &lt;/div&gt;
 
 </description>
-    </item>
+        </item>
+      
     
+
   </channel>
 </rss>
