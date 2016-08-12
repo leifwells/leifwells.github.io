@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>http://leifwells.com/tags/electron/</link>
+    <link>https://leifwells.github.io/tags/electron/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Getting Angular CLI Apps to Work Inside Electron</title>
-          <link>http://leifwells.com/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
+          <link>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
           <pubDate>Sun, 12 Jun 2016 11:41:41 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
+          <guid>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
           <description>
 
 &lt;p&gt;I started working on a new Electron application using the Angular CLI and found a solution to a show-stopping problem that I thought that I should share.&lt;/p&gt;

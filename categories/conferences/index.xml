@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>http://leifwells.com/categories/conferences/</link>
+    <link>https://leifwells.github.io/categories/conferences/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>I Attended ng-conf 2016. Yay!</title>
-          <link>http://leifwells.com/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+          <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
           <pubDate>Sat, 07 May 2016 18:35:39 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+          <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
           <description>
 
 &lt;p&gt;This week I attended &lt;a href=&#34;http://www.ng-conf.org/&#34;&gt;ng-conf&lt;/a&gt; for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.&lt;/p&gt;

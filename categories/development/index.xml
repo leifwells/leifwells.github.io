@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>http://leifwells.com/categories/development/</link>
+    <link>https://leifwells.github.io/categories/development/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
-    <updated>2016-08-05 12:00:00 -0400 EDT</updated>
+    <updated>2016-08-11 12:00:00 -0400 EDT</updated>
 
     
       
         <item>
           <title>EverythingIsInBeta</title>
-          <link>http://leifwells.com/2016/08/05/everythingisinbeta/</link>
-          <pubDate>Fri, 05 Aug 2016 12:00:00 EDT</pubDate>
+          <link>https://leifwells.github.io/2016/08/11/everythingisinbeta/</link>
+          <pubDate>Thu, 11 Aug 2016 12:00:00 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/08/05/everythingisinbeta/</guid>
+          <guid>https://leifwells.github.io/2016/08/11/everythingisinbeta/</guid>
           <description>
 
-&lt;h3 id=&#34;last-update-2016-07-10:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-07-10&lt;/h3&gt;
+&lt;h3 id=&#34;last-update-2016-08-11:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-08-11&lt;/h3&gt;
 
 &lt;p&gt;This is a list of technologies currently in beta. I&amp;rsquo;m keeping this list because I am learning Ionic 2 and Angular 2 and these technologies are all interconnected.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular/blob/master/CHANGELOG.md&#34;&gt;Angular 2.0.0-rc.4&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular/blob/master/CHANGELOG.md&#34;&gt;Angular 2.0.0-rc.5&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic/blob/master/CHANGELOG.md&#34;&gt;Ionic 2.0.0-beta.11&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic-cli/blob/v2/CHANGELOG.md&#34;&gt;Ionic CLI 2.0.0-beta.36&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-beta.10&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-beta.11&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
@@ -38,10 +38,10 @@
       
         <item>
           <title>Getting Angular CLI Apps to Work Inside Electron</title>
-          <link>http://leifwells.com/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
+          <link>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
           <pubDate>Sun, 12 Jun 2016 11:41:41 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
+          <guid>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
           <description>
 
 &lt;p&gt;I started working on a new Electron application using the Angular CLI and found a solution to a show-stopping problem that I thought that I should share.&lt;/p&gt;
@@ -91,10 +91,10 @@
       
         <item>
           <title>Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</title>
-          <link>http://leifwells.com/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</link>
+          <link>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</link>
           <pubDate>Thu, 09 Jun 2016 15:31:45 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</guid>
+          <guid>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</guid>
           <description>
 
 &lt;p&gt;This week I was asked by my friend &lt;a href=&#34;https://chrisgriffith.wordpress.com/&#34;&gt;Chris Griffith&lt;/a&gt; about using a Google spread sheet as a data source for a prototype he was building. Both Chris and I build prototypes as part of our daily jobs, so the question makes sense; what happens when you need to use archived data &amp;mdash; data that you need will need to update from time to time &amp;mdash; but you don&amp;rsquo;t have the time to build a server application or use something like Firebase to deliver the content?&lt;/p&gt;
@@ -146,7 +146,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://leifwells.com/images/2016-06-09_console_output.png&#34; /&gt;
+        &lt;img src=&#34;https://leifwells.github.io/images/2016-06-09_console_output.png&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -208,10 +208,10 @@
       
         <item>
           <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
-          <link>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
+          <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
           <pubDate>Fri, 03 Jun 2016 22:15:27 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
+          <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
           <description>&lt;p&gt;I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.&lt;/p&gt;
 
 &lt;p&gt;Lets take a look at the typical code to create a Local Notification in Ionic 1:&lt;/p&gt;
@@ -252,13 +252,13 @@
       
         <item>
           <title>Setting Android Icons with Local Notifications</title>
-          <link>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</link>
+          <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
           <pubDate>Mon, 30 May 2016 00:01:31 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</guid>
+          <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
           <description>
 
-&lt;p&gt;My &lt;a href=&#34;http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&#34;https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
 
 &lt;h2 id=&#34;understanding-how-notifications-work-on-android:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;Understanding How Notifications Work on Android&lt;/h2&gt;
 
@@ -267,7 +267,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://leifwells.com/images/android_notification_icons_example.png&#34; /&gt;
+        &lt;img src=&#34;https://leifwells.github.io/images/android_notification_icons_example.png&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -426,10 +426,10 @@ console.log(&amp;quot;&amp;quot;);
       
         <item>
           <title>Lessons Learned: Unnamed Project 2016-05</title>
-          <link>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+          <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
           <pubDate>Sat, 28 May 2016 14:57:05 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+          <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
           <description>
 
 &lt;h2 id=&#34;an-unnamed-project:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;An Unnamed Project&lt;/h2&gt;
@@ -495,7 +495,7 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;A lesson not learned? Notification and status bar icons on Android are not easy. And I still do not know how to make them work. Once I do, I will make a post.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;background-geolocation-plugin:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Background Geolocation Plugin&lt;/h2&gt;
@@ -545,10 +545,10 @@ console.log(&amp;quot;&amp;quot;);
       
         <item>
           <title>Why EverythingIsInBeta?</title>
-          <link>http://leifwells.com/2016/04/16/why-everythingisinbeta/</link>
+          <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
           <pubDate>Sat, 16 Apr 2016 23:44:14 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/04/16/why-everythingisinbeta/</guid>
+          <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
           <description>
 
 &lt;p&gt;I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?&lt;/p&gt;
@@ -561,7 +561,7 @@ console.log(&amp;quot;&amp;quot;);
 
 &lt;h2 id=&#34;finding-everything:b1ac00f0a6668a1a2a252abc877a0eee&#34;&gt;Finding Everything&lt;/h2&gt;
 
-&lt;p&gt;You&amp;rsquo;ll find #EverythingIsInBeta in my sidebar and &lt;a href=&#34;http://leifwells.com/2016/08/05/everythingisinbeta/&#34;&gt;in this post&lt;/a&gt; with links to each project&amp;rsquo;s Changelog.md. Well, except for the Ionic CLI project which never seems to have a changelog.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll find #EverythingIsInBeta in my sidebar and &lt;a href=&#34;https://leifwells.github.io/2016/08/11/everythingisinbeta/&#34;&gt;in this post&lt;/a&gt; with links to each project&amp;rsquo;s Changelog.md. Well, except for the Ionic CLI project which never seems to have a changelog.&lt;/p&gt;
 
 &lt;p&gt;Keep in mind that, for instance, just because Angular 2 is at beta 15, it doesn&amp;rsquo;t necessarily mean that Ionic 2 is using that beta. As a practical matter, the Ionic team is behind pace with the Angular 2 project to avoid Angular 2&amp;rsquo;s bleeding edge. Once Angular 2 is released, I am certain that Ionic 2&amp;rsquo;s release will follow quickly after.&lt;/p&gt;
 
@@ -580,10 +580,10 @@ console.log(&amp;quot;&amp;quot;);
       
         <item>
           <title>AngularFire 2 at the AngularJS Mountain View Meetup</title>
-          <link>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
+          <link>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
           <pubDate>Sat, 16 Apr 2016 12:21:17 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
+          <guid>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
           <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;I&amp;rsquo;m building an Ionic 2 starter with social login using Firebase!&amp;rdquo;&lt;/em&gt; said hundreds of developers participating in the &lt;a href=&#34;https://github.com/driftyco/ionic/blob/2.0/CHANGELOG.md&#34;&gt;Ionic 2 beta&lt;/a&gt;. Yeah, I&amp;rsquo;m doing it as well. It&amp;rsquo;s not a bad idea. Usually, if your app uses online data your users will be required to login. Creating a starter app &amp;mdash;&amp;ndash; a set of code from which you can base a new application upon &amp;mdash;&amp;ndash; would certainly save time and effort creating new applications. In this case it will also give you a good feel for the new way of doing things in Ionic 2. And &lt;a href=&#34;https://www.firebase.com/&#34;&gt;Firebase&lt;/a&gt; is a great service that allows you to easily create social logins.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve attempted to create my social login starter for weeks. There are several Firebase-related &lt;a href=&#34;http://angular.io&#34;&gt;Angular 2&lt;/a&gt; example apps available on github that were created using &lt;a href=&#34;https://angularfire2.com&#34;&gt;AngularFire 2&lt;/a&gt; or just using the Firebase TypeScript definitions, but I could only get one of them to actually work. One problem has been that AngularFire, the project that everyone uses with Firebase in their Angular 1 projects, simply hasn&amp;rsquo;t been ready for use with Angular 2.&lt;/p&gt;
@@ -608,10 +608,10 @@ console.log(&amp;quot;&amp;quot;);
       
         <item>
           <title>Rebooting &amp; Clearing the Cache of My Professional Life</title>
-          <link>http://leifwells.com/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
+          <link>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
           <pubDate>Fri, 15 Apr 2016 22:38:06 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
+          <guid>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
           <description>&lt;p&gt;Welcome to my new blog. I plan to write about many things here &amp;mdash;&amp;ndash; life, television, movies &amp;mdash;&amp;ndash; but I will be focusing a lot of my efforts around my work as a Web and mobile application developer.&lt;/p&gt;
 
 &lt;p&gt;A lot has changed for me over the past few years. I went from being an RIA Evangelist at Roundbox (now defunct) to working at &lt;a href=&#34;http://www.measuredprogress.org/&#34;&gt;Measured Progress&lt;/a&gt; to freelancing and feeling fairly underemployed. I&amp;rsquo;ve done my best to learn new technologies &amp;mdash;&amp;ndash; &lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Appcelerator Titanium&lt;/a&gt;, &lt;a href=&#34;https://angularjs.org/&#34;&gt;Angular&lt;/a&gt;, &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt; &amp;mdash;&amp;ndash; whilst wrapping my head around the entire ecosystem that is modern Javascript. For a long while it was all overwhelming. It seemed like we were introduced to ten new frameworks or automation libraries or CSS pre-post-processors every day. I eventually learned (or, actually, re-learned) how to cut through the daily white noise and focus on things that mattered most to me.&lt;/p&gt;
