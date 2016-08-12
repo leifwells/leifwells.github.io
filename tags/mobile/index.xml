@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>https://leifwells.github.io/tags/mobile/</link>
+    <link>http://leifwells.com/tags/mobile/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
-          <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
+          <link>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
           <pubDate>Fri, 03 Jun 2016 22:15:27 EDT</pubDate>
           <author></author>
-          <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
+          <guid>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
           <description>&lt;p&gt;I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.&lt;/p&gt;
 
 &lt;p&gt;Lets take a look at the typical code to create a Local Notification in Ionic 1:&lt;/p&gt;
@@ -56,13 +56,13 @@
       
         <item>
           <title>Setting Android Icons with Local Notifications</title>
-          <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
+          <link>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</link>
           <pubDate>Mon, 30 May 2016 00:01:31 EDT</pubDate>
           <author></author>
-          <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
+          <guid>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</guid>
           <description>
 
-&lt;p&gt;My &lt;a href=&#34;https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&#34;http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
 
 &lt;h2 id=&#34;understanding-how-notifications-work-on-android:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;Understanding How Notifications Work on Android&lt;/h2&gt;
 
@@ -71,7 +71,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://leifwells.github.io/images/android_notification_icons_example.png&#34; /&gt;
+        &lt;img src=&#34;http://leifwells.com/images/android_notification_icons_example.png&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -230,10 +230,10 @@ console.log(&amp;quot;&amp;quot;);
       
         <item>
           <title>Lessons Learned: Unnamed Project 2016-05</title>
-          <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+          <link>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
           <pubDate>Sat, 28 May 2016 14:57:05 EDT</pubDate>
           <author></author>
-          <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+          <guid>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
           <description>
 
 &lt;h2 id=&#34;an-unnamed-project:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;An Unnamed Project&lt;/h2&gt;
@@ -299,7 +299,7 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;A lesson not learned? Notification and status bar icons on Android are not easy. And I still do not know how to make them work. Once I do, I will make a post.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;background-geolocation-plugin:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Background Geolocation Plugin&lt;/h2&gt;

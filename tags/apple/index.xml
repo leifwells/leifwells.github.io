@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>https://leifwells.github.io/tags/apple/</link>
+    <link>http://leifwells.com/tags/apple/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Lessons Learned: Unnamed Project 2016-05</title>
-          <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+          <link>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
           <pubDate>Sat, 28 May 2016 14:57:05 EDT</pubDate>
           <author></author>
-          <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+          <guid>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
           <description>
 
 &lt;h2 id=&#34;an-unnamed-project:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;An Unnamed Project&lt;/h2&gt;
@@ -81,7 +81,7 @@
 &lt;p&gt;A lesson not learned? Notification and status bar icons on Android are not easy. And I still do not know how to make them work. Once I do, I will make a post.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;background-geolocation-plugin:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Background Geolocation Plugin&lt;/h2&gt;
