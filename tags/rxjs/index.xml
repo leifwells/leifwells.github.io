@@ -18,18 +18,18 @@
           <guid>https://leifwells.github.io/2016/08/31/everythingisinbeta/</guid>
           <description>
 
-&lt;h3 id=&#34;last-update-2016-08-31:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-08-31&lt;/h3&gt;
+&lt;h3 id=&#34;last-update-2016-09-28:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-09-28&lt;/h3&gt;
 
 &lt;p&gt;This is a list of technologies currently in beta. I&amp;rsquo;m keeping this list because I am learning Ionic 2 and Angular 2 and these technologies are all interconnected.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular/blob/master/CHANGELOG.md&#34;&gt;Angular 2.0.0-rc.6&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular/blob/master/CHANGELOG.md&#34;&gt;Angular 2.0.0 RELEASED&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic/blob/master/CHANGELOG.md&#34;&gt;Ionic 2.0.0-beta.11&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic/blob/master/CHANGELOG.md&#34;&gt;Ionic 2.0.0-rc.0&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic-cli/blob/master/CHANGELOG.md&#34;&gt;Ionic CLI 2.0.0 RELEASED!&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-beta.11&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-beta.12&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
