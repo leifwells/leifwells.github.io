@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>http://leifwells.com/tags/twitter/</link>
+    <link>https://leifwells.github.io/tags/twitter/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>EverythingIsInBeta</title>
-          <link>http://leifwells.com/2016/10/25/everythingisinbeta/</link>
+          <link>https://leifwells.github.io/2016/10/25/everythingisinbeta/</link>
           <pubDate>Tue, 25 Oct 2016 12:00:00 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/10/25/everythingisinbeta/</guid>
+          <guid>https://leifwells.github.io/2016/10/25/everythingisinbeta/</guid>
           <description>
 
 &lt;h3 id=&#34;last-update-2016-10-25:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-10-25&lt;/h3&gt;
@@ -38,10 +38,10 @@
       
         <item>
           <title>I Attended ng-conf 2016. Yay!</title>
-          <link>http://leifwells.com/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+          <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
           <pubDate>Sat, 07 May 2016 18:35:39 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+          <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
           <description>
 
 &lt;p&gt;This week I attended &lt;a href=&#34;http://www.ng-conf.org/&#34;&gt;ng-conf&lt;/a&gt; for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.&lt;/p&gt;
@@ -80,10 +80,10 @@
       
         <item>
           <title>Why EverythingIsInBeta?</title>
-          <link>http://leifwells.com/2016/04/16/why-everythingisinbeta/</link>
+          <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
           <pubDate>Sat, 16 Apr 2016 23:44:14 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/04/16/why-everythingisinbeta/</guid>
+          <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
           <description>
 
 &lt;p&gt;I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?&lt;/p&gt;
@@ -96,7 +96,7 @@
 
 &lt;h2 id=&#34;finding-everything:b1ac00f0a6668a1a2a252abc877a0eee&#34;&gt;Finding Everything&lt;/h2&gt;
 
-&lt;p&gt;You&amp;rsquo;ll find #EverythingIsInBeta in my sidebar and &lt;a href=&#34;http://leifwells.com/2016/10/25/everythingisinbeta/&#34;&gt;in this post&lt;/a&gt; with links to each project&amp;rsquo;s Changelog.md. Well, except for the Ionic CLI project which never seems to have a changelog.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll find #EverythingIsInBeta in my sidebar and &lt;a href=&#34;https://leifwells.github.io/2016/10/25/everythingisinbeta/&#34;&gt;in this post&lt;/a&gt; with links to each project&amp;rsquo;s Changelog.md. Well, except for the Ionic CLI project which never seems to have a changelog.&lt;/p&gt;
 
 &lt;p&gt;Keep in mind that, for instance, just because Angular 2 is at beta 15, it doesn&amp;rsquo;t necessarily mean that Ionic 2 is using that beta. As a practical matter, the Ionic team is behind pace with the Angular 2 project to avoid Angular 2&amp;rsquo;s bleeding edge. Once Angular 2 is released, I am certain that Ionic 2&amp;rsquo;s release will follow quickly after.&lt;/p&gt;
 

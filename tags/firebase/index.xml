@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leif&#39;s Development Blog-o-rama </title>
-    <link>http://leifwells.com/tags/firebase/</link>
+    <link>https://leifwells.github.io/tags/firebase/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>AngularFire 2 at the AngularJS Mountain View Meetup</title>
-          <link>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
+          <link>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
           <pubDate>Sat, 16 Apr 2016 12:21:17 EDT</pubDate>
           <author></author>
-          <guid>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
+          <guid>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
           <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;I&amp;rsquo;m building an Ionic 2 starter with social login using Firebase!&amp;rdquo;&lt;/em&gt; said hundreds of developers participating in the &lt;a href=&#34;https://github.com/driftyco/ionic/blob/2.0/CHANGELOG.md&#34;&gt;Ionic 2 beta&lt;/a&gt;. Yeah, I&amp;rsquo;m doing it as well. It&amp;rsquo;s not a bad idea. Usually, if your app uses online data your users will be required to login. Creating a starter app &amp;mdash;&amp;ndash; a set of code from which you can base a new application upon &amp;mdash;&amp;ndash; would certainly save time and effort creating new applications. In this case it will also give you a good feel for the new way of doing things in Ionic 2. And &lt;a href=&#34;https://www.firebase.com/&#34;&gt;Firebase&lt;/a&gt; is a great service that allows you to easily create social logins.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve attempted to create my social login starter for weeks. There are several Firebase-related &lt;a href=&#34;http://angular.io&#34;&gt;Angular 2&lt;/a&gt; example apps available on github that were created using &lt;a href=&#34;https://angularfire2.com&#34;&gt;AngularFire 2&lt;/a&gt; or just using the Firebase TypeScript definitions, but I could only get one of them to actually work. One problem has been that AngularFire, the project that everyone uses with Firebase in their Angular 1 projects, simply hasn&amp;rsquo;t been ready for use with Angular 2.&lt;/p&gt;
