@@ -5,7 +5,7 @@
     <link>https://leifwells.github.io/tags/cordova/</link>
     <language>en-us</language>
     <author></author>
-    <rights>(C) 2016</rights>
+    <rights>(C) 2017</rights>
     <updated>2016-06-03 22:15:27 -0400 EDT</updated>
 
     
@@ -64,7 +64,7 @@
 
 &lt;p&gt;My &lt;a href=&#34;https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
 
-&lt;h2 id=&#34;understanding-how-notifications-work-on-android:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;Understanding How Notifications Work on Android&lt;/h2&gt;
+&lt;h2 id=&#34;understanding-how-notifications-work-on-android&#34;&gt;Understanding How Notifications Work on Android&lt;/h2&gt;
 
 &lt;p&gt;The Android platform a notification requires two icons. Lets take a look at Figure 1 to identify them:&lt;/p&gt;
 
@@ -120,7 +120,7 @@ As you can see, there is an icon (1) that appears in the status bar as well as i
 
 &lt;p&gt;The &lt;code&gt;smallIcon&lt;/code&gt; property sets the small icon that appears in two places: in the status bar when a notification occurs and next to the larger icon in the notifications listing to visually associate the icon in the status bar with both the notification and the application.&lt;/p&gt;
 
-&lt;h2 id=&#34;where-do-these-icons-go:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;Where Do These Icons Go?&lt;/h2&gt;
+&lt;h2 id=&#34;where-do-these-icons-go&#34;&gt;Where Do These Icons Go?&lt;/h2&gt;
 
 &lt;p&gt;In that code sample, notice that the links to these icons are prefixed with &lt;code&gt;res://&lt;/code&gt;. That means these icons are located in the &lt;code&gt;platforms/android/res&lt;/code&gt; folder which is where the icons for each screen density reside. The &lt;code&gt;res&lt;/code&gt; folder has several folders in it with names like &lt;code&gt;drawable-hdpi&lt;/code&gt; and inside each of these folders there should already be a file named &lt;code&gt;icon.png&lt;/code&gt;. When you build the Android platform using the Ionic CLI, images located &lt;code&gt;resources/android/icon&lt;/code&gt; folder renamed and copied into the proper &lt;code&gt;drawable&lt;/code&gt; folder. When your application runs on Android, these folders are used to provide the proper icons for the device&amp;rsquo;s resolution.&lt;/p&gt;
 
@@ -132,7 +132,7 @@ As you can see, there is an icon (1) that appears in the status bar as well as i
 &lt;li&gt;&lt;p&gt;The images for the &lt;code&gt;smallIcon&lt;/code&gt; property need to be created.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;how-big-are-the-status-bar-icons:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;How Big Are The Status Bar Icons?&lt;/h2&gt;
+&lt;h2 id=&#34;how-big-are-the-status-bar-icons&#34;&gt;How Big Are The Status Bar Icons?&lt;/h2&gt;
 
 &lt;p&gt;The status bar icons need to be created for each Android screen pixel density. With a little research I was able to find out what sizes are required:&lt;/p&gt;
 
@@ -153,7 +153,7 @@ Reference: &lt;a href=&#34;http://iconhandbook.co.uk/reference/chart/android/&#3
 &lt;p&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; You can put these files into the &lt;code&gt;platforms/android/res/&lt;/code&gt; folders, but if you ever need to run the &lt;code&gt;ionic platform remove android&lt;/code&gt; command, you&amp;rsquo;ll find that those images have disappeared. Also, if you are working with a team, since the platform folder normally isn&amp;rsquo;t stored in your code repository each team member will need to manually move these files into place. Guess what happens if the icons change. A pain, right? &lt;strong&gt;So don&amp;rsquo;t do it and continue reading.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;how-can-i-get-the-icons-there-automagically:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;How Can I Get The Icons There Automagically?&lt;/h2&gt;
+&lt;h2 id=&#34;how-can-i-get-the-icons-there-automagically&#34;&gt;How Can I Get The Icons There Automagically?&lt;/h2&gt;
 
 &lt;p&gt;As you can see from the notice above, manually moving these files into place might cause all kinds of troubles for you and your team.&lt;/p&gt;
 
@@ -217,7 +217,7 @@ console.log(&amp;quot;&amp;quot;);
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;summary:bb9e2e21110c9e0855994f727c3b0639&#34;&gt;Summary&lt;/h2&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 
 &lt;p&gt;I hope this article assists folks with using Local Notifications on Android. Let me know if you have further insights.&lt;/p&gt;
 
@@ -236,13 +236,13 @@ console.log(&amp;quot;&amp;quot;);
           <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
           <description>
 
-&lt;h2 id=&#34;an-unnamed-project:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;An Unnamed Project&lt;/h2&gt;
+&lt;h2 id=&#34;an-unnamed-project&#34;&gt;An Unnamed Project&lt;/h2&gt;
 
 &lt;p&gt;Last month my friends at &lt;a href=&#34;http://www.skywardinteractive.com/&#34;&gt;Skyward Interactive&lt;/a&gt; requested my assistance with a project that needed a cross-platform mobile solution. The project, which will remain unnamed because the client is a start-up, is a prototype for a service and required phone, tablet and server development. The phone apps is for customers, the tablet app is for administrators and the server ties them all together.&lt;/p&gt;
 
 &lt;p&gt;For mobile development Skyward typically builds native iOS applications, but most of their iOS resources were tied up with other projects and since this project had a short deadline and budget they asked me if I could assemble the iOS and Android phone solution. Of course, I decided to use the &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic Framework&lt;/a&gt; to create these prototypes.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-risks:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;The Risks&lt;/h2&gt;
+&lt;h2 id=&#34;the-risks&#34;&gt;The Risks&lt;/h2&gt;
 
 &lt;p&gt;Of course, the risks were weighed before committing to a project like this as they should.&lt;/p&gt;
 
@@ -258,7 +258,7 @@ console.log(&amp;quot;&amp;quot;);
 
 &lt;p&gt;These were the risks as I saw them, eyes wide open, going into the project. On the reward side, I&amp;rsquo;d have another app in the app stores, my first Ionic app in the app stores. It didn&amp;rsquo;t hurt that since I&amp;rsquo;m seriously underemployed at this time I&amp;rsquo;d have billable work. So, off to the races.&lt;/p&gt;
 
-&lt;h2 id=&#34;and-the-work-began:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;And The Work Began&lt;/h2&gt;
+&lt;h2 id=&#34;and-the-work-began&#34;&gt;And The Work Began&lt;/h2&gt;
 
 &lt;p&gt;With wire frames in hand, I began to work laying out the application UI in earnest. I get excited sometimes. This time it cost me in frustration later in the project.&lt;/p&gt;
 
@@ -266,12 +266,12 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;strong&gt;Lesson Learned: Haste Makes Waste&lt;/strong&gt; &amp;mdash; Don&amp;rsquo;t speed through your application layout. Make certain to take the time to make the UI easily updatable; every project gets a UI update or three. It happens. Plan on it and create HTML and CSS (in this case Sass) files you can maintain even for a prototype. Build it right the first time so the changes will be easy.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;cordova-plugins-and-open-source-software:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Cordova Plugins and Open Source Software&lt;/h2&gt;
+&lt;h2 id=&#34;cordova-plugins-and-open-source-software&#34;&gt;Cordova Plugins and Open Source Software&lt;/h2&gt;
 
 &lt;p&gt;This is an observation, not a complaint: open source projects can get stale. For a group of projects like the Cordova plugins, this can be a dangerous thing. Just because the project was updated recently does not mean it very active. Just because a project hasn&amp;rsquo;t had activity in a year doesn&amp;rsquo;t mean the project isn&amp;rsquo;t rock solid.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Get to Know You OS Project Before Deciding to Use It&lt;/strong&gt; &amp;mdash; Always review any currently open issues on the project&amp;rsquo;s Github site before using any open source projects. It might save your life.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lesson Learned: Get to Know Your OS Project Before Deciding to Use It&lt;/strong&gt; &amp;mdash; Always review any currently open issues on the project&amp;rsquo;s Github site before using any open source projects. It might save your life.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -280,7 +280,7 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;strong&gt;Lesson Learned: Be a Good OS Citizen&lt;/strong&gt; &amp;mdash; If you find a problem with an open source project make sure you post an issue on the project&amp;rsquo;s Github site, otherwise no one will ever know. If you find a work-around for any issues you encounter or issues already filed, post them as well so everyone else will know, too. If you know how to fix an issue, create a pull request. You may save someone else&amp;rsquo;s life.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;local-notifications:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Local Notifications&lt;/h2&gt;
+&lt;h2 id=&#34;local-notifications&#34;&gt;Local Notifications&lt;/h2&gt;
 
 &lt;p&gt;This project required the use of Local Notifications mainly due to resistance of the time and expense of setting up Push Notifications. Push would have been the proper way, of course, but these are the cards we were dealt. Local Notifications shouldn&amp;rsquo;t be all that tricky, but they can be depending on how you manage them, what kind of data you are given and create and the symptoms that occur when you&amp;rsquo;re doing it wrong.&lt;/p&gt;
 
@@ -302,7 +302,7 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;background-geolocation-plugin:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Background Geolocation Plugin&lt;/h2&gt;
+&lt;h2 id=&#34;background-geolocation-plugin&#34;&gt;Background Geolocation Plugin&lt;/h2&gt;
 
 &lt;p&gt;Background Geolocation should also be easy. And, of course, everyone was very concerned about battery usage. Since we needed a cross-platform solution, but the &lt;a href=&#34;http://shop.transistorsoft.com/pages/cordova-background-geolocation-premium&#34;&gt;normal solution&lt;/a&gt; requires a &lt;a href=&#34;http://shop.transistorsoft.com/pages/cordova-background-geolocation-premium#plans&#34;&gt;premium version purchase&lt;/a&gt;, which the project budget couldn&amp;rsquo;t afford, unfortunately. As always, start-ups typically have shoestring budgets.&lt;/p&gt;
 
@@ -320,7 +320,7 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;strong&gt;Lesson Learned: Background Geolocation Requires Movement&lt;/strong&gt; &amp;mdash; In the app, we have a feature where the geolocation would automatically shut down after a period of time. I set the code up to check the time after each geolocation ping. During on-device testing I received a bug report stating the feature was not working. I asked &amp;ldquo;Did you move?&amp;rdquo; Yes, the geolocation doesn&amp;rsquo;t usually ping if you don&amp;rsquo;t move about 15 feet or so.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;apple-store-rejections:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Apple Store Rejections&lt;/h2&gt;
+&lt;h2 id=&#34;apple-store-rejections&#34;&gt;Apple Store Rejections&lt;/h2&gt;
 
 &lt;p&gt;Here is where things went wrong. The first submission was rejected by Apple because &amp;ldquo;On launch and content download, your app stores 6.21MB on the user&amp;rsquo;s iCloud, which does not comply with the iOS Data Storage Guidelines.&amp;rdquo;&lt;/p&gt;
 
@@ -336,7 +336,7 @@ console.log(&amp;quot;&amp;quot;);
 &lt;p&gt;&lt;strong&gt;Lesson Learned: Apple Store rejection is a fact of life.&lt;/strong&gt; &amp;mdash; Sometimes you get rejected. If you can fix what an Apple reviewer complains about, do it. If not, try again. But, for the sake of the project, allow for time for multiple reviews by Apple in your schedule. Right now, the reviews are taking less than 48 hours. Don&amp;rsquo;t count on that always being the case. Consider Apple&amp;rsquo;s schedule of updates to iOS; whenever an update is imminent, every app developer will be updating their apps and submitting them to Apple. Adding three weeks before the deadline might be advisable.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;summary:7e45e60dcc2485921abc94e1722e90e8&#34;&gt;Summary&lt;/h2&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 
 &lt;p&gt;At the end of the day we have a working prototype live in the Apple Store and the Google Play Store. And I learned a few things about development and myself along the way. My hope is that this post may be of some help to you.&lt;/p&gt;
 

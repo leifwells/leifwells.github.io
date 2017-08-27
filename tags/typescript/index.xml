@@ -5,7 +5,7 @@
     <link>https://leifwells.github.io/tags/typescript/</link>
     <language>en-us</language>
     <author></author>
-    <rights>(C) 2016</rights>
+    <rights>(C) 2017</rights>
     <updated>2016-05-07 18:35:39 -0400 EDT</updated>
 
     
@@ -24,11 +24,11 @@
 
 &lt;p&gt;The conference was held in Salt Lake City at the Grand American Hotel, an impressively nice place to hold a conference. If you have the money and want to visit SLC, this is the place.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-angular-2-workshop:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;The Angular 2 Workshop&lt;/h2&gt;
+&lt;h2 id=&#34;the-angular-2-workshop&#34;&gt;The Angular 2 Workshop&lt;/h2&gt;
 
 &lt;p&gt;The egghead.io Angular 2 workshop, lead by a clean-shaven &lt;a href=&#34;https://egghead.io/instructors/john-lindquist&#34;&gt;John Lindquist&lt;/a&gt;, was a good experience. I had two sets of goals when I bought my ticket: either to learn a lot during the workshop, or to spend time before the workshop learning as much as possible about Angular 2 and use the event as a measure of what I&amp;rsquo;d correctly learned. Luckily, I had spent a great deal of time becoming acquainted with the new version beforehand, and felt like I was on the mark with most of the content in the workshop. Good on me.&lt;/p&gt;
 
-&lt;h2 id=&#34;catching-up-with-friends:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;Catching Up with Friends&lt;/h2&gt;
+&lt;h2 id=&#34;catching-up-with-friends&#34;&gt;Catching Up with Friends&lt;/h2&gt;
 
 &lt;p&gt;Another bit of luck was that &lt;a href=&#34;https://www.ng-conf.org/#/speaker/chrisgriffith&#34;&gt;Chris Griffith&lt;/a&gt; offered to share his room with me (Super Thanks, Christopher!). Chris was accepted as a speaker this year speaking on &lt;a href=&#34;https://www.ng-conf.org/#/sessions/chrisgriffithFD&#34;&gt;Ionic 2&lt;/a&gt; during the conference&amp;rsquo;s Fair Day. While eating dinner with &lt;a href=&#34;https://twitter.com/thack&#34;&gt;Terence Carrol&lt;/a&gt;, he asked us how we first met and how we started working together on various projects. It took me a while to realize that Chris and I first worked together on the 360Flex conference application built with Flex and AIR. That was a long time ago.&lt;/p&gt;
 
@@ -37,14 +37,14 @@
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hanging at the &lt;a href=&#34;https://twitter.com/hashtag/BeerHive?src=hash&#34;&gt;#BeerHive&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/ngconf?src=hash&#34;&gt;#ngconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Ionicframework&#34;&gt;@Ionicframework&lt;/a&gt; &lt;a href=&#34;https://t.co/YMLCe2cQaZ&#34;&gt;pic.twitter.com/YMLCe2cQaZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brandy Carney (@brandyscarney) &lt;a href=&#34;https://twitter.com/brandyscarney/status/728072827564216320&#34;&gt;May 5, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;sessions:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;Sessions&lt;/h2&gt;
+&lt;h2 id=&#34;sessions&#34;&gt;Sessions&lt;/h2&gt;
 
 &lt;p&gt;There were some great sessions on Wednesday and Friday. So great, honestly, I&amp;rsquo;m going to need to rewatch most of them because all the information was hurting my brain. I think this tweet really tells you about where my head is at now that I am home:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Things &lt;a href=&#34;https://twitter.com/hashtag/ngconf?src=hash&#34;&gt;#ngconf&lt;/a&gt; has me excited about:&lt;a href=&#34;https://twitter.com/hashtag/Angular2?src=hash&#34;&gt;#Angular2&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/Ionic2?src=hash&#34;&gt;#Ionic2&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/Augury?src=hash&#34;&gt;#Augury&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/AngularUniversal?src=hash&#34;&gt;#AngularUniversal&lt;/a&gt;&lt;br&gt;Testing&lt;br&gt;The new new new router&lt;a href=&#34;https://twitter.com/hashtag/GoogleCloud?src=hash&#34;&gt;#GoogleCloud&lt;/a&gt;&lt;br&gt;This community&lt;/p&gt;&amp;mdash; Leif Wells (@leifwells) &lt;a href=&#34;https://twitter.com/leifwells/status/728356856813379584&#34;&gt;May 5, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;so-much-more-to-say:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;So Much More to Say&lt;/h2&gt;
+&lt;h2 id=&#34;so-much-more-to-say&#34;&gt;So Much More to Say&lt;/h2&gt;
 
 &lt;p&gt;In the upcoming week I&amp;rsquo;ll try to talk about all of these things and more. I had a great time at ng-conf, and now I need to decompress and recover before applying things I learned to projects I have in mind.&lt;/p&gt;
 </description>

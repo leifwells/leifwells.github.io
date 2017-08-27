@@ -5,35 +5,9 @@
     <link>https://leifwells.github.io/tags/twitter/</link>
     <language>en-us</language>
     <author></author>
-    <rights>(C) 2016</rights>
-    <updated>2016-10-25 12:00:00 -0400 EDT</updated>
+    <rights>(C) 2017</rights>
+    <updated>2016-05-07 18:35:39 -0400 EDT</updated>
 
-    
-      
-        <item>
-          <title>EverythingIsInBeta</title>
-          <link>https://leifwells.github.io/2016/10/25/everythingisinbeta/</link>
-          <pubDate>Tue, 25 Oct 2016 12:00:00 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/10/25/everythingisinbeta/</guid>
-          <description>
-
-&lt;h3 id=&#34;last-update-2016-10-25:bbc9c32e0a9f96274fb2d1b64698468c&#34;&gt;Last Update: 2016-10-25&lt;/h3&gt;
-
-&lt;p&gt;This is a list of technologies currently in beta. I&amp;rsquo;m keeping this list because I am learning Ionic 2 and Angular 2 and these technologies are all interconnected.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular/blob/master/CHANGELOG.md&#34;&gt;Angular 2.1.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic/blob/master/CHANGELOG.md&#34;&gt;Ionic 2.0.0-rc.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/driftyco/ionic-cli/blob/master/CHANGELOG.md&#34;&gt;Ionic CLI 2.1.3&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&#34;&gt;RxJS 5.0.0-rc.1&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-      
     
       
         <item>
@@ -50,11 +24,11 @@
 
 &lt;p&gt;The conference was held in Salt Lake City at the Grand American Hotel, an impressively nice place to hold a conference. If you have the money and want to visit SLC, this is the place.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-angular-2-workshop:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;The Angular 2 Workshop&lt;/h2&gt;
+&lt;h2 id=&#34;the-angular-2-workshop&#34;&gt;The Angular 2 Workshop&lt;/h2&gt;
 
 &lt;p&gt;The egghead.io Angular 2 workshop, lead by a clean-shaven &lt;a href=&#34;https://egghead.io/instructors/john-lindquist&#34;&gt;John Lindquist&lt;/a&gt;, was a good experience. I had two sets of goals when I bought my ticket: either to learn a lot during the workshop, or to spend time before the workshop learning as much as possible about Angular 2 and use the event as a measure of what I&amp;rsquo;d correctly learned. Luckily, I had spent a great deal of time becoming acquainted with the new version beforehand, and felt like I was on the mark with most of the content in the workshop. Good on me.&lt;/p&gt;
 
-&lt;h2 id=&#34;catching-up-with-friends:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;Catching Up with Friends&lt;/h2&gt;
+&lt;h2 id=&#34;catching-up-with-friends&#34;&gt;Catching Up with Friends&lt;/h2&gt;
 
 &lt;p&gt;Another bit of luck was that &lt;a href=&#34;https://www.ng-conf.org/#/speaker/chrisgriffith&#34;&gt;Chris Griffith&lt;/a&gt; offered to share his room with me (Super Thanks, Christopher!). Chris was accepted as a speaker this year speaking on &lt;a href=&#34;https://www.ng-conf.org/#/sessions/chrisgriffithFD&#34;&gt;Ionic 2&lt;/a&gt; during the conference&amp;rsquo;s Fair Day. While eating dinner with &lt;a href=&#34;https://twitter.com/thack&#34;&gt;Terence Carrol&lt;/a&gt;, he asked us how we first met and how we started working together on various projects. It took me a while to realize that Chris and I first worked together on the 360Flex conference application built with Flex and AIR. That was a long time ago.&lt;/p&gt;
 
@@ -63,14 +37,14 @@
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hanging at the &lt;a href=&#34;https://twitter.com/hashtag/BeerHive?src=hash&#34;&gt;#BeerHive&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/ngconf?src=hash&#34;&gt;#ngconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Ionicframework&#34;&gt;@Ionicframework&lt;/a&gt; &lt;a href=&#34;https://t.co/YMLCe2cQaZ&#34;&gt;pic.twitter.com/YMLCe2cQaZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brandy Carney (@brandyscarney) &lt;a href=&#34;https://twitter.com/brandyscarney/status/728072827564216320&#34;&gt;May 5, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;sessions:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;Sessions&lt;/h2&gt;
+&lt;h2 id=&#34;sessions&#34;&gt;Sessions&lt;/h2&gt;
 
 &lt;p&gt;There were some great sessions on Wednesday and Friday. So great, honestly, I&amp;rsquo;m going to need to rewatch most of them because all the information was hurting my brain. I think this tweet really tells you about where my head is at now that I am home:&lt;/p&gt;
 
 &lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Things &lt;a href=&#34;https://twitter.com/hashtag/ngconf?src=hash&#34;&gt;#ngconf&lt;/a&gt; has me excited about:&lt;a href=&#34;https://twitter.com/hashtag/Angular2?src=hash&#34;&gt;#Angular2&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/Ionic2?src=hash&#34;&gt;#Ionic2&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/Augury?src=hash&#34;&gt;#Augury&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/AngularUniversal?src=hash&#34;&gt;#AngularUniversal&lt;/a&gt;&lt;br&gt;Testing&lt;br&gt;The new new new router&lt;a href=&#34;https://twitter.com/hashtag/GoogleCloud?src=hash&#34;&gt;#GoogleCloud&lt;/a&gt;&lt;br&gt;This community&lt;/p&gt;&amp;mdash; Leif Wells (@leifwells) &lt;a href=&#34;https://twitter.com/leifwells/status/728356856813379584&#34;&gt;May 5, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;so-much-more-to-say:6a62e1efc70084a5bf4e7bdaa30c0085&#34;&gt;So Much More to Say&lt;/h2&gt;
+&lt;h2 id=&#34;so-much-more-to-say&#34;&gt;So Much More to Say&lt;/h2&gt;
 
 &lt;p&gt;In the upcoming week I&amp;rsquo;ll try to talk about all of these things and more. I had a great time at ng-conf, and now I need to decompress and recover before applying things I learned to projects I have in mind.&lt;/p&gt;
 </description>
@@ -88,15 +62,15 @@
 
 &lt;p&gt;I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?&lt;/p&gt;
 
-&lt;h2 id=&#34;my-brain-hurts:b1ac00f0a6668a1a2a252abc877a0eee&#34;&gt;MY BRAIN HURTS!&lt;/h2&gt;
+&lt;h2 id=&#34;my-brain-hurts&#34;&gt;MY BRAIN HURTS!&lt;/h2&gt;
 
 &lt;p&gt;But seriously, it&amp;rsquo;s difficult to jump in and learn new technology. It makes it even more difficult when that technology is in beta. It becomes frustratingly dumbfounding when that beta technology is dependent upon other beta technologies. There are challenges here. More than once I&amp;rsquo;ve had to step away from demo projects due to various things not working. These non-working &amp;ldquo;things&amp;rdquo; are not necessarily bugs. They can simply be features that aren&amp;rsquo;t complete or even my brain refusing to adapt to new ways of thinking.&lt;/p&gt;
 
 &lt;p&gt;Even &lt;a href=&#34;http://www.typescriptlang.org/&#34;&gt;TypeScript&lt;/a&gt;, the typed superset of Javascript that is used with Angular 2 is under development, though it seems to be fairly solid these days. Microsoft has published a &lt;a href=&#34;https://github.com/Microsoft/TypeScript/wiki/Roadmap&#34;&gt;TypeScript Roadmap&lt;/a&gt; if you&amp;rsquo;d like to see what is coming.&lt;/p&gt;
 
-&lt;h2 id=&#34;finding-everything:b1ac00f0a6668a1a2a252abc877a0eee&#34;&gt;Finding Everything&lt;/h2&gt;
+&lt;h2 id=&#34;finding-everything&#34;&gt;Finding Everything&lt;/h2&gt;
 
-&lt;p&gt;You&amp;rsquo;ll find #EverythingIsInBeta in my sidebar and &lt;a href=&#34;https://leifwells.github.io/2016/10/25/everythingisinbeta/&#34;&gt;in this post&lt;/a&gt; with links to each project&amp;rsquo;s Changelog.md. Well, except for the Ionic CLI project which never seems to have a changelog.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll find #EverythingIsInBeta in my sidebar and &lt;a href=&#34;&#34;&gt;in this post&lt;/a&gt; with links to each project&amp;rsquo;s Changelog.md. Well, except for the Ionic CLI project which never seems to have a changelog.&lt;/p&gt;
 
 &lt;p&gt;Keep in mind that, for instance, just because Angular 2 is at beta 15, it doesn&amp;rsquo;t necessarily mean that Ionic 2 is using that beta. As a practical matter, the Ionic team is behind pace with the Angular 2 project to avoid Angular 2&amp;rsquo;s bleeding edge. Once Angular 2 is released, I am certain that Ionic 2&amp;rsquo;s release will follow quickly after.&lt;/p&gt;
 
@@ -104,7 +78,7 @@
 
 &lt;p&gt;Anyway, you can keep up with the latest betas, &lt;a href=&#34;https://twitter.com/leifwells&#34;&gt;follow me on Twitter&lt;/a&gt; and keep an eye out for &lt;a href=&#34;https://twitter.com/hashtag/EverythingIsInBeta&#34;&gt;#EverythingIsInBeta&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;latest-tweets:b1ac00f0a6668a1a2a252abc877a0eee&#34;&gt;Latest Tweets&lt;/h2&gt;
+&lt;h2 id=&#34;latest-tweets&#34;&gt;Latest Tweets&lt;/h2&gt;
 
 &lt;p&gt;&lt;a class=&#34;twitter-timeline&#34; href=&#34;https://twitter.com/hashtag/EverythingIsInBeta&#34; data-widget-id=&#34;721395116104146944&#34;&gt;#EverythingIsInBeta Tweets&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rdquo;://platform.twitter.com/widgets.js&amp;rdquo;;fjs.parentNode.insertBefore(js,fjs);}}(document,&amp;ldquo;script&amp;rdquo;,&amp;ldquo;twitter-wjs&amp;rdquo;);&lt;/script&gt;&lt;/p&gt;
