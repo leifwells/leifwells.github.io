@@ -161,52 +161,7 @@ tsconfig.json
 
 &lt;p&gt;Open the &lt;code&gt;src/app/&lt;/code&gt; folder in your project and create a new file named &lt;code&gt;app.component.spec.ts&lt;/code&gt;. This will be our unit test file for the &lt;code&gt;MyApp&lt;/code&gt; class which is inside the &lt;code&gt;app.component&lt;/code&gt; file. Inside this new file, copy and paste the following code:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;import { async, TestBed } from &#39;@angular/core/testing&#39;;
-import { IonicModule, Platform } from &#39;ionic-angular&#39;;
-
-import { StatusBar } from &#39;@ionic-native/status-bar&#39;;
-import { SplashScreen } from &#39;@ionic-native/splash-screen&#39;;
-
-import { MyApp } from &#39;./app.component&#39;;
-import {
-  PlatformMock,
-  StatusBarMock,
-  SplashScreenMock
-} from &#39;../../test-config/mocks-ionic&#39;;
-
-describe(&#39;MyApp Component&#39;, () =&amp;gt; {
-  let fixture;
-  let component;
-
-  beforeEach(async(() =&amp;gt; {
-    TestBed.configureTestingModule({
-      declarations: [MyApp],
-      imports: [
-        IonicModule.forRoot(MyApp)
-      ],
-      providers: [
-        { provide: StatusBar, useClass: StatusBarMock },
-        { provide: SplashScreen, useClass: SplashScreenMock },
-        { provide: Platform, useClass: PlatformMock }
-      ]
-    })
-  }));
-
-  beforeEach(() =&amp;gt; {
-    fixture = TestBed.createComponent(MyApp);
-    component = fixture.componentInstance;
-  });
-
-  it(&#39;should be created&#39;, () =&amp;gt; {
-    expect(component instanceof MyApp).toBe(true);
-  });
-
-  it(&#39;should have two pages&#39;, () =&amp;gt; {
-    expect(component.pages.length).toBe(2);
-  });
-
-});
-&lt;/code&gt;&lt;/pre&gt;
+&lt;script src=&#34;https://gist.github.com/leifwells/d2f5f442dcbd9617f2e3f0572db5ea76.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;This is not a tutorial on how to create tests, but&lt;/strong&gt; let&amp;rsquo;s take a brief look at this test code.&lt;/p&gt;
 
@@ -242,28 +197,7 @@ describe(&#39;MyApp Component&#39;, () =&amp;gt; {
 
 &lt;p&gt;Earlier, we added the &lt;code&gt;e2e&lt;/code&gt; folder to our project which contained our first E2E test. Let&amp;rsquo;s take a look at it.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;import { Page } from &#39;./app.po&#39;;
-
-describe(&#39;App&#39;, () =&amp;gt; {
-  let page: Page;
-
-  beforeEach(() =&amp;gt; {
-    page = new Page();
-  });
-
-  describe(&#39;default screen&#39;, () =&amp;gt; {
-    beforeEach(() =&amp;gt; {
-      page.navigateTo(&#39;/&#39;);
-    });
-
-    it(&#39;should have a title saying Page One&#39;, () =&amp;gt; {
-      page.getTitle().then(title =&amp;gt; {
-        expect(title).toEqual(&#39;Page One&#39;);
-      });
-    });
-  })
-});
-&lt;/code&gt;&lt;/pre&gt;
+&lt;script src=&#34;https://gist.github.com/leifwells/266bbd53503eaf2f0d1b9675e8610ef3.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;Again, we see the typical testing methods of &lt;code&gt;describe&lt;/code&gt;, &lt;code&gt;beforeEach&lt;/code&gt; and &lt;code&gt;it&lt;/code&gt;. One this of note here is the use of a second &lt;code&gt;describe&lt;/code&gt; method. This is used to help with organizing your tests.&lt;/p&gt;
 
@@ -283,6 +217,13 @@ describe(&#39;App&#39;, () =&amp;gt; {
 &lt;a href=&#34;https://karma-runner.github.io/1.0/index.html&#34;&gt;Karma&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://jasmine.github.io/&#34;&gt;Jasmine&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.protractortest.org/&#34;&gt;Protractor&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;updates&#34;&gt;Updates&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2017-09-02:&lt;/strong&gt;&lt;br /&gt;
+Replaced two Markdown code blocks with Github Gists.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
