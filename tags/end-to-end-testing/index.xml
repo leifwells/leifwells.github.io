@@ -121,7 +121,7 @@ Once the file is downloaded, decompress it and open the containing folder so tha
 &lt;h2 id=&#34;step-5-add-the-configuration-files&#34;&gt;Step 5: Add the Configuration Files&lt;/h2&gt;
 
 &lt;p&gt;The control center for this testing configuration are a set of files that are inside the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; project which need to be added to our project. Open the folder where &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; was decompressed earlier and locate the &lt;code&gt;test-config&lt;/code&gt; folder. Copy and paste that folder into the root of our project.
-Open the folder in your code editor and take a look. You should see four files:&lt;/p&gt;
+Open the folder in your code editor and take a look. You should see five files:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;karma-test-shim.js
 karma-config.js
