@@ -1,4 +1,4 @@
-<div class="list">
+<div class="single">
   <!DOCTYPE html>
 <html>
   <head>
@@ -20,14 +20,14 @@
     <script>hljs.initHighlightingOnLoad();</script>
 
     
-    <title>Rxjs - Leif&#39;s Development Blog-o-rama</title>
-    <meta property='og:title' content="Rxjs - Leif&#39;s Development Blog-o-rama">
+    <title>Testing in Ionic: Code Coverage - Leif&#39;s Development Blog-o-rama</title>
+    <meta property='og:title' content="Testing in Ionic: Code Coverage - Leif&#39;s Development Blog-o-rama">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://leifwells.github.io/tags/rxjs/">
+    <meta property="og:url" content="https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/">
     
-    
+    <meta property="og:image" content="https://leifwells.github.io/images/default.jpg">
 
   </head>
 
@@ -40,50 +40,125 @@
     <div class="container site">
 
 
+
   <div class="row">
     <div class="col-sm-9">
 
-      <header class="title"><h1>Rxjs</h1></header>
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      <div class="articles">
-        <div class="row">
-          
-          <div class="col-sm-4">
-            <article class="li">
-  <a href="https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/" class="clearfix">
-    <div class="image" style="background-image: url(https://leifwells.github.io/images/ng-conf-2016.jpg);"></div>
-    <div class="detail">
-      <time>Sat, May 7, 2016</time>
-      <h2 class="title">I Attended ng-conf 2016. Yay!</h2>
-      <div class="summary">This week I attended ng-conf for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.
-This year I took up egghead.io on their &ldquo;buy a workshop ticket and you can buy a conference ticket instead of trying to get a lottery ticket&rdquo; offer.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
-          <div class="col-sm-4">
-            <article class="li">
-  <a href="https://leifwells.github.io/2016/04/16/why-everythingisinbeta/" class="clearfix">
-    <div class="image" style="background-image: url(https://leifwells.github.io/images/EverythingIsInBeta_Twitter_Search.png);"></div>
-    <div class="detail">
-      <time>Sat, Apr 16, 2016</time>
-      <h2 class="title">Why EverythingIsInBeta?</h2>
-      <div class="summary">I&rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&rsquo;s more of an information point rather than something actually useful but, hey, it&rsquo;s Twitter. When was Twitter ever useful?
-MY BRAIN HURTS! But seriously, it&rsquo;s difficult to jump in and learn new technology. It makes it even more difficult when that technology is in beta. It becomes frustratingly dumbfounding when that beta technology is dependent upon other beta technologies.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://leifwells.github.io/"/>
+        <meta itemprop="dateModified" content="2017-09-05T22:19:35-04:00">
+        <meta itemprop="headline" content="Testing in Ionic: Code Coverage">
+        <meta itemprop="description" content="Today, an update made to the ionic-unit-testing-example project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.
+What is Code Coverage? Wikipedia says &ldquo;code coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs.">
+        <meta itemprop="url" content="https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://leifwells.github.io/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
         </div>
-      </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://leifwells.github.io/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Leif&#39;s Development Blog-o-rama">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
 
-      
+        <div class="image" style="background-image: url(https://leifwells.github.io/images/default.jpg);"></div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2017-09-05T22:19:35-04:00">Tue, Sep 5, 2017</time>
+          <h1 class="article-title">Testing in Ionic: Code Coverage</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          
+
+<p>Today, an update made to the <code>ionic-unit-testing-example</code> project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.</p>
+
+<h2 id="what-is-code-coverage">What is Code Coverage?</h2>
+
+<p>Wikipedia says <a href="https://en.wikipedia.org/wiki/Code_coverage">&ldquo;code coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs.&rdquo;</a> Essentially, when you run the script for code coverage in your Ionic project, the unit tests in your project are run, and analysis of the code being run is generated into a Web site in which you can drill down into and see where more testing work may be needed.</p>
+
+<p><img src="https://user-images.githubusercontent.com/1648535/30074946-54a36e50-9241-11e7-9ca8-6263d0353c58.png" alt="" />
+<em>Sample of the first page of the code coverage documentation.</em></p>
+
+<h2 id="what-does-this-mean-for-developers">What Does This Mean for Developers?</h2>
+
+<p>So, here&rsquo;s the <strong>worst case scenario</strong>: Your immediate manager drops by your cube and tells you that his high-level manager&rsquo;s manager&rsquo;s manager has decided that all company code needs to have unit tests. You have some testing in your project, but you have no idea if you have covered everything that needs to be tested. <em>How do you prove you have any testing in your project at all?</em></p>
+
+<p>That is where code coverage documentation comes in. You run the command to create the code coverage documentation and you have the proof.</p>
+
+<p>On a more practical level, using code coverage documentation is a great way to receive feedback on how well your testing practice is going, give your project managers an idea of how much work may be required for future testing efforts, and allow the whole team to have confidence in the project&rsquo;s future performance.</p>
+
+<p>Simply put, having code coverage documentation available for your project should be used for more than covering your @$$. Leverage the information for greatest effect for you, your testing practice, and your projects.</p>
+
+<h2 id="how-to-add-code-coverage">How to Add Code Coverage?</h2>
+
+<p>The latest code is available on <a href="https://github.com/ionic-team/ionic-unit-testing-example">Github</a>. The changes can be applied to your project by following these steps:</p>
+
+<blockquote>
+<p><strong>Advanced Instructions:</strong> If you are comfortable adding this feature manually, take a look at <a href="https://github.com/ionic-team/ionic-unit-testing-example/commit/4209c99ddb8e48b6fc914afc51be7ec34e27ca84">this commit</a> to see what actually changed. Once the changes have been made, run the <code>npm run test-coverage</code> command.</p>
+</blockquote>
+
+<p><strong>Step 1:</strong> Install the following modules into your project:</p>
+
+<pre><code class="language-sh">npm install --save-dev karma-coverage-istanbul-reporter istanbul-instrumenter-loader
+</code></pre>
+
+<p><strong>Step 2:</strong> Add a new script to your <code>package.json</code> file:</p>
+
+<pre><code class="language-json">&quot;test-coverage&quot;: &quot;karma start ./test-config/karma.conf.js --coverage&quot;,
+</code></pre>
+
+<blockquote>
+<p><strong>Warning:</strong> Step 3 requires files to be replaced. If you have already altered these files, please look at the commits for this project and review the changes. Do not delete or replace files in your project without making backups.</p>
+</blockquote>
+
+<p><strong>Step 3:</strong> Replace your <a href="https://raw.githubusercontent.com/ionic-team/ionic-unit-testing-example/master/test-config/karma.conf.js"><code>test-config/karma.conf.js</code></a> and <a href="https://raw.githubusercontent.com/ionic-team/ionic-unit-testing-example/master/test-config/webpack.test.js"><code>test-config/webpack-test.js</code></a> files in your project with those from this project.</p>
+
+<p><strong>Step 4:</strong> Run the <code>npm run test-coverage</code> command. Your unit tests will be run and the documentation will be generated in a folder named <code>coverage</code> in the root of your project. Just open the <code>index.html</code> file in the folder in a browser and see how well your project is covered.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Testing by itself isn&rsquo;t the end-all thing your projects need to be successful. It is one of many piece to that puzzle. Having code coverage documentation is helpful for quantifying the level of testing you are performing, and can assisting you in focusing improvement efforts. Add code coverage to your testing practice.</p>
+
+        </div>
 
 
+        <aside>
+          <div class="section"><a href="https://leifwells.github.io/tags/Ionic" class="tag">Ionic</a> <a href="https://leifwells.github.io/tags/Angular" class="tag">Angular</a> <a href="https://leifwells.github.io/tags/Testing" class="tag">Testing</a> <a href="https://leifwells.github.io/tags/Test%20Driven%20Development" class="tag">Test Driven Development</a> <a href="https://leifwells.github.io/tags/TDD" class="tag">TDD</a> <a href="https://leifwells.github.io/tags/Unit%20Testing" class="tag">Unit Testing</a> <a href="https://leifwells.github.io/tags/End-to-end%20Testing" class="tag">End-to-end Testing</a> <a href="https://leifwells.github.io/tags/E2E" class="tag">E2E</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fleifwells.github.io%2f2017%2f09%2f05%2ftesting-in-ionic-code-coverage%2f&t=Testing%20in%20Ionic%3a%20Code%20Coverage" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fleifwells.github.io%2f2017%2f09%2f05%2ftesting-in-ionic-code-coverage%2f&text=Testing%20in%20Ionic%3a%20Code%20Coverage&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fleifwells.github.io%2f2017%2f09%2f05%2ftesting-in-ionic-code-coverage%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fleifwells.github.io%2f2017%2f09%2f05%2ftesting-in-ionic-code-coverage%2f&title=Testing%20in%20Ionic%3a%20Code%20Coverage" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'leifwellsblogorama';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          
+        </aside>
+
+      </article>
     </div>
 
     <div class="col-sm-3">
@@ -259,6 +334,7 @@ MY BRAIN HURTS! But seriously, it&rsquo;s difficult to jump in and learn new tec
     </div>
 
   </div>
+
       </div>
 
     <footer class="site">

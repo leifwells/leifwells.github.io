@@ -6,8 +6,69 @@
     <language>en-us</language>
     <author></author>
     <rights>(C) 2017</rights>
-    <updated>2017-08-27 16:24:28 -0400 EDT</updated>
+    <updated>2017-09-05 22:19:35 -0400 EDT</updated>
 
+    
+      
+        <item>
+          <title>Testing in Ionic: Code Coverage</title>
+          <link>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</link>
+          <pubDate>Tue, 05 Sep 2017 22:19:35 EDT</pubDate>
+          <author></author>
+          <guid>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</guid>
+          <description>
+
+&lt;p&gt;Today, an update made to the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-code-coverage&#34;&gt;What is Code Coverage?&lt;/h2&gt;
+
+&lt;p&gt;Wikipedia says &lt;a href=&#34;https://en.wikipedia.org/wiki/Code_coverage&#34;&gt;&amp;ldquo;code coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs.&amp;rdquo;&lt;/a&gt; Essentially, when you run the script for code coverage in your Ionic project, the unit tests in your project are run, and analysis of the code being run is generated into a Web site in which you can drill down into and see where more testing work may be needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/1648535/30074946-54a36e50-9241-11e7-9ca8-6263d0353c58.png&#34; alt=&#34;&#34; /&gt;
+&lt;em&gt;Sample of the first page of the code coverage documentation.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-does-this-mean-for-developers&#34;&gt;What Does This Mean for Developers?&lt;/h2&gt;
+
+&lt;p&gt;So, here&amp;rsquo;s the &lt;strong&gt;worst case scenario&lt;/strong&gt;: Your immediate manager drops by your cube and tells you that his high-level manager&amp;rsquo;s manager&amp;rsquo;s manager has decided that all company code needs to have unit tests. You have some testing in your project, but you have no idea if you have covered everything that needs to be tested. &lt;em&gt;How do you prove you have any testing in your project at all?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That is where code coverage documentation comes in. You run the command to create the code coverage documentation and you have the proof.&lt;/p&gt;
+
+&lt;p&gt;On a more practical level, using code coverage documentation is a great way to receive feedback on how well your testing practice is going, give your project managers an idea of how much work may be required for future testing efforts, and allow the whole team to have confidence in the project&amp;rsquo;s future performance.&lt;/p&gt;
+
+&lt;p&gt;Simply put, having code coverage documentation available for your project should be used for more than covering your @$$. Leverage the information for greatest effect for you, your testing practice, and your projects.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-add-code-coverage&#34;&gt;How to Add Code Coverage?&lt;/h2&gt;
+
+&lt;p&gt;The latest code is available on &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example&#34;&gt;Github&lt;/a&gt;. The changes can be applied to your project by following these steps:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Advanced Instructions:&lt;/strong&gt; If you are comfortable adding this feature manually, take a look at &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example/commit/4209c99ddb8e48b6fc914afc51be7ec34e27ca84&#34;&gt;this commit&lt;/a&gt; to see what actually changed. Once the changes have been made, run the &lt;code&gt;npm run test-coverage&lt;/code&gt; command.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Install the following modules into your project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev karma-coverage-istanbul-reporter istanbul-instrumenter-loader
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Add a new script to your &lt;code&gt;package.json&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;quot;test-coverage&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js --coverage&amp;quot;,
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Step 3 requires files to be replaced. If you have already altered these files, please look at the commits for this project and review the changes. Do not delete or replace files in your project without making backups.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Replace your &lt;a href=&#34;https://raw.githubusercontent.com/ionic-team/ionic-unit-testing-example/master/test-config/karma.conf.js&#34;&gt;&lt;code&gt;test-config/karma.conf.js&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://raw.githubusercontent.com/ionic-team/ionic-unit-testing-example/master/test-config/webpack.test.js&#34;&gt;&lt;code&gt;test-config/webpack-test.js&lt;/code&gt;&lt;/a&gt; files in your project with those from this project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Run the &lt;code&gt;npm run test-coverage&lt;/code&gt; command. Your unit tests will be run and the documentation will be generated in a folder named &lt;code&gt;coverage&lt;/code&gt; in the root of your project. Just open the &lt;code&gt;index.html&lt;/code&gt; file in the folder in a browser and see how well your project is covered.&lt;/p&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Testing by itself isn&amp;rsquo;t the end-all thing your projects need to be successful. It is one of many piece to that puzzle. Having code coverage documentation is helpful for quantifying the level of testing you are performing, and can assisting you in focusing improvement efforts. Add code coverage to your testing practice.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
