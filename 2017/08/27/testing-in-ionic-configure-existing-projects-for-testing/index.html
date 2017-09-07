@@ -157,7 +157,7 @@ Once the file is downloaded, decompress it and open the containing folder so tha
 
 <p>There are a handfull of Node modules required for testing to work with and Ionic application and need to be added to our project. While you can install each of these modules separately, we&rsquo;ve organized the install process into one handy command:</p>
 
-<pre><code class="language-sh">npm install --save-dev angular2-template-loader html-loader jasmine jasmine-spec-reporter karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter karma-sourcemap-loader karma-webpack null-loader protractor ts-loader ts-node @types/jasmine @types/node
+<pre><code class="language-sh">npm install --save-dev angular2-template-loader html-loader jasmine jasmine-spec-reporter karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter karma-sourcemap-loader karma-webpack karma-coverage-istanbul-reporter istanbul-instrumenter-loader null-loader protractor ts-loader ts-node @types/jasmine @types/node
 </code></pre>
 
 <p>This command adds these modules to the <code>&quot;devDependencies&quot;</code> node of your project&rsquo;s <code>package.json</code> file. There are quite a few modules here, but the important modules are <code>karma</code>, <code>jasmine</code> and <code>protractor</code>. <code>karma</code> is the Karma module which is our testing environment for unit testing. <code>jasmine</code> is the Jasmine module which is the unit testing framework. <code>protractor</code> is the Protractor module which is our testing environment for our end-to-end tests. The rest of the modules are utilities that allow this configuration to work.</p>
@@ -168,6 +168,7 @@ Once the file is downloaded, decompress it and open the containing folder so tha
 
 <pre><code class="language-json">&quot;test&quot;: &quot;karma start ./test-config/karma.conf.js&quot;,
 &quot;test-ci&quot;: &quot;karma start ./test-config/karma.conf.js --single-run&quot;,
+&quot;test-coverage&quot;: &quot;karma start ./test-config/karma.conf.js --coverage&quot;,
 &quot;e2e&quot;: &quot;npm run e2e-update &amp;&amp; npm run e2e-test&quot;,
 &quot;e2e-test&quot;: &quot;protractor ./test-config/protractor.conf.js&quot;,
 &quot;e2e-update&quot;: &quot;webdriver-manager update --standalone false --gecko false&quot;
@@ -280,11 +281,16 @@ tsconfig.json
 <a href="http://www.protractortest.org/">Protractor</a><br /></p>
 </blockquote>
 
-<h3 id="updates">Updates</h3>
+<h3 id="updates">Updates:</h3>
 
 <blockquote>
-<p><strong>2017-09-02:</strong><br />
-Replaced two Markdown code blocks with Github Gists.</p>
+<h4 id="2017-09-06-br"><strong>2017-09-06:</strong><br /></h4>
+
+<p>Added <a href="https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/">code coverage feature</a> steps.<br /></p>
+
+<h4 id="2017-09-02-br"><strong>2017-09-02:</strong><br /></h4>
+
+<p>Replaced two Markdown code blocks with Github Gists.<br /></p>
 </blockquote>
 
 <p><a href="https://twitter.com/leifwells" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @leifwells</a>
@@ -327,6 +333,37 @@ Replaced two Markdown code blocks with Github Gists.</p>
       <aside class="site">
 
   
+  <div class="section">
+    <header><div class="title">Table Of Contents</div></header>
+    <div class="list-default"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#step-1-create-a-project-to-test-optional">Step 1: Create a Project to Test (Optional)</a></li>
+<li><a href="#step-2-get-the-example-code">Step 2: Get the Example Code</a></li>
+<li><a href="#step-3-install-required-node-modules">Step 3: Install Required Node Modules</a></li>
+<li><a href="#step-4-add-scripts-to-the-package-json">Step 4: Add Scripts to the <code>package.json</code></a></li>
+<li><a href="#step-5-add-the-configuration-files">Step 5: Add the Configuration Files</a></li>
+<li><a href="#step-6-adding-end-to-end-testing">Step 6: Adding End-to-end Testing</a></li>
+<li><a href="#adding-your-first-unit-test">Adding Your First Unit Test</a></li>
+<li><a href="#angular-testing-utilities">Angular Testing Utilities</a></li>
+<li><a href="#mocking-ionic-classes">Mocking Ionic Classes</a></li>
+<li><a href="#what-to-expect-when-unit-testing">What to Expect When Unit Testing</a></li>
+<li><a href="#reviewing-the-e2e-test">Reviewing the E2E Test</a></li>
+<li><a href="#summary">Summary</a>
+<ul>
+<li><a href="#links-for-this-article">Links for this article:</a></li>
+<li><a href="#updates">Updates:</a>
+<ul>
+<li><a href="#2017-09-06-br"><strong>2017-09-06:</strong><br /></a></li>
+<li><a href="#2017-09-02-br"><strong>2017-09-02:</strong><br /></a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav></div>
+  </div>
+  
 
   
   
@@ -341,7 +378,7 @@ Replaced two Markdown code blocks with Github Gists.</p>
       <time>Tue, Sep 5, 2017</time>
       <h2 class="title">Testing in Ionic: Code Coverage</h2>
       <div class="summary">Today, an update made to the ionic-unit-testing-example project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.
-What is Code Coverage? Wikipedia says &ldquo;code coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs.</div>
+ Wait. You aren&rsquo;t using automated testing with your Ionic applications? Wow, you are living dangerously. Well, if you are interested in getting unit testing and end-to-end testing working in your Ionic projects, you should check out this post instead.</div>
     </div>
   </a>
 </article>

@@ -20,6 +20,10 @@
 
 &lt;p&gt;Today, an update made to the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.&lt;/p&gt;
 
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Wait. You aren&amp;rsquo;t using automated testing with your Ionic applications?&lt;/strong&gt; Wow, you are living dangerously. Well, if you are interested in getting unit testing and end-to-end testing working in your Ionic projects, you should &lt;a href=&#34;https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/&#34;&gt;check out this post instead&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;h2 id=&#34;what-is-code-coverage&#34;&gt;What is Code Coverage?&lt;/h2&gt;
 
 &lt;p&gt;Wikipedia says &lt;a href=&#34;https://en.wikipedia.org/wiki/Code_coverage&#34;&gt;&amp;ldquo;code coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs.&amp;rdquo;&lt;/a&gt; Essentially, when you run the script for code coverage in your Ionic project, the unit tests in your project are run, and analysis of the code being run is generated into a Web site in which you can drill down into and see where more testing work may be needed.&lt;/p&gt;
@@ -157,7 +161,7 @@ Once the file is downloaded, decompress it and open the containing folder so tha
 
 &lt;p&gt;There are a handfull of Node modules required for testing to work with and Ionic application and need to be added to our project. While you can install each of these modules separately, we&amp;rsquo;ve organized the install process into one handy command:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev angular2-template-loader html-loader jasmine jasmine-spec-reporter karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter karma-sourcemap-loader karma-webpack null-loader protractor ts-loader ts-node @types/jasmine @types/node
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev angular2-template-loader html-loader jasmine jasmine-spec-reporter karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter karma-sourcemap-loader karma-webpack karma-coverage-istanbul-reporter istanbul-instrumenter-loader null-loader protractor ts-loader ts-node @types/jasmine @types/node
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This command adds these modules to the &lt;code&gt;&amp;quot;devDependencies&amp;quot;&lt;/code&gt; node of your project&amp;rsquo;s &lt;code&gt;package.json&lt;/code&gt; file. There are quite a few modules here, but the important modules are &lt;code&gt;karma&lt;/code&gt;, &lt;code&gt;jasmine&lt;/code&gt; and &lt;code&gt;protractor&lt;/code&gt;. &lt;code&gt;karma&lt;/code&gt; is the Karma module which is our testing environment for unit testing. &lt;code&gt;jasmine&lt;/code&gt; is the Jasmine module which is the unit testing framework. &lt;code&gt;protractor&lt;/code&gt; is the Protractor module which is our testing environment for our end-to-end tests. The rest of the modules are utilities that allow this configuration to work.&lt;/p&gt;
@@ -168,6 +172,7 @@ Once the file is downloaded, decompress it and open the containing folder so tha
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;quot;test&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js&amp;quot;,
 &amp;quot;test-ci&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js --single-run&amp;quot;,
+&amp;quot;test-coverage&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js --coverage&amp;quot;,
 &amp;quot;e2e&amp;quot;: &amp;quot;npm run e2e-update &amp;amp;&amp;amp; npm run e2e-test&amp;quot;,
 &amp;quot;e2e-test&amp;quot;: &amp;quot;protractor ./test-config/protractor.conf.js&amp;quot;,
 &amp;quot;e2e-update&amp;quot;: &amp;quot;webdriver-manager update --standalone false --gecko false&amp;quot;
@@ -280,11 +285,16 @@ tsconfig.json
 &lt;a href=&#34;http://www.protractortest.org/&#34;&gt;Protractor&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;updates&#34;&gt;Updates&lt;/h3&gt;
+&lt;h3 id=&#34;updates&#34;&gt;Updates:&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;2017-09-02:&lt;/strong&gt;&lt;br /&gt;
-Replaced two Markdown code blocks with Github Gists.&lt;/p&gt;
+&lt;h4 id=&#34;2017-09-06-br&#34;&gt;&lt;strong&gt;2017-09-06:&lt;/strong&gt;&lt;br /&gt;&lt;/h4&gt;
+
+&lt;p&gt;Added &lt;a href=&#34;https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/&#34;&gt;code coverage feature&lt;/a&gt; steps.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;2017-09-02-br&#34;&gt;&lt;strong&gt;2017-09-02:&lt;/strong&gt;&lt;br /&gt;&lt;/h4&gt;
+
+&lt;p&gt;Replaced two Markdown code blocks with Github Gists.&lt;br /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
