@@ -1,56 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leif&#39;s Development Blog-o-rama </title>
+    <title>Typescript on Leif&#39;s Development Blog-o-rama</title>
     <link>https://leifwells.github.io/tags/typescript/</link>
+    <description>Recent content in Typescript on Leif&#39;s Development Blog-o-rama</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2017</rights>
-    <updated>2016-05-07 18:35:39 -0400 EDT</updated>
-
+    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
+    <lastBuildDate>Sat, 07 May 2016 18:35:39 -0400</lastBuildDate>
     
-      
-        <item>
-          <title>I Attended ng-conf 2016. Yay!</title>
-          <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
-          <pubDate>Sat, 07 May 2016 18:35:39 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
-          <description>
-
-&lt;p&gt;This week I attended &lt;a href=&#34;http://www.ng-conf.org/&#34;&gt;ng-conf&lt;/a&gt; for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.&lt;/p&gt;
-
-&lt;p&gt;This year I took up &lt;a href=&#34;http://egghead.io&#34;&gt;egghead.io&lt;/a&gt; on their &amp;ldquo;buy a workshop ticket and you can buy a conference ticket instead of trying to get a lottery ticket&amp;rdquo; offer. Seriously, that was only way I was going to get a conference ticket. I&amp;rsquo;m not lucky enough to win the ng-conf ticket lottery (or the &lt;a href=&#34;https://events.google.com/io2016/&#34;&gt;Google I/O (soon!)&lt;/a&gt; lottery or the WWDC ticket lottery).&lt;/p&gt;
-
-&lt;p&gt;The conference was held in Salt Lake City at the Grand American Hotel, an impressively nice place to hold a conference. If you have the money and want to visit SLC, this is the place.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-angular-2-workshop&#34;&gt;The Angular 2 Workshop&lt;/h2&gt;
-
-&lt;p&gt;The egghead.io Angular 2 workshop, lead by a clean-shaven &lt;a href=&#34;https://egghead.io/instructors/john-lindquist&#34;&gt;John Lindquist&lt;/a&gt;, was a good experience. I had two sets of goals when I bought my ticket: either to learn a lot during the workshop, or to spend time before the workshop learning as much as possible about Angular 2 and use the event as a measure of what I&amp;rsquo;d correctly learned. Luckily, I had spent a great deal of time becoming acquainted with the new version beforehand, and felt like I was on the mark with most of the content in the workshop. Good on me.&lt;/p&gt;
-
-&lt;h2 id=&#34;catching-up-with-friends&#34;&gt;Catching Up with Friends&lt;/h2&gt;
-
-&lt;p&gt;Another bit of luck was that &lt;a href=&#34;https://www.ng-conf.org/#/speaker/chrisgriffith&#34;&gt;Chris Griffith&lt;/a&gt; offered to share his room with me (Super Thanks, Christopher!). Chris was accepted as a speaker this year speaking on &lt;a href=&#34;https://www.ng-conf.org/#/sessions/chrisgriffithFD&#34;&gt;Ionic 2&lt;/a&gt; during the conference&amp;rsquo;s Fair Day. While eating dinner with &lt;a href=&#34;https://twitter.com/thack&#34;&gt;Terence Carrol&lt;/a&gt;, he asked us how we first met and how we started working together on various projects. It took me a while to realize that Chris and I first worked together on the 360Flex conference application built with Flex and AIR. That was a long time ago.&lt;/p&gt;
-
-&lt;p&gt;I also got to spend some time with a few folks on the Ionic team. I am looking forward to getting to know them better over the next year.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hanging at the &lt;a href=&#34;https://twitter.com/hashtag/BeerHive?src=hash&#34;&gt;#BeerHive&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/ngconf?src=hash&#34;&gt;#ngconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Ionicframework&#34;&gt;@Ionicframework&lt;/a&gt; &lt;a href=&#34;https://t.co/YMLCe2cQaZ&#34;&gt;pic.twitter.com/YMLCe2cQaZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brandy Carney (@brandyscarney) &lt;a href=&#34;https://twitter.com/brandyscarney/status/728072827564216320&#34;&gt;May 5, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;sessions&#34;&gt;Sessions&lt;/h2&gt;
-
-&lt;p&gt;There were some great sessions on Wednesday and Friday. So great, honestly, I&amp;rsquo;m going to need to rewatch most of them because all the information was hurting my brain. I think this tweet really tells you about where my head is at now that I am home:&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Things &lt;a href=&#34;https://twitter.com/hashtag/ngconf?src=hash&#34;&gt;#ngconf&lt;/a&gt; has me excited about:&lt;a href=&#34;https://twitter.com/hashtag/Angular2?src=hash&#34;&gt;#Angular2&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/Ionic2?src=hash&#34;&gt;#Ionic2&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/Augury?src=hash&#34;&gt;#Augury&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/AngularUniversal?src=hash&#34;&gt;#AngularUniversal&lt;/a&gt;&lt;br&gt;Testing&lt;br&gt;The new new new router&lt;a href=&#34;https://twitter.com/hashtag/GoogleCloud?src=hash&#34;&gt;#GoogleCloud&lt;/a&gt;&lt;br&gt;This community&lt;/p&gt;&amp;mdash; Leif Wells (@leifwells) &lt;a href=&#34;https://twitter.com/leifwells/status/728356856813379584&#34;&gt;May 5, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;so-much-more-to-say&#34;&gt;So Much More to Say&lt;/h2&gt;
-
-&lt;p&gt;In the upcoming week I&amp;rsquo;ll try to talk about all of these things and more. I had a great time at ng-conf, and now I need to decompress and recover before applying things I learned to projects I have in mind.&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="https://leifwells.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    <item>
+      <title>I Attended ng-conf 2016. Yay!</title>
+      <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+      <pubDate>Sat, 07 May 2016 18:35:39 -0400</pubDate>
+      
+      <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+      <description>This week I attended ng-conf for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.
+This year I took up egghead.io on their &amp;ldquo;buy a workshop ticket and you can buy a conference ticket instead of trying to get a lottery ticket&amp;rdquo; offer.</description>
+    </item>
+    
   </channel>
 </rss>

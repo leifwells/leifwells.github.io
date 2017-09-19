@@ -1,351 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leif&#39;s Development Blog-o-rama </title>
+    <title>Android on Leif&#39;s Development Blog-o-rama</title>
     <link>https://leifwells.github.io/tags/android/</link>
+    <description>Recent content in Android on Leif&#39;s Development Blog-o-rama</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2017</rights>
-    <updated>2016-06-03 22:15:27 -0400 EDT</updated>
-
+    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
+    <lastBuildDate>Fri, 03 Jun 2016 22:15:27 -0400</lastBuildDate>
     
+	<atom:link href="https://leifwells.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
+      <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
+      <pubDate>Fri, 03 Jun 2016 22:15:27 -0400</pubDate>
       
-        <item>
-          <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
-          <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
-          <pubDate>Fri, 03 Jun 2016 22:15:27 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
-          <description>&lt;p&gt;I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.&lt;/p&gt;
-
-&lt;p&gt;Lets take a look at the typical code to create a Local Notification in Ionic 1:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/leifwells/302c04f99751e54b3bd92108a7fee065.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;In the object being passed to the schedule method you see a &lt;code&gt;sound&lt;/code&gt; property. This property is set to the default sound represented by &lt;code&gt;&#39;res://platform_default&#39;&lt;/code&gt; which, of course, is the sound that the user has selected as their notification sound.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; When you are testing with the iOS Simulator, the default sound &lt;strong&gt;does not play.&lt;/strong&gt; This fact could possibly lose you time, effort, hair and sanity. As always, if something isn&amp;rsquo;t working as expected in the simulator or emulator, take the time to test it on a device.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; On the Android platform your notifications will always make a sound whether your application is in the foreground or the background. On iOS, the only time you&amp;rsquo;ll see your application&amp;rsquo;s notifications is when your application is in the background.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Default sounds are great, but, hey, your app is something special and deserves its very own notification sound. Right?&lt;/p&gt;
-
-&lt;p&gt;In that case we make a simple change to the property:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;    sound: &#39;file://audio/notification.wav&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In this case we are using a &lt;code&gt;.wav&lt;/code&gt; file which works on both iOS and Android. You&amp;rsquo;ll notice we are using the &lt;code&gt;file://&lt;/code&gt; protocol to retrieve this file. But where do we place this file so that it can be found?&lt;/p&gt;
-
-&lt;p&gt;In Ionic, the file should be placed in the &lt;code&gt;www&lt;/code&gt; folder. That makes sense in &lt;strong&gt;Ionic 1&lt;/strong&gt; since basically everything goes there. So, using this code example the file would be located at &lt;code&gt;www/audio/notification.wav&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The code in &lt;strong&gt;Ionic 2&lt;/strong&gt; using &lt;strong&gt;Ionic Native&lt;/strong&gt; might look like this:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/leifwells/d80f25e1fba0506467f2864dfaf362bc.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;But don&amp;rsquo;t be confused by the new &lt;strong&gt;Ionic 2&lt;/strong&gt; directory structure. The custom sound file does not belong in the &lt;code&gt;app&lt;/code&gt; folder. It, too, should reside in the &lt;code&gt;www&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
-</description>
-        </item>
+      <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
+      <description>I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.
+Lets take a look at the typical code to create a Local Notification in Ionic 1:
+ In the object being passed to the schedule method you see a sound property. This property is set to the default sound represented by &#39;res://platform_default&#39; which, of course, is the sound that the user has selected as their notification sound.</description>
+    </item>
+    
+    <item>
+      <title>Setting Android Icons with Local Notifications</title>
+      <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
+      <pubDate>Mon, 30 May 2016 00:01:31 -0400</pubDate>
       
+      <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
+      <description>My previous post lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.
+Understanding How Notifications Work on Android The Android platform a notification requires two icons.</description>
+    </item>
     
+    <item>
+      <title>Lessons Learned: Unnamed Project 2016-05</title>
+      <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+      <pubDate>Sat, 28 May 2016 14:57:05 -0400</pubDate>
       
-        <item>
-          <title>Setting Android Icons with Local Notifications</title>
-          <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
-          <pubDate>Mon, 30 May 2016 00:01:31 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
-          <description>
-
-&lt;p&gt;My &lt;a href=&#34;https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/&#34;&gt;previous post&lt;/a&gt; lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.&lt;/p&gt;
-
-&lt;h2 id=&#34;understanding-how-notifications-work-on-android&#34;&gt;Understanding How Notifications Work on Android&lt;/h2&gt;
-
-&lt;p&gt;The Android platform a notification requires two icons. Lets take a look at Figure 1 to identify them:&lt;/p&gt;
-
-
-&lt;figure &gt;
+      <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+      <description>An Unnamed Project Last month my friends at Skyward Interactive requested my assistance with a project that needed a cross-platform mobile solution. The project, which will remain unnamed because the client is a start-up, is a prototype for a service and required phone, tablet and server development. The phone apps is for customers, the tablet app is for administrators and the server ties them all together.
+For mobile development Skyward typically builds native iOS applications, but most of their iOS resources were tied up with other projects and since this project had a short deadline and budget they asked me if I could assemble the iOS and Android phone solution.</description>
+    </item>
     
-        &lt;img src=&#34;https://leifwells.github.io/images/android_notification_icons_example.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Figure 1: Where the Android notification icons appear&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;&lt;br /&gt;
-As you can see, there is an icon (1) that appears in the status bar as well as in the notification listing (2) along side another larger icon (3).&lt;/p&gt;
-
-&lt;p&gt;Lets take a look at the typical notification code that might appear in a service in your application:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var setUpNotification = function( note ) {
-    var deferred = $q.defer();
-    
-    $cordovaLocalNotification.schedule({
-        id: note.id,
-        at: note.at,
-        text: note.text,
-        title: note.title,
-        sound: &#39;file://audio/notification.wav&#39;,
-        badge: 1,
-        data: &#39;hello=world&#39;,
-        autoClear: false,
-        icon: &#39;res://icon.png&#39;,
-        smallIcon: &#39;res://ic_stat_notify.png&#39;
-    }).then(function ( result ) {
-        console.log(note.title  + &#39; Notification Set&#39;);
-        deferred.resolve( result );
-    }, function ( error ) {
-        console.log( &#39;setUpNotification ERROR: &#39; + error );
-        deferred.reject( error );
-    });
-            
-    return deferred.promise;
-};
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the code above the object being sent to the plugin has an &lt;code&gt;icon&lt;/code&gt; and an &lt;code&gt;smallIcon&lt;/code&gt; property.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;icon&lt;/code&gt; is the large icon that appears in the notifications listing. Typically this icon is the same as your application&amp;rsquo;s icon so that there is a visual association between the notification and the application that scheduled it.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;smallIcon&lt;/code&gt; property sets the small icon that appears in two places: in the status bar when a notification occurs and next to the larger icon in the notifications listing to visually associate the icon in the status bar with both the notification and the application.&lt;/p&gt;
-
-&lt;h2 id=&#34;where-do-these-icons-go&#34;&gt;Where Do These Icons Go?&lt;/h2&gt;
-
-&lt;p&gt;In that code sample, notice that the links to these icons are prefixed with &lt;code&gt;res://&lt;/code&gt;. That means these icons are located in the &lt;code&gt;platforms/android/res&lt;/code&gt; folder which is where the icons for each screen density reside. The &lt;code&gt;res&lt;/code&gt; folder has several folders in it with names like &lt;code&gt;drawable-hdpi&lt;/code&gt; and inside each of these folders there should already be a file named &lt;code&gt;icon.png&lt;/code&gt;. When you build the Android platform using the Ionic CLI, images located &lt;code&gt;resources/android/icon&lt;/code&gt; folder renamed and copied into the proper &lt;code&gt;drawable&lt;/code&gt; folder. When your application runs on Android, these folders are used to provide the proper icons for the device&amp;rsquo;s resolution.&lt;/p&gt;
-
-&lt;p&gt;Let me try to make this more succinct:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The images for the &lt;code&gt;icon&lt;/code&gt; property are in your &lt;code&gt;resources/android/icons&lt;/code&gt; folder, automatically created for you by Ionic. You should update those images for your application and when you use the &lt;code&gt;ionic build android&lt;/code&gt; command, those files are copied to the correct folder.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The images for the &lt;code&gt;smallIcon&lt;/code&gt; property need to be created.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;how-big-are-the-status-bar-icons&#34;&gt;How Big Are The Status Bar Icons?&lt;/h2&gt;
-
-&lt;p&gt;The status bar icons need to be created for each Android screen pixel density. With a little research I was able to find out what sizes are required:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;22 × 22 area in 24 × 24 (mdpi)&lt;br /&gt;
-33 × 33 area in 36 × 36 (hdpi)&lt;br /&gt;
-44 × 44 area in 48 × 48 (xhdpi)&lt;br /&gt;
-66 × 66 area in 72 × 72 (xxhdpi)&lt;br /&gt;
-88 × 88 area in 96 × 96 (xxxhdpi)&lt;br /&gt;&lt;br /&gt;
-Reference: &lt;a href=&#34;http://iconhandbook.co.uk/reference/chart/android/&#34;&gt;Icon Handbook&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The above reference is telling us that, for instance, for the xxxhdpi screen density a 96 x 96 pixel icon file using an area 88 x 88 pixels need to be created. Basically, center your 88 x 88 pixel graphic in your 96 x 96 pixel image.&lt;/p&gt;
-
-&lt;p&gt;Per the &lt;a href=&#34;https://developer.android.com/guide/practices/ui_guidelines/icon_design.html&#34;&gt;Android guidelines&lt;/a&gt;, you should use the prefix &lt;code&gt;ic_stat_notify_&lt;/code&gt; (&amp;ldquo;ic&amp;rdquo; for icon, &amp;ldquo;stat&amp;rdquo; for status bar, &amp;ldquo;notify&amp;rdquo; for notification) for the image name. These files should be white on transparency and should be saved in the PNG file format. For the purpose of this example, I simply used the name &lt;code&gt;ic_stat_notify&lt;/code&gt; as I was only using one file for every notification. Each file should be placed into the proper screen density folder. For instance, the 36 x 36 icon image for the hdpi screen density should go into the &lt;code&gt;platforms/android/res/drawable-hdpi&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; You can put these files into the &lt;code&gt;platforms/android/res/&lt;/code&gt; folders, but if you ever need to run the &lt;code&gt;ionic platform remove android&lt;/code&gt; command, you&amp;rsquo;ll find that those images have disappeared. Also, if you are working with a team, since the platform folder normally isn&amp;rsquo;t stored in your code repository each team member will need to manually move these files into place. Guess what happens if the icons change. A pain, right? &lt;strong&gt;So don&amp;rsquo;t do it and continue reading.&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;how-can-i-get-the-icons-there-automagically&#34;&gt;How Can I Get The Icons There Automagically?&lt;/h2&gt;
-
-&lt;p&gt;As you can see from the notice above, manually moving these files into place might cause all kinds of troubles for you and your team.&lt;/p&gt;
-
-&lt;p&gt;During my research for this feature I found &lt;a href=&#34;https://github.com/katzer/cordova-plugin-local-notifications/issues/504#issuecomment-139235623&#34;&gt;this little nugget&lt;/a&gt;. Below you will find code that will assist with placing these files into the proper places automatically.&lt;/p&gt;
-
-&lt;p&gt;This Javascript file should be placed into your &lt;code&gt;hooks/after_prepare/&lt;/code&gt; folder. I don&amp;rsquo;t think it matters how the file is named (the ReadMe says &amp;ldquo;Any scripts you add to these directories will be executed before and after the commands corresponding to the directory name.&amp;rdquo;) but the files in this folder are processed when you build your project. To find out more about how this works, take a look at the &lt;code&gt;hooks/ReadMe.md&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;This code assumes you have files named &amp;ldquo;ic_stat_notify.png&amp;rdquo; inside a folder at the root of your project named &lt;code&gt;ic_status_images/{screen density}/&lt;/code&gt;. Set up your folder structure any way you like and edit this code to reflect those changes.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;/*      file: hooks/after_prepare/add_platform_class.js     */
-
-
-#!/usr/bin/env node
-
-var filestocopy = [
-    {
-        &amp;quot;ic_status_images/mdpi/ic_stat_notify.png&amp;quot;:
-        &amp;quot;platforms/android/res/drawable-mdpi/ic_stat_notify.png&amp;quot;
-    },
-    {
-        &amp;quot;ic_status_images/hdpi/ic_stat_notify.png&amp;quot;:
-        &amp;quot;platforms/android/res/drawable-hdpi/ic_stat_notify.png&amp;quot;
-    },
-    {
-        &amp;quot;ic_status_images/xhdpi/ic_stat_notify.png&amp;quot;:
-        &amp;quot;platforms/android/res/drawable-xhdpi/ic_stat_notify.png&amp;quot;
-    },
-    {
-        &amp;quot;ic_status_images/xxhdpi/ic_stat_notify.png&amp;quot;:
-        &amp;quot;platforms/android/res/drawable-xxhdpi/ic_stat_notify.png&amp;quot;
-    },
-    {
-        &amp;quot;ic_status_images/xxxhdpi/ic_stat_notify.png&amp;quot;:
-        &amp;quot;platforms/android/res/drawable-xxxhdpi/ic_stat_notify.png&amp;quot;
-    }
-];
-
-var fs = require(&#39;fs&#39;);
-var path = require(&#39;path&#39;);
-
-// no need to configure below
-var rootdir = process.argv[2];
-console.log(&amp;quot;&amp;quot;);
-console.log(&amp;quot;~~~~ Start Copying Notification Status Icons&amp;quot;);
-filestocopy.forEach(function (obj) {
-    Object.keys(obj).forEach(function (key) {
-        var val = obj[key];
-        var srcfile = path.join(rootdir, key);
-        var destfile = path.join(rootdir, val);
-        console.log(&amp;quot;copying: &amp;quot; + srcfile);
-        console.log(&amp;quot;     to: &amp;quot; + destfile);
-        var destdir = path.dirname(destfile);
-        if (fs.existsSync(srcfile) &amp;amp;&amp;amp; fs.existsSync(destdir)) {
-            fs.createReadStream(srcfile).pipe(
-                fs.createWriteStream(destfile));
-        }
-    });
-});
-console.log(&amp;quot;~~~~ End Copying Notification Status Icons&amp;quot;);
-console.log(&amp;quot;&amp;quot;);
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;I hope this article assists folks with using Local Notifications on Android. Let me know if you have further insights.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Lessons Learned: Unnamed Project 2016-05</title>
-          <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
-          <pubDate>Sat, 28 May 2016 14:57:05 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
-          <description>
-
-&lt;h2 id=&#34;an-unnamed-project&#34;&gt;An Unnamed Project&lt;/h2&gt;
-
-&lt;p&gt;Last month my friends at &lt;a href=&#34;http://www.skywardinteractive.com/&#34;&gt;Skyward Interactive&lt;/a&gt; requested my assistance with a project that needed a cross-platform mobile solution. The project, which will remain unnamed because the client is a start-up, is a prototype for a service and required phone, tablet and server development. The phone apps is for customers, the tablet app is for administrators and the server ties them all together.&lt;/p&gt;
-
-&lt;p&gt;For mobile development Skyward typically builds native iOS applications, but most of their iOS resources were tied up with other projects and since this project had a short deadline and budget they asked me if I could assemble the iOS and Android phone solution. Of course, I decided to use the &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic Framework&lt;/a&gt; to create these prototypes.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-risks&#34;&gt;The Risks&lt;/h2&gt;
-
-&lt;p&gt;Of course, the risks were weighed before committing to a project like this as they should.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Working with Friends:&lt;/strong&gt; When I say the folks at Skyward are my friends, I mean that. These are people who have seen me through some good and bad days. Who have lifted me up when I was down. Who have driven by to check on my house when I was out of town after I had a flash of anxiety during my flight and thought I&amp;rsquo;d left my front door open. These are good people who I didn&amp;rsquo;t want to let down nor with whom I wanted conflict.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Not Knowing What We Don&amp;rsquo;t Know:&lt;/strong&gt; Working with a start-up is a risk category all in itself. I would have no direct interaction with the client and completely trusted Skyward to manage them, but I still had to ask these questions: Do they know what they want? Do they understand the developement process? Will they be active or passive during the project? Will they pay?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Apple Store &amp;amp; Google Play Submissions:&lt;/strong&gt; One interesting point about this project was that the client wanted to place this prototype in the app stores instead of using a service like &lt;a href=&#34;https://developer.apple.com/testflight/&#34;&gt;TestFlight&lt;/a&gt; as a way to test with actual customers. This is always a risk, as you never know how long it will take to get an application reviewed by Apple. Two days? Two weeks?&lt;/p&gt;
-
-&lt;p&gt;In past projects I&amp;rsquo;ve never submitted apps to the stores. Someone else had that responsibility. I&amp;rsquo;ve never submitted an application built using Ionic to the app stores. Skyward had never submitted an app to Google Play. So this is a potential point of failure.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These were the risks as I saw them, eyes wide open, going into the project. On the reward side, I&amp;rsquo;d have another app in the app stores, my first Ionic app in the app stores. It didn&amp;rsquo;t hurt that since I&amp;rsquo;m seriously underemployed at this time I&amp;rsquo;d have billable work. So, off to the races.&lt;/p&gt;
-
-&lt;h2 id=&#34;and-the-work-began&#34;&gt;And The Work Began&lt;/h2&gt;
-
-&lt;p&gt;With wire frames in hand, I began to work laying out the application UI in earnest. I get excited sometimes. This time it cost me in frustration later in the project.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Haste Makes Waste&lt;/strong&gt; &amp;mdash; Don&amp;rsquo;t speed through your application layout. Make certain to take the time to make the UI easily updatable; every project gets a UI update or three. It happens. Plan on it and create HTML and CSS (in this case Sass) files you can maintain even for a prototype. Build it right the first time so the changes will be easy.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;cordova-plugins-and-open-source-software&#34;&gt;Cordova Plugins and Open Source Software&lt;/h2&gt;
-
-&lt;p&gt;This is an observation, not a complaint: open source projects can get stale. For a group of projects like the Cordova plugins, this can be a dangerous thing. Just because the project was updated recently does not mean it very active. Just because a project hasn&amp;rsquo;t had activity in a year doesn&amp;rsquo;t mean the project isn&amp;rsquo;t rock solid.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Get to Know Your OS Project Before Deciding to Use It&lt;/strong&gt; &amp;mdash; Always review any currently open issues on the project&amp;rsquo;s Github site before using any open source projects. It might save your life.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Be a Good OS Citizen&lt;/strong&gt; &amp;mdash; If you find a problem with an open source project make sure you post an issue on the project&amp;rsquo;s Github site, otherwise no one will ever know. If you find a work-around for any issues you encounter or issues already filed, post them as well so everyone else will know, too. If you know how to fix an issue, create a pull request. You may save someone else&amp;rsquo;s life.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;local-notifications&#34;&gt;Local Notifications&lt;/h2&gt;
-
-&lt;p&gt;This project required the use of Local Notifications mainly due to resistance of the time and expense of setting up Push Notifications. Push would have been the proper way, of course, but these are the cards we were dealt. Local Notifications shouldn&amp;rsquo;t be all that tricky, but they can be depending on how you manage them, what kind of data you are given and create and the symptoms that occur when you&amp;rsquo;re doing it wrong.&lt;/p&gt;
-
-&lt;p&gt;For instance, I was receiving specific times of events that reminders were to be created for. The times were given to me as a Unix timestamp. I needed to create a Date object from the timestamp, subtract an hour from that Date object then convert it to a timestamp that Local Notifications could use. That proved  very tricky for me. Eventually I used &lt;a href=&#34;http://momentjs.com/&#34;&gt;Moment.js&lt;/a&gt; to wrangle the Date, time subtraction and creating of Local Notification timestamps and Moment.js was, as always, a joy.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Moment.js Is Your Friend&lt;/strong&gt; &amp;mdash; If you are dealing with dates and time in your application, go ahead and add Moment.js. It is simple to use and worth the effort of being added.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Isolate New Features Before Implementation&lt;/strong&gt; &amp;mdash; Before adding a feature like Local Notifications or Background Geolocation (as I will discuss later) to your project take the time to create prototype projects so you may master these features before adding them to your project. Test them on devices, too. The goal is to be able to ferret out any feature issues before mixing it with your application. You want to be able to avoid working on feature bugs and application bugs at the same time.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A lesson not learned? Notification and status bar icons on Android are not easy. And I still do not know how to make them work. Once I do, I will make a post.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE: 2016-05-30:&lt;/strong&gt; Handle local notification icons on the Android platform by reading my post &lt;a href=&#34;https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/&#34;&gt;Setting Android Icons with Local Notifications&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;background-geolocation-plugin&#34;&gt;Background Geolocation Plugin&lt;/h2&gt;
-
-&lt;p&gt;Background Geolocation should also be easy. And, of course, everyone was very concerned about battery usage. Since we needed a cross-platform solution, but the &lt;a href=&#34;http://shop.transistorsoft.com/pages/cordova-background-geolocation-premium&#34;&gt;normal solution&lt;/a&gt; requires a &lt;a href=&#34;http://shop.transistorsoft.com/pages/cordova-background-geolocation-premium#plans&#34;&gt;premium version purchase&lt;/a&gt;, which the project budget couldn&amp;rsquo;t afford, unfortunately. As always, start-ups typically have shoestring budgets.&lt;/p&gt;
-
-&lt;p&gt;An alternative Cordova plugin for &lt;a href=&#34;https://github.com/mauron85/cordova-plugin-background-geolocation&#34;&gt;Background Geolocation&lt;/a&gt; was available and I decided to take a chance with it. It worked as advertised.&lt;/p&gt;
-
-&lt;p&gt;I did find one issue with this plugin for which &lt;a href=&#34;https://github.com/mauron85/cordova-plugin-background-geolocation/issues/75&#34;&gt;I filed an issue&lt;/a&gt;: the &amp;lsquo;ANDROID_DISTANCE_FILTER&amp;rsquo; setting was throwing an error, oddly enough, on the Android platform. Specifically on my Android Marshmallow phones. Changing the setting to an actual integer, in this case a 0, resolved the issue.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lessons Learned:&lt;/strong&gt; &amp;mdash; See above lessons of isolating a feature before implementing in a project, reviewing issues before committing to using a plugin and filing issues if you find them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Background Geolocation Requires Movement&lt;/strong&gt; &amp;mdash; In the app, we have a feature where the geolocation would automatically shut down after a period of time. I set the code up to check the time after each geolocation ping. During on-device testing I received a bug report stating the feature was not working. I asked &amp;ldquo;Did you move?&amp;rdquo; Yes, the geolocation doesn&amp;rsquo;t usually ping if you don&amp;rsquo;t move about 15 feet or so.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;apple-store-rejections&#34;&gt;Apple Store Rejections&lt;/h2&gt;
-
-&lt;p&gt;Here is where things went wrong. The first submission was rejected by Apple because &amp;ldquo;On launch and content download, your app stores 6.21MB on the user&amp;rsquo;s iCloud, which does not comply with the iOS Data Storage Guidelines.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;The project was using Local Storage, but only to hold two strings in an object. There was no content download. This rejection was a mystery to me and made me very frustrated. To make matters worse, there was no guidance from Apple or online that was helpful in this situation &lt;a href=&#34;https://github.com/phonegap/build/issues/191&#34;&gt;except for this&lt;/a&gt;: set a preference in the Cordova config.xml.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;preference name=&amp;quot;BackupWebStorage&amp;quot; value=&amp;quot;none&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We did that and resubmitted. We were rejected again for the same exact reason.&lt;/p&gt;
-
-&lt;p&gt;Submitting a third time did the trick, but honestly this is still haunting me. What was causing this 6.21MB store? Was it Local Storage? Was it another plugin?Was it a by-product of building the app? Was it anything I was doing or could change or control? I wish I had answers, but I don&amp;rsquo;t.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Lesson Learned: Apple Store rejection is a fact of life.&lt;/strong&gt; &amp;mdash; Sometimes you get rejected. If you can fix what an Apple reviewer complains about, do it. If not, try again. But, for the sake of the project, allow for time for multiple reviews by Apple in your schedule. Right now, the reviews are taking less than 48 hours. Don&amp;rsquo;t count on that always being the case. Consider Apple&amp;rsquo;s schedule of updates to iOS; whenever an update is imminent, every app developer will be updating their apps and submitting them to Apple. Adding three weeks before the deadline might be advisable.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;At the end of the day we have a working prototype live in the Apple Store and the Google Play Store. And I learned a few things about development and myself along the way. My hope is that this post may be of some help to you.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
-</description>
-        </item>
-      
-    
-
   </channel>
 </rss>

@@ -1,308 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leif&#39;s Development Blog-o-rama </title>
+    <title>E2e on Leif&#39;s Development Blog-o-rama</title>
     <link>https://leifwells.github.io/tags/e2e/</link>
+    <description>Recent content in E2e on Leif&#39;s Development Blog-o-rama</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2017</rights>
-    <updated>2017-09-05 22:19:35 -0400 EDT</updated>
-
+    <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
+    <lastBuildDate>Tue, 05 Sep 2017 22:19:35 -0400</lastBuildDate>
     
+	<atom:link href="https://leifwells.github.io/tags/e2e/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Testing in Ionic: Code Coverage</title>
+      <link>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</link>
+      <pubDate>Tue, 05 Sep 2017 22:19:35 -0400</pubDate>
       
-        <item>
-          <title>Testing in Ionic: Code Coverage</title>
-          <link>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</link>
-          <pubDate>Tue, 05 Sep 2017 22:19:35 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</guid>
-          <description>
-
-&lt;p&gt;Today, an update made to the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Wait. You aren&amp;rsquo;t using automated testing with your Ionic applications?&lt;/strong&gt; Wow, you are living dangerously. Well, if you are interested in getting unit testing and end-to-end testing working in your Ionic projects, you should &lt;a href=&#34;https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/&#34;&gt;check out this post instead&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;what-is-code-coverage&#34;&gt;What is Code Coverage?&lt;/h2&gt;
-
-&lt;p&gt;Wikipedia says &lt;a href=&#34;https://en.wikipedia.org/wiki/Code_coverage&#34;&gt;&amp;ldquo;code coverage is a measure used to describe the degree to which the source code of a program is executed when a particular test suite runs.&amp;rdquo;&lt;/a&gt; Essentially, when you run the script for code coverage in your Ionic project, the unit tests in your project are run, and analysis of the code being run is generated into a Web site in which you can drill down into and see where more testing work may be needed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/1648535/30074946-54a36e50-9241-11e7-9ca8-6263d0353c58.png&#34; alt=&#34;&#34; /&gt;
-&lt;em&gt;Sample of the first page of the code coverage documentation.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;what-does-this-mean-for-developers&#34;&gt;What Does This Mean for Developers?&lt;/h2&gt;
-
-&lt;p&gt;So, here&amp;rsquo;s the &lt;strong&gt;worst case scenario&lt;/strong&gt;: Your immediate manager drops by your cube and tells you that his high-level manager&amp;rsquo;s manager&amp;rsquo;s manager has decided that all company code needs to have unit tests. You have some testing in your project, but you have no idea if you have covered everything that needs to be tested. &lt;em&gt;How do you prove you have any testing in your project at all?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;That is where code coverage documentation comes in. You run the command to create the code coverage documentation and you have the proof.&lt;/p&gt;
-
-&lt;p&gt;On a more practical level, using code coverage documentation is a great way to receive feedback on how well your testing practice is going, give your project managers an idea of how much work may be required for future testing efforts, and allow the whole team to have confidence in the project&amp;rsquo;s future performance.&lt;/p&gt;
-
-&lt;p&gt;Simply put, having code coverage documentation available for your project should be used for more than covering your @$$. Leverage the information for greatest effect for you, your testing practice, and your projects.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-add-code-coverage&#34;&gt;How to Add Code Coverage?&lt;/h2&gt;
-
-&lt;p&gt;The latest code is available on &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example&#34;&gt;Github&lt;/a&gt;. The changes can be applied to your project by following these steps:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Advanced Instructions:&lt;/strong&gt; If you are comfortable adding this feature manually, take a look at &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example/commit/4209c99ddb8e48b6fc914afc51be7ec34e27ca84&#34;&gt;this commit&lt;/a&gt; to see what actually changed. Once the changes have been made, run the &lt;code&gt;npm run test-coverage&lt;/code&gt; command.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Install the following modules into your project:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev karma-coverage-istanbul-reporter istanbul-instrumenter-loader
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Add a new script to your &lt;code&gt;package.json&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;quot;test-coverage&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js --coverage&amp;quot;,
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Step 3 requires files to be replaced. If you have already altered these files, please look at the commits for this project and review the changes. Do not delete or replace files in your project without making backups.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Replace your &lt;a href=&#34;https://raw.githubusercontent.com/ionic-team/ionic-unit-testing-example/master/test-config/karma.conf.js&#34;&gt;&lt;code&gt;test-config/karma.conf.js&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://raw.githubusercontent.com/ionic-team/ionic-unit-testing-example/master/test-config/webpack.test.js&#34;&gt;&lt;code&gt;test-config/webpack-test.js&lt;/code&gt;&lt;/a&gt; files in your project with those from this project.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Run the &lt;code&gt;npm run test-coverage&lt;/code&gt; command. Your unit tests will be run and the documentation will be generated in a folder named &lt;code&gt;coverage&lt;/code&gt; in the root of your project. Just open the &lt;code&gt;index.html&lt;/code&gt; file in the folder in a browser and see how well your project is covered.&lt;/p&gt;
-
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;Testing by itself isn&amp;rsquo;t the end-all thing your projects need to be successful. It is one of many piece to that puzzle. Having code coverage documentation is helpful for quantifying the level of testing you are performing, and can assisting you in focusing improvement efforts. Add code coverage to your testing practice.&lt;/p&gt;
-</description>
-        </item>
+      <guid>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</guid>
+      <description>Today, an update made to the ionic-unit-testing-example project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.
+ Wait. You aren&amp;rsquo;t using automated testing with your Ionic applications? Wow, you are living dangerously. Well, if you are interested in getting unit testing and end-to-end testing working in your Ionic projects, you should check out this post instead.</description>
+    </item>
+    
+    <item>
+      <title>Testing in Ionic: Configure Existing Projects for Testing</title>
+      <link>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</link>
+      <pubDate>Sun, 27 Aug 2017 16:24:28 -0400</pubDate>
       
+      <guid>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</guid>
+      <description>So, you have an existing Ionic project and now you want to start unit testing and end-to-end testing it. A great way to configure your existing project for testing is use the ionic-unit-testing-example project on Github. This post will provide you with step-by-step instructions on how to add modules and files from that project into your own project so you may begin testing your project.
+While the name of the project is ionic-unit-testing-example, the project actually sets up two kinds of testing: unit testing and end-to-end (E2E) testing.</description>
+    </item>
     
-      
-        <item>
-          <title>Testing in Ionic: Configure Existing Projects for Testing</title>
-          <link>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</link>
-          <pubDate>Sun, 27 Aug 2017 16:24:28 EDT</pubDate>
-          <author></author>
-          <guid>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</guid>
-          <description>
-
-&lt;p&gt;So, you have an existing &lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt; project and now you want to start unit testing and end-to-end testing it. A great way to configure your existing project for testing is use the &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example&#34;&gt;&lt;code&gt;ionic-unit-testing-example&lt;/code&gt;&lt;/a&gt; project on Github. This post will provide you with step-by-step instructions on how to add modules and files from that project into your own project so you may begin testing your project.&lt;/p&gt;
-
-&lt;p&gt;While the name of the project is &lt;code&gt;ionic-unit-testing-example&lt;/code&gt;, the project actually sets up two kinds of testing: unit testing and end-to-end (E2E) testing. For the purposes of this tutorial, unit testing is isolating components for testing, and end-to-end testing automates the browser and simulates user interactivity to allow the testing of how the whole application works.&lt;/p&gt;
-
-&lt;p&gt;Testing and Test Driven Development can be controversial topics in some circles. How you go about testing is up to you and your team.  Personally, I believe that you should have both unit tests for your components and E2E tests for your application. How you get there is up to you.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Trigger Warning:&lt;/strong&gt; Unit testing and end-to-end testing can be challenging and frustrating even for experienced developers. Getting tests to pass can take patience and experience. You should learn as much as possible about testing before beginning your testing practice. Take your time, ask questions of your peers, seek assistance online, and above all, don&amp;rsquo;t let a continuosly failing test get the better of you. You will overcome it.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This tutorial was assembled with the following software installed (this information gathered by using the &lt;code&gt;ionic info&lt;/code&gt; command):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ionic info
-
-cli packages: (/Users/leifwells/.nvm/versions/node/v6.11.2/lib/node_modules)
-
-    @ionic/cli-utils  : 1.9.2
-    ionic (Ionic CLI) : 3.9.2
-
-local packages:
-
-    @ionic/app-scripts : 2.1.3
-    Ionic Framework    : ionic-angular 3.6.0
-
-System:
-
-    Node : v6.11.2
-    npm  : 3.10.10 
-    OS   : macOS Sierra
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;step-1-create-a-project-to-test-optional&#34;&gt;Step 1: Create a Project to Test (Optional)&lt;/h2&gt;
-
-&lt;p&gt;Since we do not know anything about your project, so we will be using an Ionic starter project as our starting point. To create it, open up your terminal application, navigate to the folder where you would like to add a new project, and run the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;ionic start starter-with-testing sidemenu
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This command will create a directory named &lt;code&gt;starter-with-testing&lt;/code&gt; and install the code for an Ionic application using the side menu template.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Please Note:&lt;/strong&gt; This step is not necessary if you are adding content to your own project. Since we can&amp;rsquo;t see your project, we needed a point of reference to get these instructions started.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Now, navigate your terminal window to the installed folder and run the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd starter-with-testing
-ionic serve
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once you have the application running, you have completed this step.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-2-get-the-example-code&#34;&gt;Step 2: Get the Example Code&lt;/h2&gt;
-
-&lt;p&gt;Head over to &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example&#34;&gt;&lt;code&gt;ionic-unit-testing-example&lt;/code&gt;&lt;/a&gt; and download the code. You don&amp;rsquo;t need to load or run the project. We&amp;rsquo;ll be moving files and code from that project into our project code.&lt;/p&gt;
-
-&lt;p&gt;You can use the green &amp;ldquo;Clone or download&amp;rdquo; to download a .zip file of the project. Click the button to reveal the &amp;ldquo;Clone with SSH&amp;rdquo; popover and click on the &amp;ldquo;Download ZIP&amp;rdquo; button to begin the process.&lt;/p&gt;
-
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://leifwells.github.io/images/2017-08-27_clone_or_download.png&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Figure 1: The Clone or download popover.&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-&lt;br /&gt;
-Once the file is downloaded, decompress it and open the containing folder so that it is available when we need it.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-3-install-required-node-modules&#34;&gt;Step 3: Install Required Node Modules&lt;/h2&gt;
-
-&lt;p&gt;There are a handfull of Node modules required for testing to work with and Ionic application and need to be added to our project. While you can install each of these modules separately, we&amp;rsquo;ve organized the install process into one handy command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;npm install --save-dev angular2-template-loader html-loader jasmine jasmine-spec-reporter karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter karma-sourcemap-loader karma-webpack karma-coverage-istanbul-reporter istanbul-instrumenter-loader null-loader protractor ts-loader ts-node @types/jasmine @types/node
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This command adds these modules to the &lt;code&gt;&amp;quot;devDependencies&amp;quot;&lt;/code&gt; node of your project&amp;rsquo;s &lt;code&gt;package.json&lt;/code&gt; file. There are quite a few modules here, but the important modules are &lt;code&gt;karma&lt;/code&gt;, &lt;code&gt;jasmine&lt;/code&gt; and &lt;code&gt;protractor&lt;/code&gt;. &lt;code&gt;karma&lt;/code&gt; is the Karma module which is our testing environment for unit testing. &lt;code&gt;jasmine&lt;/code&gt; is the Jasmine module which is the unit testing framework. &lt;code&gt;protractor&lt;/code&gt; is the Protractor module which is our testing environment for our end-to-end tests. The rest of the modules are utilities that allow this configuration to work.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-4-add-scripts-to-the-package-json&#34;&gt;Step 4: Add Scripts to the &lt;code&gt;package.json&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;There are a couple of scripts that need to be added to the &lt;code&gt;package.json&lt;/code&gt; to make running tests from the command-line possible. Open the &lt;code&gt;package.json&lt;/code&gt; file and add the following scripts to your &lt;code&gt;&amp;quot;scripts&amp;quot;&lt;/code&gt; node:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;quot;test&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js&amp;quot;,
-&amp;quot;test-ci&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js --single-run&amp;quot;,
-&amp;quot;test-coverage&amp;quot;: &amp;quot;karma start ./test-config/karma.conf.js --coverage&amp;quot;,
-&amp;quot;e2e&amp;quot;: &amp;quot;npm run e2e-update &amp;amp;&amp;amp; npm run e2e-test&amp;quot;,
-&amp;quot;e2e-test&amp;quot;: &amp;quot;protractor ./test-config/protractor.conf.js&amp;quot;,
-&amp;quot;e2e-update&amp;quot;: &amp;quot;webdriver-manager update --standalone false --gecko false&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; Make sure you add a trailing comma on the line above this code or your &lt;code&gt;package.json&lt;/code&gt; will stop working. Your code editor should inform you of the missing comma.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;With the addition of these items, you will be able to enter the &lt;code&gt;npm run test&lt;/code&gt; command to begin unit testing, or &lt;code&gt;npm run e2e&lt;/code&gt; to begin end-to-end testing.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-5-add-the-configuration-files&#34;&gt;Step 5: Add the Configuration Files&lt;/h2&gt;
-
-&lt;p&gt;The control center for this testing configuration are a set of files that are inside the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; project which need to be added to our project. Open the folder where &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; was decompressed earlier and locate the &lt;code&gt;test-config&lt;/code&gt; folder. Copy and paste that folder into the root of our project.
-Open the folder in your code editor and take a look. You should see five files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;karma-test-shim.js
-karma-config.js
-mocks-ionic.js
-protractor.conf.js
-webpack.test.js
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;karma-config.js&lt;/code&gt; file is the configuration file for Karma. It uses &lt;code&gt;karma-test-shim.js&lt;/code&gt; to link more modules required for testing and &lt;code&gt;webpack.test.js&lt;/code&gt; to configure and compile our code for testing.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;protractor.conf.js&lt;/code&gt; file is the configuration file for Protractor.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;mocks-ionic.js&lt;/code&gt; file is a collection of classes that are used to as a substitute for classes in the &lt;code&gt;ionic-angular&lt;/code&gt; module for testing. We will discuss mocking further later in this tutorial.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-6-adding-end-to-end-testing&#34;&gt;Step 6: Adding End-to-end Testing&lt;/h2&gt;
-
-&lt;p&gt;Now that our unit testing configuration is set up, we need to add one more folder to our project so we can implement the end-to-end testing solution. Copy the &lt;code&gt;e2e&lt;/code&gt; folder found inside the location where you decompressed .zip file from the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; and paste that folder into the root of your project. This folder has the following files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;app.e2e-spec.ts
-app.po.ts
-tsconfig.json
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;tsconfig.json&lt;/code&gt; file is an important configuration file which assists with compiling the project and tests for end-to-end testing. The file is placed here because it isolates it from the project&amp;rsquo;s &lt;code&gt;tsconfig.json&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;app.e2e-spec.ts&lt;/code&gt; file is an actual E2E test file. Note the name of the test as our configuration file is looking for files that have the &lt;code&gt;.e2e-spec.ts&lt;/code&gt; as part of the name to identify it as an E2E test and not an unit test. The &lt;code&gt;app.po.ts&lt;/code&gt; is an example of a page object, a helper file that assists in providing utility methods for locating elements and processing expected results. You can find out &lt;a href=&#34;http://www.protractortest.org/#/page-objects&#34;&gt;more about page objects on the Protractor Website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you are following along with this tutorial, when you run the &lt;code&gt;npm run e2e&lt;/code&gt; command in your terminal window, this test should work. If you run this test with your project, it will probably fail. You will need to update the test to make it work for you.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; When you run E2E tests, make sure you are running &lt;code&gt;ionic serve&lt;/code&gt; in another terminal window. The E2E configuration expects to have a connection to the server and if it is not it will fail with an error.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;adding-your-first-unit-test&#34;&gt;Adding Your First Unit Test&lt;/h2&gt;
-
-&lt;p&gt;Before you can begin testing, you need to have a test file. To make sure the testing configuration is working, we&amp;rsquo;ll add a file to our project to test that the application loads.&lt;/p&gt;
-
-&lt;p&gt;Open the &lt;code&gt;src/app/&lt;/code&gt; folder in your project and create a new file named &lt;code&gt;app.component.spec.ts&lt;/code&gt;. This will be our unit test file for the &lt;code&gt;MyApp&lt;/code&gt; class which is inside the &lt;code&gt;app.component&lt;/code&gt; file. Inside this new file, copy and paste the following code:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/leifwells/d2f5f442dcbd9617f2e3f0572db5ea76.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;This is not a tutorial on how to create tests, but&lt;/strong&gt; let&amp;rsquo;s take a brief look at this test code.&lt;/p&gt;
-
-&lt;h2 id=&#34;angular-testing-utilities&#34;&gt;Angular Testing Utilities&lt;/h2&gt;
-
-&lt;p&gt;As you can see, the test file has the typical methods for unit testing: &lt;code&gt;describe&lt;/code&gt;, &lt;code&gt;beforeEach&lt;/code&gt;, and &lt;code&gt;it&lt;/code&gt;. Inside the first &lt;code&gt;beforeEach&lt;/code&gt; is a call to the &lt;code&gt;TestBed&lt;/code&gt; object&amp;rsquo;s &lt;code&gt;configureTestingModule()&lt;/code&gt; method. &lt;code&gt;TestBed&lt;/code&gt; is a module provided by the Angular team to facilitate testing. To find out more about testing in Angular, please read the &lt;a href=&#34;https://angular.io/guide/testing&#34;&gt;Angular Testing Guide&lt;/a&gt;. Seriously, read that documentation a few times and let it sink in.&lt;/p&gt;
-
-&lt;p&gt;Now, take a look at places where &lt;code&gt;MyApp&lt;/code&gt; is listed. &lt;code&gt;MyApp&lt;/code&gt; is the component being tested here, and appears in the class import, inside the &lt;code&gt;TestBed.configureTestingModule()&lt;/code&gt; method inside the &lt;code&gt;declarations&lt;/code&gt; array, inside the &lt;code&gt;imports&lt;/code&gt; array, and also in the second &lt;code&gt;beforeEach&lt;/code&gt; method when the component is actually created. This is how each of your test files will work.&lt;/p&gt;
-
-&lt;p&gt;The first test, the code inside the first &lt;code&gt;it&lt;/code&gt; instance, checks to see if the &lt;code&gt;MyApp&lt;/code&gt; component is created. The second test checks that the &lt;code&gt;pages&lt;/code&gt; array created in the &lt;code&gt;MyApp&lt;/code&gt; class has two items.&lt;/p&gt;
-
-&lt;h2 id=&#34;mocking-ionic-classes&#34;&gt;Mocking Ionic Classes&lt;/h2&gt;
-
-&lt;p&gt;Another note of interest: mocking Ionic classes. With unit testing, developers should try to isolate the component to be tested. If you include the actual classes, technically you would be testing the Ionic framework, which is unnecessary.&lt;/p&gt;
-
-&lt;p&gt;To understand how mocking works, look at the structure of items inside the &lt;code&gt;providers&lt;/code&gt; array. Typically,providers are listed simply by adding the class name to the array. In this case, we are mocking the classes using the &lt;code&gt;provide&lt;/code&gt; property to identify the name of the class to be mocked, and the &lt;code&gt;useClass&lt;/code&gt; property to identify the class to serve as the mock. We are using the mocks provided by the &lt;code&gt;ionic-unit-testing-example&lt;/code&gt; project found in the &lt;code&gt;test-config/mocks-ionic.ts&lt;/code&gt; file mentioned earlier.&lt;/p&gt;
-
-&lt;p&gt;If you choose to not use mocks for Ionic classes, what may happen is that errors will occur running you down a never-ending rabbit hole. Mocking Ionic classes is the best way to avoid this problem.&lt;/p&gt;
-
-&lt;h2 id=&#34;what-to-expect-when-unit-testing&#34;&gt;What to Expect When Unit Testing&lt;/h2&gt;
-
-&lt;p&gt;This test is a sample test that will work with the project we are using in this tutorial and may not work for you. If you add this file to your own project and run the &lt;code&gt;npm run test&lt;/code&gt; command, what you may expect is an error stating that &lt;code&gt;no provider for&lt;/code&gt; or &lt;code&gt;no declaration for&lt;/code&gt;, at which point you will import that class into this file, add the class name to the &lt;code&gt;providers&lt;/code&gt; array or the &lt;code&gt;declarations&lt;/code&gt; array inside the &lt;code&gt;TestBed.configureTestingModule()&lt;/code&gt; method argument object.&lt;/p&gt;
-
-&lt;p&gt;You will probably need to create mock classes for your own providers. These mocks should accurately reflect the same methods but return expected values, for instance, mock data instead of data from a server.&lt;/p&gt;
-
-&lt;p&gt;Reviewing the Angular Testing documentation will help you with testing your Ionic application. There are concepts described there that will assist you with testing processes that are asynchronous, as well as best practices to follow.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Sometimes when working on a unit test, you will not find a way to test a particular scenario. The problem may not be your test. It may be your code. Are the methods in your component too complex? Could you refactor your code to make your component more maintanable as well as more testable? Make sure you are looking at both sides, the test and the code you are testing, to ensure you have a successful testing practice.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;reviewing-the-e2e-test&#34;&gt;Reviewing the E2E Test&lt;/h2&gt;
-
-&lt;p&gt;Earlier, we added the &lt;code&gt;e2e&lt;/code&gt; folder to our project which contained our first E2E test. Let&amp;rsquo;s take a look at it.&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/leifwells/266bbd53503eaf2f0d1b9675e8610ef3.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Again, we see the typical testing methods of &lt;code&gt;describe&lt;/code&gt;, &lt;code&gt;beforeEach&lt;/code&gt; and &lt;code&gt;it&lt;/code&gt;. One this of note here is the use of a second &lt;code&gt;describe&lt;/code&gt; method. This is used to help with organizing your tests.&lt;/p&gt;
-
-&lt;p&gt;Inside your E2E tests, you will be using Promises. A lot. Good tests will chain Promises. You can find out more about how to structure your tests by reviewing the &lt;a href=&#34;http://www.protractortest.org/#/tutorial&#34;&gt;Protractor Tutorial&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;In this tutorial, we created an example Ionic (&lt;code&gt;ionic-angular&lt;/code&gt;) project to configure for unit and end-to-end testing. We used the &lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example&#34;&gt;&lt;code&gt;ionic-unit-testing-example&lt;/code&gt;&lt;/a&gt; project on Github as a guide for installing the necessary node modules and configuration files to the project to get unit testing and E2E testing to work. Then we took a brief look at the test files. Hopefully, this will give you enough information to get you started with testing your own Ionic applications.&lt;/p&gt;
-
-&lt;h3 id=&#34;links-for-this-article&#34;&gt;Links for this article:&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/ionic-team/ionic-unit-testing-example&#34;&gt;ionic-unit-testing-example&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://ionicframework.com/&#34;&gt;Ionic&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://angular.io&#34;&gt;Angular&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://angular.io/guide/testing&#34;&gt;Angular Testing&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://karma-runner.github.io/1.0/index.html&#34;&gt;Karma&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://jasmine.github.io/&#34;&gt;Jasmine&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.protractortest.org/&#34;&gt;Protractor&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;updates&#34;&gt;Updates:&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;h4 id=&#34;2017-09-06-br&#34;&gt;&lt;strong&gt;2017-09-06:&lt;/strong&gt;&lt;br /&gt;&lt;/h4&gt;
-
-&lt;p&gt;Added &lt;a href=&#34;https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/&#34;&gt;code coverage feature&lt;/a&gt; steps.&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;2017-09-02-br&#34;&gt;&lt;strong&gt;2017-09-02:&lt;/strong&gt;&lt;br /&gt;&lt;/h4&gt;
-
-&lt;p&gt;Replaced two Markdown code blocks with Github Gists.&lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/leifwells&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34; data-size=&#34;large&#34;&gt;Follow @leifwells&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rsquo;://platform.twitter.com/widgets.js&amp;rsquo;;fjs.parentNode.insertBefore(js,fjs);}}(document, &amp;lsquo;script&amp;rsquo;, &amp;lsquo;twitter-wjs&amp;rsquo;);&lt;/script&gt;&lt;/p&gt;
-</description>
-        </item>
-      
-    
-
   </channel>
 </rss>
