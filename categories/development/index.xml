@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Leif&#39;s Development Blog-o-rama</title>
-    <link>https://leifwells.github.io/categories/development/</link>
+    <link>http://leifwells.com/categories/development/</link>
     <description>Recent content in Development on Leif&#39;s Development Blog-o-rama</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Tue, 05 Sep 2017 22:19:35 -0400</lastBuildDate>
     
-	<atom:link href="https://leifwells.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://leifwells.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Testing in Ionic: Code Coverage</title>
-      <link>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</link>
+      <link>http://leifwells.com/2017/09/05/testing-in-ionic-code-coverage/</link>
       <pubDate>Tue, 05 Sep 2017 22:19:35 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</guid>
+      <guid>http://leifwells.com/2017/09/05/testing-in-ionic-code-coverage/</guid>
       <description>Today, an update made to the ionic-unit-testing-example project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.
  Wait. You aren&amp;rsquo;t using automated testing with your Ionic applications? Wow, you are living dangerously. Well, if you are interested in getting unit testing and end-to-end testing working in your Ionic projects, you should check out this post instead.</description>
     </item>
     
     <item>
       <title>Testing in Ionic: Configure Existing Projects for Testing</title>
-      <link>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</link>
+      <link>http://leifwells.com/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</link>
       <pubDate>Sun, 27 Aug 2017 16:24:28 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</guid>
+      <guid>http://leifwells.com/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</guid>
       <description>So, you have an existing Ionic project and now you want to start unit testing and end-to-end testing it. A great way to configure your existing project for testing is use the ionic-unit-testing-example project on Github. This post will provide you with step-by-step instructions on how to add modules and files from that project into your own project so you may begin testing your project.
 While the name of the project is ionic-unit-testing-example, the project actually sets up two kinds of testing: unit testing and end-to-end (E2E) testing.</description>
     </item>
     
     <item>
       <title>Getting Angular CLI Apps to Work Inside Electron</title>
-      <link>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
+      <link>http://leifwells.com/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</link>
       <pubDate>Sun, 12 Jun 2016 11:41:41 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
+      <guid>http://leifwells.com/2016/06/12/getting-angular-cli-apps-to-work-inside-electron/</guid>
       <description>I started working on a new Electron application using the Angular CLI and found a solution to a show-stopping problem that I thought that I should share.
 What is Electron? For those who haven&amp;rsquo;t heard of it, Electron is a technology that combines Node and Chromium and allows Web developers to build desktop applications using their skills with HTML/CSS/JavaScript. Electron was built by Github as a shell for their Atom coding tool.</description>
     </item>
     
     <item>
       <title>Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</title>
-      <link>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</link>
+      <link>http://leifwells.com/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</link>
       <pubDate>Thu, 09 Jun 2016 15:31:45 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</guid>
+      <guid>http://leifwells.com/2016/06/09/ionic-2--angular-2-using-a-google-spreadsheet-as-a-data-source/</guid>
       <description>This week I was asked by my friend Chris Griffith about using a Google spread sheet as a data source for a prototype he was building. Both Chris and I build prototypes as part of our daily jobs, so the question makes sense; what happens when you need to use archived data &amp;mdash; data that you need will need to update from time to time &amp;mdash; but you don&amp;rsquo;t have the time to build a server application or use something like Firebase to deliver the content?</description>
     </item>
     
     <item>
       <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
-      <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
+      <link>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
       <pubDate>Fri, 03 Jun 2016 22:15:27 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
+      <guid>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
       <description>I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.
 Lets take a look at the typical code to create a Local Notification in Ionic 1:
  In the object being passed to the schedule method you see a sound property. This property is set to the default sound represented by &#39;res://platform_default&#39; which, of course, is the sound that the user has selected as their notification sound.</description>
@@ -64,49 +64,49 @@ Lets take a look at the typical code to create a Local Notification in Ionic 1:
     
     <item>
       <title>Setting Android Icons with Local Notifications</title>
-      <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
+      <link>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</link>
       <pubDate>Mon, 30 May 2016 00:01:31 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
+      <guid>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</guid>
       <description>My previous post lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.
 Understanding How Notifications Work on Android The Android platform a notification requires two icons.</description>
     </item>
     
     <item>
       <title>Lessons Learned: Unnamed Project 2016-05</title>
-      <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+      <link>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
       <pubDate>Sat, 28 May 2016 14:57:05 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+      <guid>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
       <description>An Unnamed Project Last month my friends at Skyward Interactive requested my assistance with a project that needed a cross-platform mobile solution. The project, which will remain unnamed because the client is a start-up, is a prototype for a service and required phone, tablet and server development. The phone apps is for customers, the tablet app is for administrators and the server ties them all together.
 For mobile development Skyward typically builds native iOS applications, but most of their iOS resources were tied up with other projects and since this project had a short deadline and budget they asked me if I could assemble the iOS and Android phone solution.</description>
     </item>
     
     <item>
       <title>Why EverythingIsInBeta?</title>
-      <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
+      <link>http://leifwells.com/2016/04/16/why-everythingisinbeta/</link>
       <pubDate>Sat, 16 Apr 2016 23:44:14 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
+      <guid>http://leifwells.com/2016/04/16/why-everythingisinbeta/</guid>
       <description>I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?
 MY BRAIN HURTS! But seriously, it&amp;rsquo;s difficult to jump in and learn new technology. It makes it even more difficult when that technology is in beta. It becomes frustratingly dumbfounding when that beta technology is dependent upon other beta technologies.</description>
     </item>
     
     <item>
       <title>AngularFire 2 at the AngularJS Mountain View Meetup</title>
-      <link>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
+      <link>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
       <pubDate>Sat, 16 Apr 2016 12:21:17 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
+      <guid>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
       <description>&amp;ldquo;I&amp;rsquo;m building an Ionic 2 starter with social login using Firebase!&amp;rdquo; said hundreds of developers participating in the Ionic 2 beta. Yeah, I&amp;rsquo;m doing it as well. It&amp;rsquo;s not a bad idea. Usually, if your app uses online data your users will be required to login. Creating a starter app &amp;mdash;&amp;ndash; a set of code from which you can base a new application upon &amp;mdash;&amp;ndash; would certainly save time and effort creating new applications.</description>
     </item>
     
     <item>
       <title>Rebooting &amp; Clearing the Cache of My Professional Life</title>
-      <link>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
+      <link>http://leifwells.com/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
       <pubDate>Fri, 15 Apr 2016 22:38:06 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
+      <guid>http://leifwells.com/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
       <description>Welcome to my new blog. I plan to write about many things here &amp;mdash;&amp;ndash; life, television, movies &amp;mdash;&amp;ndash; but I will be focusing a lot of my efforts around my work as a Web and mobile application developer.
 A lot has changed for me over the past few years. I went from being an RIA Evangelist at Roundbox (now defunct) to working at Measured Progress to freelancing and feeling fairly underemployed.</description>
     </item>

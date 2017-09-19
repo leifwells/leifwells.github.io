@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Leif&#39;s Development Blog-o-rama</title>
-    <link>https://leifwells.github.io/categories/about/</link>
+    <link>http://leifwells.com/categories/about/</link>
     <description>Recent content in About on Leif&#39;s Development Blog-o-rama</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Fri, 15 Apr 2016 22:38:06 -0400</lastBuildDate>
     
-	<atom:link href="https://leifwells.github.io/categories/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://leifwells.com/categories/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rebooting &amp; Clearing the Cache of My Professional Life</title>
-      <link>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
+      <link>http://leifwells.com/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</link>
       <pubDate>Fri, 15 Apr 2016 22:38:06 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
+      <guid>http://leifwells.com/2016/04/15/rebooting--clearing-the-cache-of-my-professional-life/</guid>
       <description>Welcome to my new blog. I plan to write about many things here &amp;mdash;&amp;ndash; life, television, movies &amp;mdash;&amp;ndash; but I will be focusing a lot of my efforts around my work as a Web and mobile application developer.
 A lot has changed for me over the past few years. I went from being an RIA Evangelist at Roundbox (now defunct) to working at Measured Progress to freelancing and feeling fairly underemployed.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://leifwells.github.io/2016/04/15/about-me/</link>
+      <link>http://leifwells.com/2016/04/15/about-me/</link>
       <pubDate>Fri, 15 Apr 2016 15:58:34 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/15/about-me/</guid>
+      <guid>http://leifwells.com/2016/04/15/about-me/</guid>
       <description>This is a narrative of my professional life. If this is too long for your attention deprived mind, please visit my Linked In profile; but I am so very much more than my resume. Follow me on Twitter but be warned, I tweet about a many different things, not just technology.
 Last Updated: 2016-04-16T18:40:00
 Shadowboxes: The Beginning I&amp;rsquo;ve been a developer for more than 20 years. After months of stealing computer time at a local college to train myself in Macromedia Director, I was brought on to an interactive media team at IBM&amp;rsquo;s Eduquest to work on a children&amp;rsquo;s interactive CD-ROM story book based on Laura L.</description>

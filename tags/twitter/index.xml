@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Twitter on Leif&#39;s Development Blog-o-rama</title>
-    <link>https://leifwells.github.io/tags/twitter/</link>
+    <link>http://leifwells.com/tags/twitter/</link>
     <description>Recent content in Twitter on Leif&#39;s Development Blog-o-rama</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Sat, 07 May 2016 18:35:39 -0400</lastBuildDate>
     
-	<atom:link href="https://leifwells.github.io/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://leifwells.com/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I Attended ng-conf 2016. Yay!</title>
-      <link>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
+      <link>http://leifwells.com/2016/05/07/i-attended-ng-conf-2016.-yay/</link>
       <pubDate>Sat, 07 May 2016 18:35:39 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
+      <guid>http://leifwells.com/2016/05/07/i-attended-ng-conf-2016.-yay/</guid>
       <description>This week I attended ng-conf for the first time. Last year I tried to get tickets in the lottery but ended up watching online with most everyone else. Of course, I rewatched several of the sessions several times trying to drain every drop of knowledge from these presenters.
 This year I took up egghead.io on their &amp;ldquo;buy a workshop ticket and you can buy a conference ticket instead of trying to get a lottery ticket&amp;rdquo; offer.</description>
     </item>
     
     <item>
       <title>Why EverythingIsInBeta?</title>
-      <link>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</link>
+      <link>http://leifwells.com/2016/04/16/why-everythingisinbeta/</link>
       <pubDate>Sat, 16 Apr 2016 23:44:14 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/16/why-everythingisinbeta/</guid>
+      <guid>http://leifwells.com/2016/04/16/why-everythingisinbeta/</guid>
       <description>I&amp;rsquo;m trying to keep track of several projects currently in beta using the Twitter hashtag #EverythingIsInBeta. It&amp;rsquo;s more of an information point rather than something actually useful but, hey, it&amp;rsquo;s Twitter. When was Twitter ever useful?
 MY BRAIN HURTS! But seriously, it&amp;rsquo;s difficult to jump in and learn new technology. It makes it even more difficult when that technology is in beta. It becomes frustratingly dumbfounding when that beta technology is dependent upon other beta technologies.</description>
     </item>

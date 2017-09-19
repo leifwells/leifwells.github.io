@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firebase on Leif&#39;s Development Blog-o-rama</title>
-    <link>https://leifwells.github.io/tags/firebase/</link>
+    <link>http://leifwells.com/tags/firebase/</link>
     <description>Recent content in Firebase on Leif&#39;s Development Blog-o-rama</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Sat, 16 Apr 2016 12:21:17 -0400</lastBuildDate>
     
-	<atom:link href="https://leifwells.github.io/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://leifwells.com/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AngularFire 2 at the AngularJS Mountain View Meetup</title>
-      <link>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
+      <link>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</link>
       <pubDate>Sat, 16 Apr 2016 12:21:17 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
+      <guid>http://leifwells.com/2016/04/16/angularfire-2-at-the-angularjs-mountain-view-meetup/</guid>
       <description>&amp;ldquo;I&amp;rsquo;m building an Ionic 2 starter with social login using Firebase!&amp;rdquo; said hundreds of developers participating in the Ionic 2 beta. Yeah, I&amp;rsquo;m doing it as well. It&amp;rsquo;s not a bad idea. Usually, if your app uses online data your users will be required to login. Creating a starter app &amp;mdash;&amp;ndash; a set of code from which you can base a new application upon &amp;mdash;&amp;ndash; would certainly save time and effort creating new applications.</description>
     </item>
     

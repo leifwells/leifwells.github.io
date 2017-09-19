@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Testing on Leif&#39;s Development Blog-o-rama</title>
-    <link>https://leifwells.github.io/tags/testing/</link>
+    <link>http://leifwells.com/tags/testing/</link>
     <description>Recent content in Testing on Leif&#39;s Development Blog-o-rama</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Tue, 05 Sep 2017 22:19:35 -0400</lastBuildDate>
     
-	<atom:link href="https://leifwells.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://leifwells.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Testing in Ionic: Code Coverage</title>
-      <link>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</link>
+      <link>http://leifwells.com/2017/09/05/testing-in-ionic-code-coverage/</link>
       <pubDate>Tue, 05 Sep 2017 22:19:35 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2017/09/05/testing-in-ionic-code-coverage/</guid>
+      <guid>http://leifwells.com/2017/09/05/testing-in-ionic-code-coverage/</guid>
       <description>Today, an update made to the ionic-unit-testing-example project that will be helpful for Ionic developers: code coverage. I thought that a discussion about this feature, and details as to how to add code coverage to your current Ionic projects would be helpful.
  Wait. You aren&amp;rsquo;t using automated testing with your Ionic applications? Wow, you are living dangerously. Well, if you are interested in getting unit testing and end-to-end testing working in your Ionic projects, you should check out this post instead.</description>
     </item>
     
     <item>
       <title>Testing in Ionic: Configure Existing Projects for Testing</title>
-      <link>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</link>
+      <link>http://leifwells.com/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</link>
       <pubDate>Sun, 27 Aug 2017 16:24:28 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</guid>
+      <guid>http://leifwells.com/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/</guid>
       <description>So, you have an existing Ionic project and now you want to start unit testing and end-to-end testing it. A great way to configure your existing project for testing is use the ionic-unit-testing-example project on Github. This post will provide you with step-by-step instructions on how to add modules and files from that project into your own project so you may begin testing your project.
 While the name of the project is ionic-unit-testing-example, the project actually sets up two kinds of testing: unit testing and end-to-end (E2E) testing.</description>
     </item>

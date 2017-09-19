@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cordova on Leif&#39;s Development Blog-o-rama</title>
-    <link>https://leifwells.github.io/tags/cordova/</link>
+    <link>http://leifwells.com/tags/cordova/</link>
     <description>Recent content in Cordova on Leif&#39;s Development Blog-o-rama</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Leif Wells, leifwells.github.io and leifwells.com, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content.</copyright>
     <lastBuildDate>Fri, 03 Jun 2016 22:15:27 -0400</lastBuildDate>
     
-	<atom:link href="https://leifwells.github.io/tags/cordova/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://leifwells.com/tags/cordova/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ionic: Local Notification Sound, Custom Sound and File Placement </title>
-      <link>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
+      <link>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</link>
       <pubDate>Fri, 03 Jun 2016 22:15:27 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
+      <guid>http://leifwells.com/2016/06/03/ionic-local-notification-sound-custom-sound-and-file-placement/</guid>
       <description>I&amp;rsquo;m creating an Ionic 2 and Ionic Native code sample for using Local Notifications and thought I&amp;rsquo;d take a moment to write up a post about notification sounds.
 Lets take a look at the typical code to create a Local Notification in Ionic 1:
  In the object being passed to the schedule method you see a sound property. This property is set to the default sound represented by &#39;res://platform_default&#39; which, of course, is the sound that the user has selected as their notification sound.</description>
@@ -25,20 +25,20 @@ Lets take a look at the typical code to create a Local Notification in Ionic 1:
     
     <item>
       <title>Setting Android Icons with Local Notifications</title>
-      <link>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</link>
+      <link>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</link>
       <pubDate>Mon, 30 May 2016 00:01:31 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/05/30/setting-android-icons-with-local-notifications/</guid>
+      <guid>http://leifwells.com/2016/05/30/setting-android-icons-with-local-notifications/</guid>
       <description>My previous post lamented my ignorance about setting up Android icons for Local Notifications in an Ionic 1 project. I found a lot of speculation in my Google search as to how to handle them but not a lot of explanation or examples. In this post I am presenting the results of the research I completed on this topic during a recent project.
 Understanding How Notifications Work on Android The Android platform a notification requires two icons.</description>
     </item>
     
     <item>
       <title>Lessons Learned: Unnamed Project 2016-05</title>
-      <link>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
+      <link>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</link>
       <pubDate>Sat, 28 May 2016 14:57:05 -0400</pubDate>
       
-      <guid>https://leifwells.github.io/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
+      <guid>http://leifwells.com/2016/05/28/lessons-learned-unnamed-project-2016-05/</guid>
       <description>An Unnamed Project Last month my friends at Skyward Interactive requested my assistance with a project that needed a cross-platform mobile solution. The project, which will remain unnamed because the client is a start-up, is a prototype for a service and required phone, tablet and server development. The phone apps is for customers, the tablet app is for administrators and the server ties them all together.
 For mobile development Skyward typically builds native iOS applications, but most of their iOS resources were tied up with other projects and since this project had a short deadline and budget they asked me if I could assemble the iOS and Android phone solution.</description>
     </item>
