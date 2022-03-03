@@ -3,8 +3,759 @@
     <title>COVID-19 Pandemic: Things for developers to do</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>html,body{height:100%}body{margin:0;font-family:Lato,sans-serif;line-height:1.4rem}</style><link rel="stylesheet" href="styles.babd960fb2cc5928.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.babd960fb2cc5928.css"></noscript><style>.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]{background-color:#fff;box-shadow:1px 3px 3px #d3d3d3;color:#000;display:flex;flex-direction:column;height:60px;left:0;position:fixed;right:0;text-align:center;text-decoration:none;z-index:999}.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]   .title[_ngcontent-swe-c7]{font-size:1.4rem;line-height:1.5rem;margin-top:10px}@media (min-width: 600px){.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]   .title[_ngcontent-swe-c7]{font-size:.8rem;line-height:.9rem;margin-top:10px}}.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]   .sub-title[_ngcontent-swe-c7]{display:none}@media (min-width: 600px){.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]   .sub-title[_ngcontent-swe-c7]{display:inline;font-size:.7rem;line-height:.8rem;margin-top:15px}}@media (min-width: 600px){.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]{text-align:center;width:100vw}.main-nav[_ngcontent-swe-c7]   .title-container[_ngcontent-swe-c7]   .title[_ngcontent-swe-c7]{font-size:2rem}}.main-nav[_ngcontent-swe-c7]   .main-container[_ngcontent-swe-c7]{background-color:#fff;padding-top:65px}.main-nav[_ngcontent-swe-c7]   .main-container.dark-theme[_ngcontent-swe-c7]{background-color:#4f4f4f}.main-nav[_ngcontent-swe-c7]   .main-container[_ngcontent-swe-c7]   .page-container[_ngcontent-swe-c7]{background-color:#000;margin:0 15px}@media (min-width: 600px){.main-nav[_ngcontent-swe-c7]   .main-container[_ngcontent-swe-c7]   .page-container[_ngcontent-swe-c7]{margin:0 20%}}.main-nav[_ngcontent-swe-c7]   .main-container[_ngcontent-swe-c7]   .version[_ngcontent-swe-c7]{font-size:.75rem;text-align:center;width:100%}</style><style type="text/css"></style><style>.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]{align-content:center;display:flex;flex-direction:row;justify-content:center;padding:0 15px}.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]{display:flex;flex-direction:row}.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]   .title-image-container[_ngcontent-swe-c6]{display:flex;flex-direction:column;padding-top:15px}.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]   .title-image-container[_ngcontent-swe-c6]   .title[_ngcontent-swe-c6]{text-align:center;width:100%}.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]   .title-image-container[_ngcontent-swe-c6]   .author[_ngcontent-swe-c6]{display:flex;align-items:center;justify-content:center}.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]   .title-image-container[_ngcontent-swe-c6]   .author[_ngcontent-swe-c6]   .author-image[_ngcontent-swe-c6]{background-color:#000;background-image:url(/assets/images/2015-08-12_profile_image.png);background-position:center;background-size:cover;border-radius:50%;height:6rem;margin:0;width:6rem}.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]   .blurb-container[_ngcontent-swe-c6]{margin-top:20px;padding:15px}@media (min-width: 600px){.footer[_ngcontent-swe-c6]   .author-container[_ngcontent-swe-c6]   .author-card[_ngcontent-swe-c6]   .blurb-container[_ngcontent-swe-c6]{width:30vw}}.footer[_ngcontent-swe-c6]   .social-media-container[_ngcontent-swe-c6]{display:flex;align-items:center;justify-content:center;width:100vw}.footer[_ngcontent-swe-c6]   .copyright-container[_ngcontent-swe-c6]{text-align:center;margin:0 10%;width:80%}@media (min-width: 600px){.footer[_ngcontent-swe-c6]   .copyright-container[_ngcontent-swe-c6]{margin:0 25%;width:50%}}.footer[_ngcontent-swe-c6]   .copyright-container[_ngcontent-swe-c6]   p[_ngcontent-swe-c6]{font-size:.6rem;line-height:.8rem;margin:0;padding:0}</style><style>.social-media[_ngcontent-swe-c5]{display:block;margin:0}.social-media[_ngcontent-swe-c5]   .social-icon[_ngcontent-swe-c5]{color:#000}.social-media[_ngcontent-swe-c5]   ul.social-icons[_ngcontent-swe-c5]{margin:0;padding:0}.social-media[_ngcontent-swe-c5]   .social-icons[_ngcontent-swe-c5]   li[_ngcontent-swe-c5]{display:inline;vertical-align:top}.social-media[_ngcontent-swe-c5]   .social-icons[_ngcontent-swe-c5]   a[_ngcontent-swe-c5]{color:#000;text-decoration:none}.social-media[_ngcontent-swe-c5]   .fa-facebook[_ngcontent-swe-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-swe-c5]   .fa-facebook[_ngcontent-swe-c5]:hover{background-color:#3d5b99}.social-media[_ngcontent-swe-c5]   .fa-twitter[_ngcontent-swe-c5]{padding:10px 12px;transition:.5s;background-color:#fff}.social-media[_ngcontent-swe-c5]   .fa-twitter[_ngcontent-swe-c5]:hover{background-color:#00aced}.social-media[_ngcontent-swe-c5]   .fa-rss[_ngcontent-swe-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-swe-c5]   .fa-rss[_ngcontent-swe-c5]:hover{background-color:#eb8231}.social-media[_ngcontent-swe-c5]   .fa-youtube[_ngcontent-swe-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-swe-c5]   .fa-youtube[_ngcontent-swe-c5]:hover{background-color:#e64a41}.social-media[_ngcontent-swe-c5]   .fa-linkedin[_ngcontent-swe-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-swe-c5]   .fa-linkedin[_ngcontent-swe-c5]:hover{background-color:#0073a4}.social-media[_ngcontent-swe-c5]   .fa-github[_ngcontent-swe-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-swe-c5]   .fa-github[_ngcontent-swe-c5]:hover{background-color:#5a32a3}</style><style>.post-page[_ngcontent-swe-c12]{display:flex;flex-direction:row;height:100%}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]{margin:0 15vw}.post-page[_ngcontent-swe-c12]   img[_ngcontent-swe-c12]{padding:0 25px;width:45vw}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]{height:100%;width:100%}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]{min-height:85vh;width:65vw}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .post-title[_ngcontent-swe-c12]{margin:0 15px;font-size:1.5rem;line-height:1.8rem}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .post-title[_ngcontent-swe-c12]{margin:15px 30px}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .post-date[_ngcontent-swe-c12]{margin:0 15px;font-size:.8rem;line-height:1rem}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .post-date[_ngcontent-swe-c12]{margin:10px 30px}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .article-body[_ngcontent-swe-c12]{margin:0 15px}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .article-body[_ngcontent-swe-c12]{padding:0 15px}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .post-image-container[_ngcontent-swe-c12]{background-color:gray;background-position:50% 25%;background-size:cover;height:120px}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .post-image-container[_ngcontent-swe-c12]{height:14rem}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   img[_ngcontent-swe-c12]{height:auto;width:95vw}@media (min-width: 600px){.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   img[_ngcontent-swe-c12]{width:55vw}}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   img[_ngcontent-swe-c12] + em[_ngcontent-swe-c12]{font-style:normal;display:inherit;text-align:center;font-size:90%}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   pre[_ngcontent-swe-c12]{background-color:#000;color:#fff;overflow:scroll;padding:15px}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]{background-color:#dbdbdb;border-left:6px solid #a0a0a0;margin:10px;padding:10px}.post-page[_ngcontent-swe-c12]   .post[_ngcontent-swe-c12]   .twitter-center[_ngcontent-swe-c12]{align-items:center;display:flex;justify-content:center;width:100%}.post-page[_ngcontent-swe-c12]   .side-note-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]{background-color:#a0a0a0;border-left:6px solid black}.post-page[_ngcontent-swe-c12]   .side-note-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]   p[_ngcontent-swe-c12]{font-size:.9rem}.post-page[_ngcontent-swe-c12]   .pros-cons-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;margin:10px;min-height:200px;padding:10px;position:relative}.post-page[_ngcontent-swe-c12]   .pros-cons-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]   h4[_ngcontent-swe-c12]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-swe-c12]   .side-note-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-swe-c12]   .side-note-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]   h4[_ngcontent-swe-c12]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-swe-c12]   .protocol-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-swe-c12]   .protocol-blockquote[_ngcontent-swe-c12]   blockquote[_ngcontent-swe-c12]   h4[_ngcontent-swe-c12]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}</style><style>
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>html,body{height:100%}body{margin:0;font-family:Lato,sans-serif;line-height:1.4rem}</style><link rel="stylesheet" href="styles.babd960fb2cc5928.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.babd960fb2cc5928.css"></noscript><style>.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]{background-color:#fff;box-shadow:1px 3px 3px #d3d3d3;color:#000;display:flex;flex-direction:column;height:60px;left:0;position:fixed;right:0;text-align:center;text-decoration:none;z-index:999}.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]   .title[_ngcontent-kru-c10]{font-size:1.4rem;line-height:1.5rem;margin-top:10px}@media (min-width: 600px){.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]   .title[_ngcontent-kru-c10]{font-size:.8rem;line-height:.9rem;margin-top:10px}}.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]   .sub-title[_ngcontent-kru-c10]{display:none}@media (min-width: 600px){.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]   .sub-title[_ngcontent-kru-c10]{display:inline;font-size:.7rem;line-height:.8rem;margin-top:15px}}@media (min-width: 600px){.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]{text-align:center;width:100vw}.main-nav[_ngcontent-kru-c10]   .title-container[_ngcontent-kru-c10]   .title[_ngcontent-kru-c10]{font-size:2rem}}.main-nav[_ngcontent-kru-c10]   .main-container[_ngcontent-kru-c10]{background-color:#fff;padding-top:65px}.main-nav[_ngcontent-kru-c10]   .main-container.dark-theme[_ngcontent-kru-c10]{background-color:#4f4f4f}.main-nav[_ngcontent-kru-c10]   .main-container[_ngcontent-kru-c10]   .page-container[_ngcontent-kru-c10]{background-color:#000;margin:0 15px}@media (min-width: 600px){.main-nav[_ngcontent-kru-c10]   .main-container[_ngcontent-kru-c10]   .page-container[_ngcontent-kru-c10]{margin:0 20%}}.main-nav[_ngcontent-kru-c10]   .version-container[_ngcontent-kru-c10]{width:100%}.main-nav[_ngcontent-kru-c10]   .version-container[_ngcontent-kru-c10]   .version[_ngcontent-kru-c10]{font-size:.75rem;text-align:center;width:100%}</style><style type="text/css"></style><style>.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]{align-content:center;display:flex;flex-direction:row;justify-content:center;padding:0 15px}.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]{display:flex;flex-direction:row}.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]   .title-image-container[_ngcontent-kru-c9]{display:flex;flex-direction:column;padding-top:15px}.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]   .title-image-container[_ngcontent-kru-c9]   .title[_ngcontent-kru-c9]{text-align:center;width:100%}.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]   .title-image-container[_ngcontent-kru-c9]   .author[_ngcontent-kru-c9]{display:flex;align-items:center;justify-content:center}.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]   .title-image-container[_ngcontent-kru-c9]   .author[_ngcontent-kru-c9]   .author-image[_ngcontent-kru-c9]{background-color:#000;background-image:url(/assets/images/2015-08-12_profile_image.png);background-position:center;background-size:cover;border-radius:50%;height:6rem;margin:0;width:6rem}.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]   .blurb-container[_ngcontent-kru-c9]{margin-top:20px;padding:15px}@media (min-width: 600px){.footer[_ngcontent-kru-c9]   .author-container[_ngcontent-kru-c9]   .author-card[_ngcontent-kru-c9]   .blurb-container[_ngcontent-kru-c9]{width:30vw}}.footer[_ngcontent-kru-c9]   .social-media-container[_ngcontent-kru-c9]{display:flex;align-items:center;justify-content:center;width:100vw}.footer[_ngcontent-kru-c9]   .copyright-container[_ngcontent-kru-c9]{text-align:center;margin:0 10%;width:80%}@media (min-width: 600px){.footer[_ngcontent-kru-c9]   .copyright-container[_ngcontent-kru-c9]{margin:0 25%;width:50%}}.footer[_ngcontent-kru-c9]   .copyright-container[_ngcontent-kru-c9]   p[_ngcontent-kru-c9]{font-size:.6rem;line-height:.8rem;margin:0;padding:0}</style><style>.social-media[_ngcontent-kru-c8]{display:block;margin:0}.social-media[_ngcontent-kru-c8]   .social-icon[_ngcontent-kru-c8]{color:#000}.social-media[_ngcontent-kru-c8]   ul.social-icons[_ngcontent-kru-c8]{padding:0}.social-media[_ngcontent-kru-c8]   .social-icons[_ngcontent-kru-c8]   li[_ngcontent-kru-c8]{display:inline;margin:10px;vertical-align:top}.social-media[_ngcontent-kru-c8]   .social-icons[_ngcontent-kru-c8]   a[_ngcontent-kru-c8]{color:#000;text-decoration:none}.social-media[_ngcontent-kru-c8]   .fa-facebook[_ngcontent-kru-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-kru-c8]   .fa-facebook[_ngcontent-kru-c8]:hover{background-color:#3d5b99}.social-media[_ngcontent-kru-c8]   .fa-twitter[_ngcontent-kru-c8]{padding:10px 12px;transition:.5s;background-color:#fff}.social-media[_ngcontent-kru-c8]   .fa-twitter[_ngcontent-kru-c8]:hover{background-color:#00aced}.social-media[_ngcontent-kru-c8]   .fa-rss[_ngcontent-kru-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-kru-c8]   .fa-rss[_ngcontent-kru-c8]:hover{background-color:#eb8231}.social-media[_ngcontent-kru-c8]   .fa-youtube[_ngcontent-kru-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-kru-c8]   .fa-youtube[_ngcontent-kru-c8]:hover{background-color:#e64a41}.social-media[_ngcontent-kru-c8]   .fa-linkedin[_ngcontent-kru-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-kru-c8]   .fa-linkedin[_ngcontent-kru-c8]:hover{background-color:#0073a4}.social-media[_ngcontent-kru-c8]   .fa-github[_ngcontent-kru-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-kru-c8]   .fa-github[_ngcontent-kru-c8]:hover{background-color:#5a32a3}</style><style>.post-page[_ngcontent-kru-c15]{display:flex;flex-direction:row;height:100%}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]{margin:0 15vw}.post-page[_ngcontent-kru-c15]   img[_ngcontent-kru-c15]{padding:0 25px;width:45vw}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]{height:100%;width:100%}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]{min-height:85vh;width:65vw}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .post-title[_ngcontent-kru-c15]{margin:0 15px;font-size:1.5rem;line-height:1.8rem}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .post-title[_ngcontent-kru-c15]{margin:15px 30px}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .post-date[_ngcontent-kru-c15]{margin:0 15px;font-size:.8rem;line-height:1rem}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .post-date[_ngcontent-kru-c15]{margin:10px 30px}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .article-body[_ngcontent-kru-c15]{margin:0 15px}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .article-body[_ngcontent-kru-c15]{padding:0 15px}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .post-image-container[_ngcontent-kru-c15]{background-color:gray;background-position:50% 25%;background-size:cover;height:120px}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .post-image-container[_ngcontent-kru-c15]{height:14rem}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   img[_ngcontent-kru-c15]{height:auto;width:95vw}@media (min-width: 600px){.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   img[_ngcontent-kru-c15]{width:55vw}}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   img[_ngcontent-kru-c15] + em[_ngcontent-kru-c15]{font-style:normal;display:inherit;text-align:center;font-size:90%}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   pre[_ngcontent-kru-c15]{background-color:#000;color:#fff;overflow:scroll;padding:15px}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]{background-color:#dbdbdb;border-left:6px solid #a0a0a0;margin:10px;padding:10px}.post-page[_ngcontent-kru-c15]   .post[_ngcontent-kru-c15]   .twitter-center[_ngcontent-kru-c15]{align-items:center;display:flex;justify-content:center;width:100%}.post-page[_ngcontent-kru-c15]   .side-note-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]{background-color:#a0a0a0;border-left:6px solid black}.post-page[_ngcontent-kru-c15]   .side-note-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]   p[_ngcontent-kru-c15]{font-size:.9rem}.post-page[_ngcontent-kru-c15]   .pros-cons-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;margin:10px;min-height:200px;padding:10px;position:relative}.post-page[_ngcontent-kru-c15]   .pros-cons-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]   h4[_ngcontent-kru-c15]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-kru-c15]   .side-note-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-kru-c15]   .side-note-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]   h4[_ngcontent-kru-c15]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-kru-c15]   .protocol-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-kru-c15]   .protocol-blockquote[_ngcontent-kru-c15]   blockquote[_ngcontent-kru-c15]   h4[_ngcontent-kru-c15]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}</style><style>
       :host {
         display: none;
       }
@@ -13,45 +764,45 @@
       }
     </style><meta name="og:title" content="COVID-19 Pandemic: Things for developers to do"><meta name="og:type" content="website"><meta name="og:image" content="/assets/images/who_groot.jpg"><meta name="og:image:alt" content="Leif Wells Development Blogorama: COVID-19 Pandemic: Things for developers to do"><meta name="og:description" content="Things I'm doing during the pandemic to keep my sanity"><meta name="og:url" content="https://leifwells.github.io//blog/2020-05-01-things-to-do-during-a-pandemic"><meta name="author" content="Leif Wells"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="COVID-19 Pandemic: Things for developers to do"><meta name="twitter:description" content="Things I'm doing during the pandemic to keep my sanity"><meta name="twitter:image" content="https://leifwells.github.io/assets/images/who_groot.jpg"><meta name="twitter:image:alt" content="Leif Wells Development Blogorama: COVID-19 Pandemic: Things for developers to do"><meta name="twitter:site" content="@leifwells"><meta name="twitter:creator" content="@leifwells"><script>window['ScullyIO']='generated';</script><script>window.ScullyIOAngularDisabled = true;</script></head>
   <body scully-version="0.0.0">
-    <app-root ng-version="13.2.2"><app-main-nav _nghost-swe-c7=""><div _ngcontent-swe-c7="" class="main-nav"><a _ngcontent-swe-c7="" href="/index.html" class="title-container"><div _ngcontent-swe-c7="" class="title">Leif's Development Blog-o-rama</div><div _ngcontent-swe-c7="" class="sub-title"> This is the place where Leif writes stuff down for other developers to read. Also, it is how he remembers stuff. And things. </div></a><div _ngcontent-swe-c7="" class="main-container"><router-outlet _ngcontent-swe-c7=""></router-outlet><app-blog _nghost-swe-c12=""><div _ngcontent-swe-c12="" class="post-page">
-  <article _ngcontent-swe-c12="" class="post">
-    <header _ngcontent-swe-c12="">
-      <div _ngcontent-swe-c12="" width="{!(isHandset$ | async) ? '630px' : '100vw'}" height="{!(isHandset$ | async) ? '120px' : 'auto'}" class="post-image-container" style="background-image: url(&quot;/assets/images/who_groot.jpg&quot;);"></div>
-      <h1 _ngcontent-swe-c12="" class="post-title">COVID-19 Pandemic: Things for developers to do</h1>
-      <h3 _ngcontent-swe-c12="" class="post-date">
-        <i _ngcontent-swe-c12="" class="fa fa-calendar-check-o"></i> May 1, 2020
+    <app-root ng-version="13.2.2"><app-main-nav _nghost-kru-c10=""><div _ngcontent-kru-c10="" class="main-nav"><a _ngcontent-kru-c10="" href="/index.html" class="title-container"><div _ngcontent-kru-c10="" class="title">Leif's Development Blog-o-rama</div><div _ngcontent-kru-c10="" class="sub-title"> This is the place where Leif writes stuff down for other developers to read. Also, it is how he remembers stuff. And things. </div></a><div _ngcontent-kru-c10="" class="main-container"><router-outlet _ngcontent-kru-c10=""></router-outlet><app-blog _nghost-kru-c15=""><div _ngcontent-kru-c15="" class="post-page">
+  <article _ngcontent-kru-c15="" class="post">
+    <header _ngcontent-kru-c15="">
+      <div _ngcontent-kru-c15="" width="{!(isHandset$ | async) ? '630px' : '100vw'}" height="{!(isHandset$ | async) ? '120px' : 'auto'}" class="post-image-container" style="background-image: url(&quot;/assets/images/who_groot.jpg&quot;);"></div>
+      <h1 _ngcontent-kru-c15="" class="post-title">COVID-19 Pandemic: Things for developers to do</h1>
+      <h3 _ngcontent-kru-c15="" class="post-date">
+        <i _ngcontent-kru-c15="" class="fa fa-calendar-check-o"></i> May 1, 2020
         <!---->
       </h3>
     </header>
-    <div _ngcontent-swe-c12="" class="article-body">
-      <!--scullyContent-begin--><p _ngcontent-swe-c12="">Like everyone else, I have been affected by the <strong _ngcontent-swe-c12="">COVID-19 Pandemic</strong>, and in ways I was not expecting. Sure, I've been working remotely from my home for a decade, so you would think that my mental/emotional state would not be affected. My brain seems to know that there is a difference between choosing to stay home and being told that you have to stay home (and if you don't you might get sick and die). My mental state took a nose dive in April, not long after Atlanta was ordered to <strong _ngcontent-swe-c12="">Stay Home</strong>.</p>
-<p _ngcontent-swe-c12="">So, obviously, I needed to find things to keep myself from losing my mind. And I thought I'd share those with you here.</p>
-<blockquote _ngcontent-swe-c12="">
-<h3 id="so-of-course-i-was-laid-off" _ngcontent-swe-c12="">So, of course I was laid off</h3>
-<p _ngcontent-swe-c12="">Yeah, just like 16 million Americans, my employer decided, right at the beginning of this madness that they needed to reduce staff. As far as I can tell, the decision had nothing to do with the pandemic, but a bunch of my co-workers and I were let go anyway. This isn't the first time I've been laid off, so I was better prepared for this than most. Even so, a layoff messes with everyone's head. Throw in a pandemic, and you've got all the mixings for depression.</p>
+    <div _ngcontent-kru-c15="" class="article-body">
+      <!--scullyContent-begin--><p _ngcontent-kru-c15="">Like everyone else, I have been affected by the <strong _ngcontent-kru-c15="">COVID-19 Pandemic</strong>, and in ways I was not expecting. Sure, I've been working remotely from my home for a decade, so you would think that my mental/emotional state would not be affected. My brain seems to know that there is a difference between choosing to stay home and being told that you have to stay home (and if you don't you might get sick and die). My mental state took a nose dive in April, not long after Atlanta was ordered to <strong _ngcontent-kru-c15="">Stay Home</strong>.</p>
+<p _ngcontent-kru-c15="">So, obviously, I needed to find things to keep myself from losing my mind. And I thought I'd share those with you here.</p>
+<blockquote _ngcontent-kru-c15="">
+<h3 id="so-of-course-i-was-laid-off" _ngcontent-kru-c15="">So, of course I was laid off</h3>
+<p _ngcontent-kru-c15="">Yeah, just like 16 million Americans, my employer decided, right at the beginning of this madness that they needed to reduce staff. As far as I can tell, the decision had nothing to do with the pandemic, but a bunch of my co-workers and I were let go anyway. This isn't the first time I've been laid off, so I was better prepared for this than most. Even so, a layoff messes with everyone's head. Throw in a pandemic, and you've got all the mixings for depression.</p>
 </blockquote>
-<h2 id="i-worked-on-my-blog-i-am-a-cliché" _ngcontent-swe-c12="">I worked on my blog: I am a cliché</h2>
-<p _ngcontent-swe-c12="">Having been stuck in my house without any work, I started to take a look at the thing I haven't been doing for myself in years: writing. So, as cliché as it sounds, I decided to work on my stale and lifeless blog. I had been using Hugo for my static site, but wasn't very satisfied by the workflow. Sure, the templates for Hugo look great, but the developer experience (at least three years ago) was not a lot of fun.</p>
-<p _ngcontent-swe-c12="">Having heard about <strong _ngcontent-swe-c12=""><a href="https://scully.io/" _ngcontent-swe-c12="">Scully</a></strong>, the static site generator for <strong _ngcontent-swe-c12=""><a href="https://angular.io" _ngcontent-swe-c12="">Angular</a></strong>, and having seen <a href="https://twitter.com/aaronfrost" _ngcontent-swe-c12="">Frosty himself</a> talk about <strong _ngcontent-swe-c12="">Scully</strong> on <strong _ngcontent-swe-c12="">AngularAir</strong>, I thought I'd give it a go. I don't think I've gotten everything quite right yet, but expect a post about it when I do.</p>
-<p _ngcontent-swe-c12="">And, also expect more blog posts for me.</p>
-<p _ngcontent-swe-c12=""><a href="http://www.youtube.com/watch?v=nb3l1fEJDwM" title="AngularAir - Scully: Angular JAMStack with Aaron Frost" _ngcontent-swe-c12=""><img src="http://img.youtube.com/vi/nb3l1fEJDwM/0.jpg" alt="AngularAir - Scully: Angular JAMStack with Aaron Frost" _ngcontent-swe-c12=""></a></p>
-<p _ngcontent-swe-c12="">If you are an <strong _ngcontent-swe-c12="">Angular</strong> developer you should subscribe to <strong _ngcontent-swe-c12=""><a href="https://www.youtube.com/channel/UCdCOpvRk1lsBk26ePGDPLpQ" _ngcontent-swe-c12="">Angular Air</a></strong>. I enjoy their show.</p>
-<h2 id="ng-conf-2020" _ngcontent-swe-c12="">ng-conf 2020</h2>
-<p _ngcontent-swe-c12="">The last couple of days that I was still employed coincided with <strong _ngcontent-swe-c12="">ng-conf 2020</strong>, which like many other conferences had to cancel the actual conference, but instead held the conference online (and for a much-reduced price of admission).</p>
-<h2 id="webinars-every-week" _ngcontent-swe-c12="">Webinars every week</h2>
-<h2 id="working-with-chris-griffith-on-hiking-apps" _ngcontent-swe-c12="">Working with Chris Griffith on Hiking Apps</h2>
-<h2 id="giving-myself-a-break" _ngcontent-swe-c12="">Giving Myself a Break</h2>
-<h2 id="taking-care-of-yourself" _ngcontent-swe-c12="">Taking Care of Yourself</h2>
-<!--scullyContent-end--><scully-content _ngcontent-swe-c12=""></scully-content>
-    <script>try {window['scullyContent'] = {cssId:"_ngcontent-swe-c12",html:document.body.innerHTML.split('<!--scullyContent-begin-->')[1].split('<!--scullyContent-end-->')[0]};} catch(e) {console.error('scully could not parse content');}</script></div>
-    <h3 _ngcontent-swe-c12="" class="post-date">
-      <i _ngcontent-swe-c12="" class="fa fa-calendar-check-o"></i>
+<h2 id="i-worked-on-my-blog-i-am-a-cliché" _ngcontent-kru-c15="">I worked on my blog: I am a cliché</h2>
+<p _ngcontent-kru-c15="">Having been stuck in my house without any work, I started to take a look at the thing I haven't been doing for myself in years: writing. So, as cliché as it sounds, I decided to work on my stale and lifeless blog. I had been using Hugo for my static site, but wasn't very satisfied by the workflow. Sure, the templates for Hugo look great, but the developer experience (at least three years ago) was not a lot of fun.</p>
+<p _ngcontent-kru-c15="">Having heard about <strong _ngcontent-kru-c15=""><a href="https://scully.io/" _ngcontent-kru-c15="">Scully</a></strong>, the static site generator for <strong _ngcontent-kru-c15=""><a href="https://angular.io" _ngcontent-kru-c15="">Angular</a></strong>, and having seen <a href="https://twitter.com/aaronfrost" _ngcontent-kru-c15="">Frosty himself</a> talk about <strong _ngcontent-kru-c15="">Scully</strong> on <strong _ngcontent-kru-c15="">AngularAir</strong>, I thought I'd give it a go. I don't think I've gotten everything quite right yet, but expect a post about it when I do.</p>
+<p _ngcontent-kru-c15="">And, also expect more blog posts for me.</p>
+<p _ngcontent-kru-c15=""><a href="http://www.youtube.com/watch?v=nb3l1fEJDwM" title="AngularAir - Scully: Angular JAMStack with Aaron Frost" _ngcontent-kru-c15=""><img src="http://img.youtube.com/vi/nb3l1fEJDwM/0.jpg" alt="AngularAir - Scully: Angular JAMStack with Aaron Frost" _ngcontent-kru-c15=""></a></p>
+<p _ngcontent-kru-c15="">If you are an <strong _ngcontent-kru-c15="">Angular</strong> developer you should subscribe to <strong _ngcontent-kru-c15=""><a href="https://www.youtube.com/channel/UCdCOpvRk1lsBk26ePGDPLpQ" _ngcontent-kru-c15="">Angular Air</a></strong>. I enjoy their show.</p>
+<h2 id="ng-conf-2020" _ngcontent-kru-c15="">ng-conf 2020</h2>
+<p _ngcontent-kru-c15="">The last couple of days that I was still employed coincided with <strong _ngcontent-kru-c15="">ng-conf 2020</strong>, which like many other conferences had to cancel the actual conference, but instead held the conference online (and for a much-reduced price of admission).</p>
+<h2 id="webinars-every-week" _ngcontent-kru-c15="">Webinars every week</h2>
+<h2 id="working-with-chris-griffith-on-hiking-apps" _ngcontent-kru-c15="">Working with Chris Griffith on Hiking Apps</h2>
+<h2 id="giving-myself-a-break" _ngcontent-kru-c15="">Giving Myself a Break</h2>
+<h2 id="taking-care-of-yourself" _ngcontent-kru-c15="">Taking Care of Yourself</h2>
+<!--scullyContent-end--><scully-content _ngcontent-kru-c15=""></scully-content>
+    <script>try {window['scullyContent'] = {cssId:"_ngcontent-kru-c15",html:document.body.innerHTML.split('<!--scullyContent-begin-->')[1].split('<!--scullyContent-end-->')[0]};} catch(e) {console.error('scully could not parse content');}</script></div>
+    <h3 _ngcontent-kru-c15="" class="post-date">
+      <i _ngcontent-kru-c15="" class="fa fa-calendar-check-o"></i>
       This article was posted on May 1, 2020
       <!---->
     </h3>
   </article>
 </div>
-</app-blog><!----><div _ngcontent-swe-c7=""><p _ngcontent-swe-c7="" class="version">Version: 0.1.8</p></div></div><app-footer _ngcontent-swe-c7="" _nghost-swe-c6=""><div _ngcontent-swe-c6="" class="footer"><div _ngcontent-swe-c6="" class="author-container"><div _ngcontent-swe-c6="" class="author-card"><div _ngcontent-swe-c6="" class="title-image-container"><div _ngcontent-swe-c6="" class="title">Leif Wells</div><div _ngcontent-swe-c6="" class="author"><div _ngcontent-swe-c6="" class="author-image"></div></div></div><div _ngcontent-swe-c6="" class="blurb-container"><p _ngcontent-swe-c6=""> Leif Wells is a presenter, author, and Web &amp; mobile developer based in Atlanta. </p></div></div></div><div _ngcontent-swe-c6="" class="social-media-container"><app-social-media _ngcontent-swe-c6="" _nghost-swe-c5=""><div _ngcontent-swe-c5="" class="social-media"><ul _ngcontent-swe-c5="" class="social-icons"><li _ngcontent-swe-c5=""><a _ngcontent-swe-c5="" href="https://twitter.com/leifwells" class="social-icon"><i _ngcontent-swe-c5="" class="fa fa-twitter"></i></a></li><li _ngcontent-swe-c5=""><a _ngcontent-swe-c5="" href="https://www.linkedin.com/in/leifwells/" class="social-icon"><i _ngcontent-swe-c5="" class="fa fa-linkedin"></i></a></li><li _ngcontent-swe-c5=""><a _ngcontent-swe-c5="" href="https://github.com/leifwells" class="social-icon"><i _ngcontent-swe-c5="" class="fa fa-github"></i></a></li></ul></div></app-social-media></div><div _ngcontent-swe-c6="" class="copyright-container"><p _ngcontent-swe-c6=""> Copyright © Leif Wells, leifwells.github.io and leifwells.com, 2022. </p><p _ngcontent-swe-c6=""> Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content. </p></div></div></app-footer></div></app-main-nav></app-root>
+</app-blog><!----></div><app-footer _ngcontent-kru-c10="" _nghost-kru-c9=""><div _ngcontent-kru-c9="" class="footer"><div _ngcontent-kru-c9="" class="author-container"><div _ngcontent-kru-c9="" class="author-card"><div _ngcontent-kru-c9="" class="title-image-container"><div _ngcontent-kru-c9="" class="title">Leif Wells</div><div _ngcontent-kru-c9="" class="author"><div _ngcontent-kru-c9="" class="author-image"></div></div></div><div _ngcontent-kru-c9="" class="blurb-container"><p _ngcontent-kru-c9=""> Leif Wells is a presenter, author, and Web &amp; mobile developer based in Atlanta. </p></div></div></div><div _ngcontent-kru-c9="" class="social-media-container"><app-social-media _ngcontent-kru-c9="" _nghost-kru-c8=""><div _ngcontent-kru-c8="" class="social-media"><ul _ngcontent-kru-c8="" class="social-icons"><li _ngcontent-kru-c8=""><a _ngcontent-kru-c8="" href="https://twitter.com/leifwells" class="social-icon"><fa-icon _ngcontent-kru-c8="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg></fa-icon></a></li><li _ngcontent-kru-c8=""><a _ngcontent-kru-c8="" href="https://www.linkedin.com/in/leifwells/" class="social-icon"><fa-icon _ngcontent-kru-c8="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></fa-icon></a></li></ul></div></app-social-media></div><div _ngcontent-kru-c9="" class="copyright-container"><p _ngcontent-kru-c9=""> Copyright © Leif Wells, leifwells.github.io and leifwells.com, 2022. </p><p _ngcontent-kru-c9=""> Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content. </p></div></div></app-footer><div _ngcontent-kru-c10="" class="version-container"><p _ngcontent-kru-c10="" class="version">Version: 0.1.11</p></div></div></app-main-nav></app-root>
   
 
 </body></html>

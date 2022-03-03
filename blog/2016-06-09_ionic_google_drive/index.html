@@ -3,8 +3,759 @@
     <title>Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>html,body{height:100%}body{margin:0;font-family:Lato,sans-serif;line-height:1.4rem}</style><link rel="stylesheet" href="styles.babd960fb2cc5928.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.babd960fb2cc5928.css"></noscript><style>.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]{background-color:#fff;box-shadow:1px 3px 3px #d3d3d3;color:#000;display:flex;flex-direction:column;height:60px;left:0;position:fixed;right:0;text-align:center;text-decoration:none;z-index:999}.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]   .title[_ngcontent-qnh-c7]{font-size:1.4rem;line-height:1.5rem;margin-top:10px}@media (min-width: 600px){.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]   .title[_ngcontent-qnh-c7]{font-size:.8rem;line-height:.9rem;margin-top:10px}}.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]   .sub-title[_ngcontent-qnh-c7]{display:none}@media (min-width: 600px){.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]   .sub-title[_ngcontent-qnh-c7]{display:inline;font-size:.7rem;line-height:.8rem;margin-top:15px}}@media (min-width: 600px){.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]{text-align:center;width:100vw}.main-nav[_ngcontent-qnh-c7]   .title-container[_ngcontent-qnh-c7]   .title[_ngcontent-qnh-c7]{font-size:2rem}}.main-nav[_ngcontent-qnh-c7]   .main-container[_ngcontent-qnh-c7]{background-color:#fff;padding-top:65px}.main-nav[_ngcontent-qnh-c7]   .main-container.dark-theme[_ngcontent-qnh-c7]{background-color:#4f4f4f}.main-nav[_ngcontent-qnh-c7]   .main-container[_ngcontent-qnh-c7]   .page-container[_ngcontent-qnh-c7]{background-color:#000;margin:0 15px}@media (min-width: 600px){.main-nav[_ngcontent-qnh-c7]   .main-container[_ngcontent-qnh-c7]   .page-container[_ngcontent-qnh-c7]{margin:0 20%}}.main-nav[_ngcontent-qnh-c7]   .main-container[_ngcontent-qnh-c7]   .version[_ngcontent-qnh-c7]{font-size:.75rem;text-align:center;width:100%}</style><style type="text/css"></style><style>.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]{align-content:center;display:flex;flex-direction:row;justify-content:center;padding:0 15px}.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]{display:flex;flex-direction:row}.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]   .title-image-container[_ngcontent-qnh-c6]{display:flex;flex-direction:column;padding-top:15px}.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]   .title-image-container[_ngcontent-qnh-c6]   .title[_ngcontent-qnh-c6]{text-align:center;width:100%}.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]   .title-image-container[_ngcontent-qnh-c6]   .author[_ngcontent-qnh-c6]{display:flex;align-items:center;justify-content:center}.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]   .title-image-container[_ngcontent-qnh-c6]   .author[_ngcontent-qnh-c6]   .author-image[_ngcontent-qnh-c6]{background-color:#000;background-image:url(/assets/images/2015-08-12_profile_image.png);background-position:center;background-size:cover;border-radius:50%;height:6rem;margin:0;width:6rem}.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]   .blurb-container[_ngcontent-qnh-c6]{margin-top:20px;padding:15px}@media (min-width: 600px){.footer[_ngcontent-qnh-c6]   .author-container[_ngcontent-qnh-c6]   .author-card[_ngcontent-qnh-c6]   .blurb-container[_ngcontent-qnh-c6]{width:30vw}}.footer[_ngcontent-qnh-c6]   .social-media-container[_ngcontent-qnh-c6]{display:flex;align-items:center;justify-content:center;width:100vw}.footer[_ngcontent-qnh-c6]   .copyright-container[_ngcontent-qnh-c6]{text-align:center;margin:0 10%;width:80%}@media (min-width: 600px){.footer[_ngcontent-qnh-c6]   .copyright-container[_ngcontent-qnh-c6]{margin:0 25%;width:50%}}.footer[_ngcontent-qnh-c6]   .copyright-container[_ngcontent-qnh-c6]   p[_ngcontent-qnh-c6]{font-size:.6rem;line-height:.8rem;margin:0;padding:0}</style><style>.social-media[_ngcontent-qnh-c5]{display:block;margin:0}.social-media[_ngcontent-qnh-c5]   .social-icon[_ngcontent-qnh-c5]{color:#000}.social-media[_ngcontent-qnh-c5]   ul.social-icons[_ngcontent-qnh-c5]{margin:0;padding:0}.social-media[_ngcontent-qnh-c5]   .social-icons[_ngcontent-qnh-c5]   li[_ngcontent-qnh-c5]{display:inline;vertical-align:top}.social-media[_ngcontent-qnh-c5]   .social-icons[_ngcontent-qnh-c5]   a[_ngcontent-qnh-c5]{color:#000;text-decoration:none}.social-media[_ngcontent-qnh-c5]   .fa-facebook[_ngcontent-qnh-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-qnh-c5]   .fa-facebook[_ngcontent-qnh-c5]:hover{background-color:#3d5b99}.social-media[_ngcontent-qnh-c5]   .fa-twitter[_ngcontent-qnh-c5]{padding:10px 12px;transition:.5s;background-color:#fff}.social-media[_ngcontent-qnh-c5]   .fa-twitter[_ngcontent-qnh-c5]:hover{background-color:#00aced}.social-media[_ngcontent-qnh-c5]   .fa-rss[_ngcontent-qnh-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-qnh-c5]   .fa-rss[_ngcontent-qnh-c5]:hover{background-color:#eb8231}.social-media[_ngcontent-qnh-c5]   .fa-youtube[_ngcontent-qnh-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-qnh-c5]   .fa-youtube[_ngcontent-qnh-c5]:hover{background-color:#e64a41}.social-media[_ngcontent-qnh-c5]   .fa-linkedin[_ngcontent-qnh-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-qnh-c5]   .fa-linkedin[_ngcontent-qnh-c5]:hover{background-color:#0073a4}.social-media[_ngcontent-qnh-c5]   .fa-github[_ngcontent-qnh-c5]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-qnh-c5]   .fa-github[_ngcontent-qnh-c5]:hover{background-color:#5a32a3}</style><style>.post-page[_ngcontent-qnh-c12]{display:flex;flex-direction:row;height:100%}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]{margin:0 15vw}.post-page[_ngcontent-qnh-c12]   img[_ngcontent-qnh-c12]{padding:0 25px;width:45vw}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]{height:100%;width:100%}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]{min-height:85vh;width:65vw}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .post-title[_ngcontent-qnh-c12]{margin:0 15px;font-size:1.5rem;line-height:1.8rem}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .post-title[_ngcontent-qnh-c12]{margin:15px 30px}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .post-date[_ngcontent-qnh-c12]{margin:0 15px;font-size:.8rem;line-height:1rem}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .post-date[_ngcontent-qnh-c12]{margin:10px 30px}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .article-body[_ngcontent-qnh-c12]{margin:0 15px}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .article-body[_ngcontent-qnh-c12]{padding:0 15px}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .post-image-container[_ngcontent-qnh-c12]{background-color:gray;background-position:50% 25%;background-size:cover;height:120px}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .post-image-container[_ngcontent-qnh-c12]{height:14rem}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   img[_ngcontent-qnh-c12]{height:auto;width:95vw}@media (min-width: 600px){.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   img[_ngcontent-qnh-c12]{width:55vw}}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   img[_ngcontent-qnh-c12] + em[_ngcontent-qnh-c12]{font-style:normal;display:inherit;text-align:center;font-size:90%}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   pre[_ngcontent-qnh-c12]{background-color:#000;color:#fff;overflow:scroll;padding:15px}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]{background-color:#dbdbdb;border-left:6px solid #a0a0a0;margin:10px;padding:10px}.post-page[_ngcontent-qnh-c12]   .post[_ngcontent-qnh-c12]   .twitter-center[_ngcontent-qnh-c12]{align-items:center;display:flex;justify-content:center;width:100%}.post-page[_ngcontent-qnh-c12]   .side-note-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]{background-color:#a0a0a0;border-left:6px solid black}.post-page[_ngcontent-qnh-c12]   .side-note-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]   p[_ngcontent-qnh-c12]{font-size:.9rem}.post-page[_ngcontent-qnh-c12]   .pros-cons-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;margin:10px;min-height:200px;padding:10px;position:relative}.post-page[_ngcontent-qnh-c12]   .pros-cons-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]   h4[_ngcontent-qnh-c12]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-qnh-c12]   .side-note-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-qnh-c12]   .side-note-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]   h4[_ngcontent-qnh-c12]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-qnh-c12]   .protocol-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-qnh-c12]   .protocol-blockquote[_ngcontent-qnh-c12]   blockquote[_ngcontent-qnh-c12]   h4[_ngcontent-qnh-c12]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}</style><style>
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>html,body{height:100%}body{margin:0;font-family:Lato,sans-serif;line-height:1.4rem}</style><link rel="stylesheet" href="styles.babd960fb2cc5928.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.babd960fb2cc5928.css"></noscript><style>.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]{background-color:#fff;box-shadow:1px 3px 3px #d3d3d3;color:#000;display:flex;flex-direction:column;height:60px;left:0;position:fixed;right:0;text-align:center;text-decoration:none;z-index:999}.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]   .title[_ngcontent-iqd-c10]{font-size:1.4rem;line-height:1.5rem;margin-top:10px}@media (min-width: 600px){.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]   .title[_ngcontent-iqd-c10]{font-size:.8rem;line-height:.9rem;margin-top:10px}}.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]   .sub-title[_ngcontent-iqd-c10]{display:none}@media (min-width: 600px){.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]   .sub-title[_ngcontent-iqd-c10]{display:inline;font-size:.7rem;line-height:.8rem;margin-top:15px}}@media (min-width: 600px){.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]{text-align:center;width:100vw}.main-nav[_ngcontent-iqd-c10]   .title-container[_ngcontent-iqd-c10]   .title[_ngcontent-iqd-c10]{font-size:2rem}}.main-nav[_ngcontent-iqd-c10]   .main-container[_ngcontent-iqd-c10]{background-color:#fff;padding-top:65px}.main-nav[_ngcontent-iqd-c10]   .main-container.dark-theme[_ngcontent-iqd-c10]{background-color:#4f4f4f}.main-nav[_ngcontent-iqd-c10]   .main-container[_ngcontent-iqd-c10]   .page-container[_ngcontent-iqd-c10]{background-color:#000;margin:0 15px}@media (min-width: 600px){.main-nav[_ngcontent-iqd-c10]   .main-container[_ngcontent-iqd-c10]   .page-container[_ngcontent-iqd-c10]{margin:0 20%}}.main-nav[_ngcontent-iqd-c10]   .version-container[_ngcontent-iqd-c10]{width:100%}.main-nav[_ngcontent-iqd-c10]   .version-container[_ngcontent-iqd-c10]   .version[_ngcontent-iqd-c10]{font-size:.75rem;text-align:center;width:100%}</style><style type="text/css"></style><style>.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]{align-content:center;display:flex;flex-direction:row;justify-content:center;padding:0 15px}.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]{display:flex;flex-direction:row}.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]   .title-image-container[_ngcontent-iqd-c9]{display:flex;flex-direction:column;padding-top:15px}.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]   .title-image-container[_ngcontent-iqd-c9]   .title[_ngcontent-iqd-c9]{text-align:center;width:100%}.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]   .title-image-container[_ngcontent-iqd-c9]   .author[_ngcontent-iqd-c9]{display:flex;align-items:center;justify-content:center}.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]   .title-image-container[_ngcontent-iqd-c9]   .author[_ngcontent-iqd-c9]   .author-image[_ngcontent-iqd-c9]{background-color:#000;background-image:url(/assets/images/2015-08-12_profile_image.png);background-position:center;background-size:cover;border-radius:50%;height:6rem;margin:0;width:6rem}.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]   .blurb-container[_ngcontent-iqd-c9]{margin-top:20px;padding:15px}@media (min-width: 600px){.footer[_ngcontent-iqd-c9]   .author-container[_ngcontent-iqd-c9]   .author-card[_ngcontent-iqd-c9]   .blurb-container[_ngcontent-iqd-c9]{width:30vw}}.footer[_ngcontent-iqd-c9]   .social-media-container[_ngcontent-iqd-c9]{display:flex;align-items:center;justify-content:center;width:100vw}.footer[_ngcontent-iqd-c9]   .copyright-container[_ngcontent-iqd-c9]{text-align:center;margin:0 10%;width:80%}@media (min-width: 600px){.footer[_ngcontent-iqd-c9]   .copyright-container[_ngcontent-iqd-c9]{margin:0 25%;width:50%}}.footer[_ngcontent-iqd-c9]   .copyright-container[_ngcontent-iqd-c9]   p[_ngcontent-iqd-c9]{font-size:.6rem;line-height:.8rem;margin:0;padding:0}</style><style>.social-media[_ngcontent-iqd-c8]{display:block;margin:0}.social-media[_ngcontent-iqd-c8]   .social-icon[_ngcontent-iqd-c8]{color:#000}.social-media[_ngcontent-iqd-c8]   ul.social-icons[_ngcontent-iqd-c8]{padding:0}.social-media[_ngcontent-iqd-c8]   .social-icons[_ngcontent-iqd-c8]   li[_ngcontent-iqd-c8]{display:inline;margin:10px;vertical-align:top}.social-media[_ngcontent-iqd-c8]   .social-icons[_ngcontent-iqd-c8]   a[_ngcontent-iqd-c8]{color:#000;text-decoration:none}.social-media[_ngcontent-iqd-c8]   .fa-facebook[_ngcontent-iqd-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-iqd-c8]   .fa-facebook[_ngcontent-iqd-c8]:hover{background-color:#3d5b99}.social-media[_ngcontent-iqd-c8]   .fa-twitter[_ngcontent-iqd-c8]{padding:10px 12px;transition:.5s;background-color:#fff}.social-media[_ngcontent-iqd-c8]   .fa-twitter[_ngcontent-iqd-c8]:hover{background-color:#00aced}.social-media[_ngcontent-iqd-c8]   .fa-rss[_ngcontent-iqd-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-iqd-c8]   .fa-rss[_ngcontent-iqd-c8]:hover{background-color:#eb8231}.social-media[_ngcontent-iqd-c8]   .fa-youtube[_ngcontent-iqd-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-iqd-c8]   .fa-youtube[_ngcontent-iqd-c8]:hover{background-color:#e64a41}.social-media[_ngcontent-iqd-c8]   .fa-linkedin[_ngcontent-iqd-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-iqd-c8]   .fa-linkedin[_ngcontent-iqd-c8]:hover{background-color:#0073a4}.social-media[_ngcontent-iqd-c8]   .fa-github[_ngcontent-iqd-c8]{padding:10px 14px;transition:.5s;background-color:#fff}.social-media[_ngcontent-iqd-c8]   .fa-github[_ngcontent-iqd-c8]:hover{background-color:#5a32a3}</style><style>.post-page[_ngcontent-iqd-c15]{display:flex;flex-direction:row;height:100%}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]{margin:0 15vw}.post-page[_ngcontent-iqd-c15]   img[_ngcontent-iqd-c15]{padding:0 25px;width:45vw}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]{height:100%;width:100%}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]{min-height:85vh;width:65vw}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .post-title[_ngcontent-iqd-c15]{margin:0 15px;font-size:1.5rem;line-height:1.8rem}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .post-title[_ngcontent-iqd-c15]{margin:15px 30px}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .post-date[_ngcontent-iqd-c15]{margin:0 15px;font-size:.8rem;line-height:1rem}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .post-date[_ngcontent-iqd-c15]{margin:10px 30px}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .article-body[_ngcontent-iqd-c15]{margin:0 15px}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .article-body[_ngcontent-iqd-c15]{padding:0 15px}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .post-image-container[_ngcontent-iqd-c15]{background-color:gray;background-position:50% 25%;background-size:cover;height:120px}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .post-image-container[_ngcontent-iqd-c15]{height:14rem}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   img[_ngcontent-iqd-c15]{height:auto;width:95vw}@media (min-width: 600px){.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   img[_ngcontent-iqd-c15]{width:55vw}}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   img[_ngcontent-iqd-c15] + em[_ngcontent-iqd-c15]{font-style:normal;display:inherit;text-align:center;font-size:90%}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   pre[_ngcontent-iqd-c15]{background-color:#000;color:#fff;overflow:scroll;padding:15px}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]{background-color:#dbdbdb;border-left:6px solid #a0a0a0;margin:10px;padding:10px}.post-page[_ngcontent-iqd-c15]   .post[_ngcontent-iqd-c15]   .twitter-center[_ngcontent-iqd-c15]{align-items:center;display:flex;justify-content:center;width:100%}.post-page[_ngcontent-iqd-c15]   .side-note-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]{background-color:#a0a0a0;border-left:6px solid black}.post-page[_ngcontent-iqd-c15]   .side-note-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]   p[_ngcontent-iqd-c15]{font-size:.9rem}.post-page[_ngcontent-iqd-c15]   .pros-cons-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;margin:10px;min-height:200px;padding:10px;position:relative}.post-page[_ngcontent-iqd-c15]   .pros-cons-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]   h4[_ngcontent-iqd-c15]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-iqd-c15]   .side-note-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-iqd-c15]   .side-note-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]   h4[_ngcontent-iqd-c15]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}.post-page[_ngcontent-iqd-c15]   .protocol-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]{background-color:#dbdbdb;border-left:40px solid #a0a0a0;position:relative;margin:10px;padding:10px;min-height:200px}.post-page[_ngcontent-iqd-c15]   .protocol-blockquote[_ngcontent-iqd-c15]   blockquote[_ngcontent-iqd-c15]   h4[_ngcontent-iqd-c15]{background:none;bottom:-30px;color:#fff;font-size:.9rem;left:-32px;letter-spacing:5px;position:absolute;text-transform:uppercase;transform-origin:0 0;transform:rotate(-90deg)}</style><style>
       :host {
         display: none;
       }
@@ -13,82 +764,82 @@
       }
     </style><meta name="og:title" content="Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source"><meta name="og:type" content="website"><meta name="og:image" content="/assets/images/2016-08-07-flowers.jpg"><meta name="og:image:alt" content="Leif Wells Development Blogorama: Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source"><meta name="og:description" content="A way to use a Google spread sheet as a data source."><meta name="og:url" content="https://leifwells.github.io//blog/2016-06-09_ionic_google_drive"><meta name="author" content="Leif Wells"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source"><meta name="twitter:description" content="A way to use a Google spread sheet as a data source."><meta name="twitter:image" content="https://leifwells.github.io/assets/images/2016-08-07-flowers.jpg"><meta name="twitter:image:alt" content="Leif Wells Development Blogorama: Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source"><meta name="twitter:site" content="@leifwells"><meta name="twitter:creator" content="@leifwells"><script>window['ScullyIO']='generated';</script><script>window.ScullyIOAngularDisabled = true;</script></head>
   <body scully-version="0.0.0">
-    <app-root ng-version="13.2.2"><app-main-nav _nghost-qnh-c7=""><div _ngcontent-qnh-c7="" class="main-nav"><a _ngcontent-qnh-c7="" href="/index.html" class="title-container"><div _ngcontent-qnh-c7="" class="title">Leif's Development Blog-o-rama</div><div _ngcontent-qnh-c7="" class="sub-title"> This is the place where Leif writes stuff down for other developers to read. Also, it is how he remembers stuff. And things. </div></a><div _ngcontent-qnh-c7="" class="main-container"><router-outlet _ngcontent-qnh-c7=""></router-outlet><app-blog _nghost-qnh-c12=""><div _ngcontent-qnh-c12="" class="post-page">
-  <article _ngcontent-qnh-c12="" class="post">
-    <header _ngcontent-qnh-c12="">
-      <div _ngcontent-qnh-c12="" width="{!(isHandset$ | async) ? '630px' : '100vw'}" height="{!(isHandset$ | async) ? '120px' : 'auto'}" class="post-image-container" style="background-image: url(&quot;/assets/images/2016-08-07-flowers.jpg&quot;);"></div>
-      <h1 _ngcontent-qnh-c12="" class="post-title">Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</h1>
-      <h3 _ngcontent-qnh-c12="" class="post-date">
-        <i _ngcontent-qnh-c12="" class="fa fa-calendar-check-o"></i> Jun 9, 2016
+    <app-root ng-version="13.2.2"><app-main-nav _nghost-iqd-c10=""><div _ngcontent-iqd-c10="" class="main-nav"><a _ngcontent-iqd-c10="" href="/index.html" class="title-container"><div _ngcontent-iqd-c10="" class="title">Leif's Development Blog-o-rama</div><div _ngcontent-iqd-c10="" class="sub-title"> This is the place where Leif writes stuff down for other developers to read. Also, it is how he remembers stuff. And things. </div></a><div _ngcontent-iqd-c10="" class="main-container"><router-outlet _ngcontent-iqd-c10=""></router-outlet><app-blog _nghost-iqd-c15=""><div _ngcontent-iqd-c15="" class="post-page">
+  <article _ngcontent-iqd-c15="" class="post">
+    <header _ngcontent-iqd-c15="">
+      <div _ngcontent-iqd-c15="" width="{!(isHandset$ | async) ? '630px' : '100vw'}" height="{!(isHandset$ | async) ? '120px' : 'auto'}" class="post-image-container" style="background-image: url(&quot;/assets/images/2016-08-07-flowers.jpg&quot;);"></div>
+      <h1 _ngcontent-iqd-c15="" class="post-title">Ionic 2 &amp; Angular 2: Using a Google Spreadsheet as a Data Source</h1>
+      <h3 _ngcontent-iqd-c15="" class="post-date">
+        <i _ngcontent-iqd-c15="" class="fa fa-calendar-check-o"></i> Jun 9, 2016
         <!---->
       </h3>
     </header>
-    <div _ngcontent-qnh-c12="" class="article-body">
-      <!--scullyContent-begin--><p _ngcontent-qnh-c12="">This week I was asked by my friend <a href="https://chrisgriffith.wordpress.com/" _ngcontent-qnh-c12="">Chris Griffith</a> about using a Google spread sheet as a data source for a prototype he was building. Both Chris and I build prototypes as part of our daily jobs, so the question makes sense; what happens when you need to use archived data -- data that you need will need to update from time to time -- but you don't have the time to build a server application or use something like Firebase to deliver the content?</p>
-<p _ngcontent-qnh-c12="">Certainly you may use a JSON file, but managing and maintaining this file can be a pain. It also doesn't give a real online experience. So, off I went to The Googles to see what was out there on this topic.</p>
-<p _ngcontent-qnh-c12="">Chris threw a <a href="https://ctrlq.org/code/20004-google-spreadsheets-json" _ngcontent-qnh-c12="">JQuery-specific on this subject link</a> at me. Thanks to <a href="https://ctrlq.org/" _ngcontent-qnh-c12="">Amit Agarwal</a> for blogging. If you'd like to give him some support there are some Google scripts for purchase on his site.</p>
-<p _ngcontent-qnh-c12="">Using this technique we create a publicly viewable spread sheet and access it using Ionic 2 without using an API key, just the id of the spread sheet.</p>
-<blockquote _ngcontent-qnh-c12="">
-<p _ngcontent-qnh-c12=""><strong _ngcontent-qnh-c12="">Caveat:</strong> If you use this technique for creating a data source using a Google spread sheet please be advised that this spread sheet will be public. Please consider the data you are using with this technique and do not put anyone's private data at risk. While the spread sheet will only be available via a URL, that doesn't mean that someone won't be able to find it. You can <a href="https://www.google.com/search?q=automated+user+creation&amp;oq=atomated+user+crea&amp;aqs=chrome.1.69i57j0l5.5173j0j7&amp;sourceid=chrome&amp;ie=UTF-8#q=create+a+set+of+mock+users+to+fill+a+database" _ngcontent-qnh-c12="">use Google to find mock data generators online</a>.</p>
+    <div _ngcontent-iqd-c15="" class="article-body">
+      <!--scullyContent-begin--><p _ngcontent-iqd-c15="">This week I was asked by my friend <a href="https://chrisgriffith.wordpress.com/" _ngcontent-iqd-c15="">Chris Griffith</a> about using a Google spread sheet as a data source for a prototype he was building. Both Chris and I build prototypes as part of our daily jobs, so the question makes sense; what happens when you need to use archived data -- data that you need will need to update from time to time -- but you don't have the time to build a server application or use something like Firebase to deliver the content?</p>
+<p _ngcontent-iqd-c15="">Certainly you may use a JSON file, but managing and maintaining this file can be a pain. It also doesn't give a real online experience. So, off I went to The Googles to see what was out there on this topic.</p>
+<p _ngcontent-iqd-c15="">Chris threw a <a href="https://ctrlq.org/code/20004-google-spreadsheets-json" _ngcontent-iqd-c15="">JQuery-specific on this subject link</a> at me. Thanks to <a href="https://ctrlq.org/" _ngcontent-iqd-c15="">Amit Agarwal</a> for blogging. If you'd like to give him some support there are some Google scripts for purchase on his site.</p>
+<p _ngcontent-iqd-c15="">Using this technique we create a publicly viewable spread sheet and access it using Ionic 2 without using an API key, just the id of the spread sheet.</p>
+<blockquote _ngcontent-iqd-c15="">
+<p _ngcontent-iqd-c15=""><strong _ngcontent-iqd-c15="">Caveat:</strong> If you use this technique for creating a data source using a Google spread sheet please be advised that this spread sheet will be public. Please consider the data you are using with this technique and do not put anyone's private data at risk. While the spread sheet will only be available via a URL, that doesn't mean that someone won't be able to find it. You can <a href="https://www.google.com/search?q=automated+user+creation&amp;oq=atomated+user+crea&amp;aqs=chrome.1.69i57j0l5.5173j0j7&amp;sourceid=chrome&amp;ie=UTF-8#q=create+a+set+of+mock+users+to+fill+a+database" _ngcontent-iqd-c15="">use Google to find mock data generators online</a>.</p>
 </blockquote>
-<br _ngcontent-qnh-c12="">
+<br _ngcontent-iqd-c15="">
 
-<blockquote _ngcontent-qnh-c12="">
-<p _ngcontent-qnh-c12=""><strong _ngcontent-qnh-c12="">Caveat:</strong> This code sample is built using Ionic 2 Beta 8 which was released earlier this week. I'll do my best to remember update this code sample when and if there are significant changes to the code in the future (or remember to remove this notice). This code sample uses TypeScript. I wholeheartedly endorse using TypeScript with Ionic 2 and Angular 2.</p>
+<blockquote _ngcontent-iqd-c15="">
+<p _ngcontent-iqd-c15=""><strong _ngcontent-iqd-c15="">Caveat:</strong> This code sample is built using Ionic 2 Beta 8 which was released earlier this week. I'll do my best to remember update this code sample when and if there are significant changes to the code in the future (or remember to remove this notice). This code sample uses TypeScript. I wholeheartedly endorse using TypeScript with Ionic 2 and Angular 2.</p>
 </blockquote>
-<h2 id="setting-up-a-spread-sheet" _ngcontent-qnh-c12="">Setting Up a Spread Sheet</h2>
-<p _ngcontent-qnh-c12="">Here is my Google spread sheet:</p>
-<iframe style="width: 100%" src="https://docs.google.com/spreadsheets/d/15Kndr-OcyCUAkBUcq6X3BMqKa_y2fMAXfPFLiSACiys/pubhtml?widget=true&amp;headers=false" _ngcontent-qnh-c12=""></iframe>
+<h2 id="setting-up-a-spread-sheet" _ngcontent-iqd-c15="">Setting Up a Spread Sheet</h2>
+<p _ngcontent-iqd-c15="">Here is my Google spread sheet:</p>
+<iframe style="width: 100%" src="https://docs.google.com/spreadsheets/d/15Kndr-OcyCUAkBUcq6X3BMqKa_y2fMAXfPFLiSACiys/pubhtml?widget=true&amp;headers=false" _ngcontent-iqd-c15=""></iframe>
 
-<br _ngcontent-qnh-c12="">
+<br _ngcontent-iqd-c15="">
 
-<p _ngcontent-qnh-c12="">Yeah, fairly simple, but this is an example post not a full application. Also notice that this is a live document, not an image. We've published this spread sheet on the Web via Google Drive.</p>
-<p _ngcontent-qnh-c12="">We have a typical first row that holds the headers for the columns. Notice how I have named these headers as lowercase and without spaces. I've purposefully named these this way because they will end up as keys for our data source.</p>
-<p _ngcontent-qnh-c12="">Now here comes the tricky part: setting it up to be available online. In Google Drive select the <code _ngcontent-qnh-c12="">File &gt; Publish to the Web...</code> option which will end up giving you a URL which has an id inside of it which is important. In our case the url looks like this:</p>
-<p _ngcontent-qnh-c12=""><code _ngcontent-qnh-c12="">https://docs.google.com/spreadsheets/d/15Kndr-OcyCUAkBUcq6X3BMqKa_y2fMAXfPFLiSACiys/pubhtml</code></p>
-<p _ngcontent-qnh-c12="">The id that is in this url is:</p>
-<p _ngcontent-qnh-c12=""><code _ngcontent-qnh-c12="">15Kndr-OcyCUAkBUcq6X3BMqKa_y2fMAXfPFLiSACiys</code></p>
-<blockquote _ngcontent-qnh-c12="">
-<p _ngcontent-qnh-c12=""><strong _ngcontent-qnh-c12="">Important:</strong> Do NOT use Google Drive's blue Share button on the right-hand side of the tool bar for this technique. My results with using that sharing feature with this technique led to receiving JSON errors.</p>
+<p _ngcontent-iqd-c15="">Yeah, fairly simple, but this is an example post not a full application. Also notice that this is a live document, not an image. We've published this spread sheet on the Web via Google Drive.</p>
+<p _ngcontent-iqd-c15="">We have a typical first row that holds the headers for the columns. Notice how I have named these headers as lowercase and without spaces. I've purposefully named these this way because they will end up as keys for our data source.</p>
+<p _ngcontent-iqd-c15="">Now here comes the tricky part: setting it up to be available online. In Google Drive select the <code _ngcontent-iqd-c15="">File &gt; Publish to the Web...</code> option which will end up giving you a URL which has an id inside of it which is important. In our case the url looks like this:</p>
+<p _ngcontent-iqd-c15=""><code _ngcontent-iqd-c15="">https://docs.google.com/spreadsheets/d/15Kndr-OcyCUAkBUcq6X3BMqKa_y2fMAXfPFLiSACiys/pubhtml</code></p>
+<p _ngcontent-iqd-c15="">The id that is in this url is:</p>
+<p _ngcontent-iqd-c15=""><code _ngcontent-iqd-c15="">15Kndr-OcyCUAkBUcq6X3BMqKa_y2fMAXfPFLiSACiys</code></p>
+<blockquote _ngcontent-iqd-c15="">
+<p _ngcontent-iqd-c15=""><strong _ngcontent-iqd-c15="">Important:</strong> Do NOT use Google Drive's blue Share button on the right-hand side of the tool bar for this technique. My results with using that sharing feature with this technique led to receiving JSON errors.</p>
 </blockquote>
-<h2 id="where-are-we-going" _ngcontent-qnh-c12="">Where Are We Going.</h2>
-<p _ngcontent-qnh-c12="">Let's look at the results that are logged with our completed code so you can understand where we are going with this code sample:</p>
-<p _ngcontent-qnh-c12=""><img src="/assets/images/2016-06-09_console_output.png" alt="Figure 1: Console output for the Final Code Sample." _ngcontent-qnh-c12=""></p>
-<br _ngcontent-qnh-c12="">
+<h2 id="where-are-we-going" _ngcontent-iqd-c15="">Where Are We Going.</h2>
+<p _ngcontent-iqd-c15="">Let's look at the results that are logged with our completed code so you can understand where we are going with this code sample:</p>
+<p _ngcontent-iqd-c15=""><img src="/assets/images/2016-06-09_console_output.png" alt="Figure 1: Console output for the Final Code Sample." _ngcontent-iqd-c15=""></p>
+<br _ngcontent-iqd-c15="">
 
-<p _ngcontent-qnh-c12="">At the top you see under the "Raw Data" text the Object that you receive from Google using this technique. And, as JSON goes, it is verbose. But the opened nodes are the ones we are focusing on here. Take a look at the <code _ngcontent-qnh-c12="">Object &gt; feed &gt; entry</code> node. This is where your spread sheet data resides.</p>
-<p _ngcontent-qnh-c12="">The entry node is an Array of Objects representing the row of data in the spread sheet. Notice the keys that are prefixed with <code _ngcontent-qnh-c12="">gsx$</code>: these are the nodes that contain the row content. For example, the <code _ngcontent-qnh-c12="">gsx$firstname</code> key represents the firstname column of that row. Now you can see why I mentioned the naming of the headers in the first row.</p>
-<p _ngcontent-qnh-c12="">Now notice that the <code _ngcontent-qnh-c12="">gsx$firstname</code> key points to an object contain an key of <code _ngcontent-qnh-c12="">$t</code>. That is the property we are wanting to retrieve.</p>
-<p _ngcontent-qnh-c12="">I could have focused on the <code _ngcontent-qnh-c12="">Object &gt; feed &gt; entry &gt; content</code> node, but I decided this was the way to go.</p>
-<p _ngcontent-qnh-c12="">At the bottom of Figure 1 you also see the Array that we use in the view component.</p>
-<h2 id="creating-the-provider" _ngcontent-qnh-c12="">Creating the Provider</h2>
-<p _ngcontent-qnh-c12="">I used the Ionic CLI's <a href="http://ionicframework.com/docs/v2/cli/generate/" _ngcontent-qnh-c12="">generate command</a> to create my provider and added some code to process the incoming data. Lets take a look at it:</p>
-<script src="https://gist.github.com/leifwells/7d5b7a8bb4bf0130d9faf1434ba953b8.js" _ngcontent-qnh-c12=""></script>
+<p _ngcontent-iqd-c15="">At the top you see under the "Raw Data" text the Object that you receive from Google using this technique. And, as JSON goes, it is verbose. But the opened nodes are the ones we are focusing on here. Take a look at the <code _ngcontent-iqd-c15="">Object &gt; feed &gt; entry</code> node. This is where your spread sheet data resides.</p>
+<p _ngcontent-iqd-c15="">The entry node is an Array of Objects representing the row of data in the spread sheet. Notice the keys that are prefixed with <code _ngcontent-iqd-c15="">gsx$</code>: these are the nodes that contain the row content. For example, the <code _ngcontent-iqd-c15="">gsx$firstname</code> key represents the firstname column of that row. Now you can see why I mentioned the naming of the headers in the first row.</p>
+<p _ngcontent-iqd-c15="">Now notice that the <code _ngcontent-iqd-c15="">gsx$firstname</code> key points to an object contain an key of <code _ngcontent-iqd-c15="">$t</code>. That is the property we are wanting to retrieve.</p>
+<p _ngcontent-iqd-c15="">I could have focused on the <code _ngcontent-iqd-c15="">Object &gt; feed &gt; entry &gt; content</code> node, but I decided this was the way to go.</p>
+<p _ngcontent-iqd-c15="">At the bottom of Figure 1 you also see the Array that we use in the view component.</p>
+<h2 id="creating-the-provider" _ngcontent-iqd-c15="">Creating the Provider</h2>
+<p _ngcontent-iqd-c15="">I used the Ionic CLI's <a href="http://ionicframework.com/docs/v2/cli/generate/" _ngcontent-iqd-c15="">generate command</a> to create my provider and added some code to process the incoming data. Lets take a look at it:</p>
+<script src="https://gist.github.com/leifwells/7d5b7a8bb4bf0130d9faf1434ba953b8.js" _ngcontent-iqd-c15=""></script>
 
-<p _ngcontent-qnh-c12="">Most of this code is boilerplate. The interesting part of this code resides inside the <code _ngcontent-qnh-c12="">subscribe()</code> where the data is processed.</p>
-<blockquote _ngcontent-qnh-c12="">
-<p _ngcontent-qnh-c12=""><strong _ngcontent-qnh-c12="">Confession:</strong> I am still working on gaining the skills necessary for modern Javascript Array processing. This code example is how I solved this problem, but if there are better ways of processing this data please let me know.</p>
+<p _ngcontent-iqd-c15="">Most of this code is boilerplate. The interesting part of this code resides inside the <code _ngcontent-iqd-c15="">subscribe()</code> where the data is processed.</p>
+<blockquote _ngcontent-iqd-c15="">
+<p _ngcontent-iqd-c15=""><strong _ngcontent-iqd-c15="">Confession:</strong> I am still working on gaining the skills necessary for modern Javascript Array processing. This code example is how I solved this problem, but if there are better ways of processing this data please let me know.</p>
 </blockquote>
-<p _ngcontent-qnh-c12="">In that code we loop through the <code _ngcontent-qnh-c12="">data.feed.entry</code> node, find the items that are prefixed with <code _ngcontent-qnh-c12="">gsx$</code> (and error checks that the subitem contains a <code _ngcontent-qnh-c12="">$t</code> key) and processes the key stripping away the prefix and creates a typical key/value object which is pushed into our <code _ngcontent-qnh-c12="">returnArray</code>.</p>
-<p _ngcontent-qnh-c12="">It may be a little much for beginners to take in, but I think careful review of the code should reveal the code's simplicity.</p>
-<h2 id="the-component-code" _ngcontent-qnh-c12="">The Component Code</h2>
-<p _ngcontent-qnh-c12="">Now lets look at the code in Component that calls this provider:</p>
-<script src="https://gist.github.com/leifwells/b12ed12f85bd2b3aef8d5ac507e8be89.js" _ngcontent-qnh-c12=""></script>
+<p _ngcontent-iqd-c15="">In that code we loop through the <code _ngcontent-iqd-c15="">data.feed.entry</code> node, find the items that are prefixed with <code _ngcontent-iqd-c15="">gsx$</code> (and error checks that the subitem contains a <code _ngcontent-iqd-c15="">$t</code> key) and processes the key stripping away the prefix and creates a typical key/value object which is pushed into our <code _ngcontent-iqd-c15="">returnArray</code>.</p>
+<p _ngcontent-iqd-c15="">It may be a little much for beginners to take in, but I think careful review of the code should reveal the code's simplicity.</p>
+<h2 id="the-component-code" _ngcontent-iqd-c15="">The Component Code</h2>
+<p _ngcontent-iqd-c15="">Now lets look at the code in Component that calls this provider:</p>
+<script src="https://gist.github.com/leifwells/b12ed12f85bd2b3aef8d5ac507e8be89.js" _ngcontent-iqd-c15=""></script>
 
-<p _ngcontent-qnh-c12="">Since this data is static we are only retrieving this data once so we are making the call inside out <code _ngcontent-qnh-c12="">construtor</code> method. If we wanted to retrieve this data upon every time the view is loaded, we would leverage the new Ionic lifecycle event <code _ngcontent-qnh-c12="">ionViewLoaded</code>. Take a look at <a href="http://ionicframework.com/docs/v2/api/components/nav/NavController/" _ngcontent-qnh-c12="">the lifecycle events in the NavController documentation</a>.</p>
-<p _ngcontent-qnh-c12="">Also note that we have placed the spread sheet id inside this component. There are many ways to provide a separation of concerns in providers. We are placing the id of the spread sheet outside of the provider so that there is no need for any decision-making about which spread sheet to load. Another option would use constants inside our provider to hold the ids and expose those constants to our view.</p>
-<h2 id="summary" _ngcontent-qnh-c12="">Summary</h2>
-<p _ngcontent-qnh-c12="">In this article we created and published a spread sheet on Google Drive and leveraged it as a data source in an Ionic 2 / Angular 2. Feel free to comment below or contact me on Twitter if you have questions or comments.</p>
-<!--scullyContent-end--><scully-content _ngcontent-qnh-c12=""></scully-content>
-    <script>try {window['scullyContent'] = {cssId:"_ngcontent-qnh-c12",html:document.body.innerHTML.split('<!--scullyContent-begin-->')[1].split('<!--scullyContent-end-->')[0]};} catch(e) {console.error('scully could not parse content');}</script></div>
-    <h3 _ngcontent-qnh-c12="" class="post-date">
-      <i _ngcontent-qnh-c12="" class="fa fa-calendar-check-o"></i>
+<p _ngcontent-iqd-c15="">Since this data is static we are only retrieving this data once so we are making the call inside out <code _ngcontent-iqd-c15="">construtor</code> method. If we wanted to retrieve this data upon every time the view is loaded, we would leverage the new Ionic lifecycle event <code _ngcontent-iqd-c15="">ionViewLoaded</code>. Take a look at <a href="http://ionicframework.com/docs/v2/api/components/nav/NavController/" _ngcontent-iqd-c15="">the lifecycle events in the NavController documentation</a>.</p>
+<p _ngcontent-iqd-c15="">Also note that we have placed the spread sheet id inside this component. There are many ways to provide a separation of concerns in providers. We are placing the id of the spread sheet outside of the provider so that there is no need for any decision-making about which spread sheet to load. Another option would use constants inside our provider to hold the ids and expose those constants to our view.</p>
+<h2 id="summary" _ngcontent-iqd-c15="">Summary</h2>
+<p _ngcontent-iqd-c15="">In this article we created and published a spread sheet on Google Drive and leveraged it as a data source in an Ionic 2 / Angular 2. Feel free to comment below or contact me on Twitter if you have questions or comments.</p>
+<!--scullyContent-end--><scully-content _ngcontent-iqd-c15=""></scully-content>
+    <script>try {window['scullyContent'] = {cssId:"_ngcontent-iqd-c15",html:document.body.innerHTML.split('<!--scullyContent-begin-->')[1].split('<!--scullyContent-end-->')[0]};} catch(e) {console.error('scully could not parse content');}</script></div>
+    <h3 _ngcontent-iqd-c15="" class="post-date">
+      <i _ngcontent-iqd-c15="" class="fa fa-calendar-check-o"></i>
       This article was posted on Jun 9, 2016
       <!---->
     </h3>
   </article>
 </div>
-</app-blog><!----><div _ngcontent-qnh-c7=""><p _ngcontent-qnh-c7="" class="version">Version: 0.1.8</p></div></div><app-footer _ngcontent-qnh-c7="" _nghost-qnh-c6=""><div _ngcontent-qnh-c6="" class="footer"><div _ngcontent-qnh-c6="" class="author-container"><div _ngcontent-qnh-c6="" class="author-card"><div _ngcontent-qnh-c6="" class="title-image-container"><div _ngcontent-qnh-c6="" class="title">Leif Wells</div><div _ngcontent-qnh-c6="" class="author"><div _ngcontent-qnh-c6="" class="author-image"></div></div></div><div _ngcontent-qnh-c6="" class="blurb-container"><p _ngcontent-qnh-c6=""> Leif Wells is a presenter, author, and Web &amp; mobile developer based in Atlanta. </p></div></div></div><div _ngcontent-qnh-c6="" class="social-media-container"><app-social-media _ngcontent-qnh-c6="" _nghost-qnh-c5=""><div _ngcontent-qnh-c5="" class="social-media"><ul _ngcontent-qnh-c5="" class="social-icons"><li _ngcontent-qnh-c5=""><a _ngcontent-qnh-c5="" href="https://twitter.com/leifwells" class="social-icon"><i _ngcontent-qnh-c5="" class="fa fa-twitter"></i></a></li><li _ngcontent-qnh-c5=""><a _ngcontent-qnh-c5="" href="https://www.linkedin.com/in/leifwells/" class="social-icon"><i _ngcontent-qnh-c5="" class="fa fa-linkedin"></i></a></li><li _ngcontent-qnh-c5=""><a _ngcontent-qnh-c5="" href="https://github.com/leifwells" class="social-icon"><i _ngcontent-qnh-c5="" class="fa fa-github"></i></a></li></ul></div></app-social-media></div><div _ngcontent-qnh-c6="" class="copyright-container"><p _ngcontent-qnh-c6=""> Copyright © Leif Wells, leifwells.github.io and leifwells.com, 2022. </p><p _ngcontent-qnh-c6=""> Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content. </p></div></div></app-footer></div></app-main-nav></app-root>
+</app-blog><!----></div><app-footer _ngcontent-iqd-c10="" _nghost-iqd-c9=""><div _ngcontent-iqd-c9="" class="footer"><div _ngcontent-iqd-c9="" class="author-container"><div _ngcontent-iqd-c9="" class="author-card"><div _ngcontent-iqd-c9="" class="title-image-container"><div _ngcontent-iqd-c9="" class="title">Leif Wells</div><div _ngcontent-iqd-c9="" class="author"><div _ngcontent-iqd-c9="" class="author-image"></div></div></div><div _ngcontent-iqd-c9="" class="blurb-container"><p _ngcontent-iqd-c9=""> Leif Wells is a presenter, author, and Web &amp; mobile developer based in Atlanta. </p></div></div></div><div _ngcontent-iqd-c9="" class="social-media-container"><app-social-media _ngcontent-iqd-c9="" _nghost-iqd-c8=""><div _ngcontent-iqd-c8="" class="social-media"><ul _ngcontent-iqd-c8="" class="social-icons"><li _ngcontent-iqd-c8=""><a _ngcontent-iqd-c8="" href="https://twitter.com/leifwells" class="social-icon"><fa-icon _ngcontent-iqd-c8="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg></fa-icon></a></li><li _ngcontent-iqd-c8=""><a _ngcontent-iqd-c8="" href="https://www.linkedin.com/in/leifwells/" class="social-icon"><fa-icon _ngcontent-iqd-c8="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></fa-icon></a></li></ul></div></app-social-media></div><div _ngcontent-iqd-c9="" class="copyright-container"><p _ngcontent-iqd-c9=""> Copyright © Leif Wells, leifwells.github.io and leifwells.com, 2022. </p><p _ngcontent-iqd-c9=""> Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Leif Wells, leifwells.github.io and leifwells.com with appropriate and specific direction to the original content. </p></div></div></app-footer><div _ngcontent-iqd-c10="" class="version-container"><p _ngcontent-iqd-c10="" class="version">Version: 0.1.11</p></div></div></app-main-nav></app-root>
   
 
 </body></html>
